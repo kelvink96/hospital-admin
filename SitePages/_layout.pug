@@ -1,0 +1,57 @@
+html
+	head
+		title Admin
+		meta(name='viewport' control='width=device-width, intial-scale=1')
+		link(rel='stylesheet' href='../SiteAssets/css/vendors/bootstrap.min.css')
+		link(rel='stylesheet' href='../SiteAssets/css/vendors/all.min.css')
+		block links
+		script(src='../SiteAssets/js/vendors/jquery.min.js')
+		script(src='../SiteAssets/js/vendors/bootstrap.bundle.min.js')
+
+	body
+		header
+			nav.navbar.navbar-expand-lg.shadow-sm
+				a.navbar-brand(href='')
+					img(src='../SiteAssets/images/qafya-logo.png')
+				button.navbar-toggler(type='button' data-target='#navbarContent' data-toggle='collapse')
+					i.fas.fa-bars
+				h5.nav-link.page-title dashboard
+				.collapse.navbar-collapse#navbarContent
+					ul.navbar-nav.ml-auto
+						li.nav-item.dropdown
+							a.nav-link.notification-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+								i.fas.fa-bell
+							.dropdown-menu.notificationDropdownMenu(aria-labelledby='notification-dropdown')
+								ul.list-unstyled
+									li.media
+										img.mr-3(src='...', alt='...')
+										.media-body
+											h5.mt-0.mb-1 List-based media object
+											|       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+									li.media.my-4
+										img.mr-3(src='...', alt='...')
+										.media-body
+											h5.mt-0.mb-1 List-based media object
+											|       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+									li.media
+										img.mr-3(src='...', alt='...')
+										.media-body
+											h5.mt-0.mb-1 List-based media object
+											|       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+						li.nav-item
+							.nav-link
+								span.vertical-divider
+						li.nav-item
+							a.nav-link(href='#')
+								img.rounded-circle(src='../SiteAssets/images/person.jpg')
+						li.nav-item.dropdown.dropleft
+							a.nav-link.profile-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+								| jane doe
+							.dropdown-menu(aria-labelledby='profile-dropdown').shadow-sm
+								a.dropdown-item(href='#')
+									i.fas.fa-user.mr-2
+									| profile
+								a.dropdown-item(href='#')
+									i.fas.fa-cog.mr-2
+									| settings
+		block content

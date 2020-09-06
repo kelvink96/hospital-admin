@@ -1,0 +1,49 @@
+@import "../themes/colors"
+
+nav, .navbar
+  background-color: $color-white-ish
+  padding-right: 2em
+  padding-left: 2em
+
+  .navbar-brand
+    color: $color-med-red
+    text-transform: uppercase
+
+    img
+      width: 40px
+      height: 40px
+      object-fit: contain
+
+  .page-title
+    text-transform: capitalize
+
+  .navbar-collapse
+    .navbar-nav
+      align-items: center
+
+      .nav-item
+        .nav-link
+          padding: .5em .75em
+          color: black
+          text-transform: capitalize
+
+          .vertical-divider
+            border-left: 2px solid lightgray
+
+          img
+            width: 40px
+            height: 40px
+            object-fit: cover
+
+          .fa-bell
+            font-size: 1.2em
+            color: $color-dark-red
+
+      .profile-dropdown
+        font-weight: 600
+
+      .dropdown-menu
+        border: none
+
+        a
+          text-transform: capitalize
