@@ -4,6 +4,7 @@ html
 		meta(name='viewport' control='width=device-width, intial-scale=1')
 		link(rel='stylesheet' href='../SiteAssets/css/vendors/bootstrap.min.css')
 		link(rel='stylesheet' href='../SiteAssets/css/vendors/all.min.css')
+		link(rel='icon' href='../SiteAssets/images/qafya-icon.ico')
 		block links
 		script(src='../SiteAssets/js/vendors/jquery.min.js')
 		script(src='../SiteAssets/js/vendors/bootstrap.bundle.min.js')
@@ -18,26 +19,40 @@ html
 				h5.nav-link.page-title dashboard
 				.collapse.navbar-collapse#navbarContent
 					ul.navbar-nav.ml-auto
-						li.nav-item.dropdown
+						li.nav-item.dropdown.dropleft
 							a.nav-link.notification-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+								span.badge.badge-pill.badge-primary(style='float:right;margin-bottom:-10px;')
 								i.fas.fa-bell
-							.dropdown-menu.notificationDropdownMenu(aria-labelledby='notification-dropdown')
-								ul.list-unstyled
-									li.media
-										img.mr-3(src='...', alt='...')
-										.media-body
-											h5.mt-0.mb-1 List-based media object
-											|       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-									li.media.my-4
-										img.mr-3(src='...', alt='...')
-										.media-body
-											h5.mt-0.mb-1 List-based media object
-											|       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-									li.media
-										img.mr-3(src='...', alt='...')
-										.media-body
-											h5.mt-0.mb-1 List-based media object
-											|       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							.dropdown-menu.notification-dropdown-menu.shadow-sm(aria-labelledby='notification-dropdown')
+								.dropdown-title
+									a(href='') notifications
+										span.ml-2.notifications-count (1)
+									a(href='').float-right mark all as read
+								.dropdown-body
+									ul.list-unstyled
+										li.media
+											a(href='').notification-card
+												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
+												.media-body
+													h5.mt-0.mb-1 List-based media object
+													p Cras sit amet nibh libero, in gravida nulla.
+													small.text-muted 21.03.2020, 13.02
+										li.media
+											a(href='').notification-card
+												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
+												.media-body
+													h5.mt-0.mb-1 List-based media object
+													p Cras sit amet nibh libero, in gravida nulla.
+													small.text-muted 21.03.2020, 13.02
+										li.media
+											a(href='').notification-card
+												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
+												.media-body
+													h5.mt-0.mb-1 List-based media object
+													p Cras sit amet nibh libero, in gravida nulla.
+													small.text-muted 21.03.2020, 13.02
+								.dropdown-footer.text-center
+									a(href='') view more
 						li.nav-item
 							.nav-link
 								span.vertical-divider
@@ -47,7 +62,7 @@ html
 						li.nav-item.dropdown.dropleft
 							a.nav-link.profile-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 								| jane doe
-							.dropdown-menu(aria-labelledby='profile-dropdown').shadow-sm
+							.dropdown-menu.shadow-sm(aria-labelledby='profile-dropdown')
 								a.dropdown-item(href='#')
 									i.fas.fa-user.mr-2
 									| profile

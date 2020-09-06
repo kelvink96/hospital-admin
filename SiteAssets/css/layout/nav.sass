@@ -39,11 +39,52 @@ nav, .navbar
             font-size: 1.2em
             color: $color-dark-red
 
-      .profile-dropdown
-        font-weight: 600
-
       .dropdown-menu
         border: none
 
         a
           text-transform: capitalize
+
+      .profile-dropdown
+        font-weight: 600
+
+      .notification-dropdown-menu
+        padding: 0
+        width: 400px
+
+        .dropdown-title, .dropdown-footer
+          background-color: $color-dark-red
+          padding: .5em 1em
+
+          a
+            color: $color-white-ish
+
+
+        .dropdown-body
+          padding: 0
+
+          .media
+            .notification-card
+              align-items: center
+              width: 100%
+              display: flex
+              margin: 0
+              color: black
+              padding: .5em 1em
+
+              img
+                width: 25px
+                height: 25px
+                background-color: $color-white-ish
+
+              a
+                color: black
+
+              &:hover,
+              &:focus
+                background-color: $color-white-ish
+                text-decoration: none
+
+          p
+            margin: 0
+
