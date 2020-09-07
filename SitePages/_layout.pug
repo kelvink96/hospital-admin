@@ -11,7 +11,7 @@ html
 
 	body
 		header
-			nav.navbar.navbar-expand-lg.shadow-sm
+			nav.navbar.navbar-expand-lg.shadow-sm.sticky-top
 				a.navbar-brand(href='')
 					img(src='../SiteAssets/images/qafya-logo.png')
 				button.navbar-toggler(type='button' data-target='#navbarContent' data-toggle='collapse')
@@ -23,7 +23,7 @@ html
 							a.nav-link.notification-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 								span.badge.badge-pill.badge-primary(style='float:right;margin-bottom:-10px;')
 								i.fas.fa-bell
-							.dropdown-menu.notification-dropdown-menu.shadow-sm(aria-labelledby='notification-dropdown')
+							.dropdown-menu.notification-dropdown-menu.shadow-lg(aria-labelledby='notification-dropdown')
 								.dropdown-title
 									a(href='') notifications
 										span.ml-2.notifications-count (1)
@@ -34,21 +34,21 @@ html
 											a(href='').notification-card
 												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
 												.media-body
-													h5.mt-0.mb-1 List-based media object
+													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
 													small.text-muted 21.03.2020, 13.02
 										li.media
 											a(href='').notification-card
 												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
 												.media-body
-													h5.mt-0.mb-1 List-based media object
+													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
 													small.text-muted 21.03.2020, 13.02
 										li.media
 											a(href='').notification-card
 												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
 												.media-body
-													h5.mt-0.mb-1 List-based media object
+													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
 													small.text-muted 21.03.2020, 13.02
 								.dropdown-footer.text-center
@@ -62,11 +62,54 @@ html
 						li.nav-item.dropdown.dropleft
 							a.nav-link.profile-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 								| jane doe
-							.dropdown-menu.shadow-sm(aria-labelledby='profile-dropdown')
+							.dropdown-menu.shadow-lg(aria-labelledby='profile-dropdown')
 								a.dropdown-item(href='#')
 									i.fas.fa-user.mr-2
 									| profile
 								a.dropdown-item(href='#')
 									i.fas.fa-cog.mr-2
 									| settings
-		block content
+		main
+			.side-nav
+				ul.list-group
+					li.list-group-item
+						a(href='')
+							i.fas.fa-shapes.fa-fw
+							| dashboard
+					li.list-group-item
+						a(href='')
+							i.fas.fa-hospital-user.fa-fw
+							| patients
+					li.list-group-item
+						a(href='')
+							i.fas.fa-clipboard-list.fa-fw
+							| activities
+					li.list-group-item
+						a(href='')
+							i.fas.fa-shopping-cart.fa-fw
+							| procurement
+					li.list-group-item
+						a(href='')
+							i.fas.fa-users.fa-fw
+							| employees
+					li.list-group-item
+						a(href='')
+							i.fas.fa-tools.fa-fw
+							| tools
+					li.list-group-item
+						a(href='')
+							i.fas.fa-chart-pie.fa-fw
+							| reports
+					li.list-group-item
+						hr.divider
+					li.list-group-item
+						a(href='')
+							i.fas.fa-user-shield.fa-fw
+							| account
+					li.list-group-item
+						a(href='')
+							i.fas.fa-cogs.fa-fw
+							| settings
+			.main-content
+				.container-fluid
+					block content

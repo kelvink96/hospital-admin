@@ -1,4 +1,5 @@
 @import "../themes/colors"
+@import "../abstracts/mixins"
 
 nav, .navbar
   background-color: $color-white-ish
@@ -41,6 +42,7 @@ nav, .navbar
 
       .dropdown-menu
         border: none
+        @include border-radius(0)
 
         a
           text-transform: capitalize

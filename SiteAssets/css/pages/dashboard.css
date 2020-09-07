@@ -39,6 +39,7 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link .fa-bell, .navbar .navbar-c
 }
 nav .navbar-collapse .navbar-nav .dropdown-menu, .navbar .navbar-collapse .navbar-nav .dropdown-menu {
   border: none;
+  border-radius: 0;
 }
 nav .navbar-collapse .navbar-nav .dropdown-menu a, .navbar .navbar-collapse .navbar-nav .dropdown-menu a {
   text-transform: capitalize;
@@ -84,4 +85,91 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
   margin: 0;
 }
 
-/*# sourceMappingURL=index.css.map */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.side-nav {
+  margin: 1em 0;
+}
+.side-nav .list-group .list-group-item {
+  border: none;
+}
+.side-nav .list-group .list-group-item i {
+  margin-right: 0.5em;
+}
+.side-nav .list-group .list-group-item a {
+  text-transform: capitalize;
+  color: black;
+}
+.side-nav .list-group .list-group-item a:hover {
+  text-decoration: none;
+}
+.side-nav .list-group .list-group-item:hover {
+  background-color: #a8001f;
+}
+.side-nav .list-group .list-group-item:hover a {
+  color: #f9f9f9;
+}
+
+main {
+  width: 100vw;
+}
+main .side-nav {
+  width: 15%;
+}
+main .main-content {
+  width: 75%;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.section {
+  margin: 2em;
+}
+.section .section-content {
+  margin: 1em;
+}
+
+main .main-content .section-content .card {
+  background-color: #f9f9f9;
+  text-transform: capitalize;
+  border: 2px solid #a8001f;
+  border-radius: 0;
+}
+main .main-content .section-content .card .card-title {
+  padding-top: 1.5em;
+}
+main .main-content .section-content .card .card-title i {
+  font-size: 3em;
+  color: #a8001f;
+}
+main .main-content .section-content .card .card-body {
+  color: black;
+  min-height: 100px;
+}
+main .main-content .section-content .card .card-body p {
+  font-weight: 500;
+  font-size: 0.95em;
+}
+main .main-content .section-content .card:hover, main .main-content .section-content .card:focus {
+  border-radius: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  background-color: #a8001f;
+  border-color: #a8001f;
+}
+main .main-content .section-content .card:hover .card-title i, main .main-content .section-content .card:focus .card-title i {
+  color: #f9f9f9;
+}
+main .main-content .section-content .card:hover .card-body p, main .main-content .section-content .card:focus .card-body p {
+  color: #f9f9f9;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=dashboard.css.map */
