@@ -1,46 +1,71 @@
 @import "layout"
 @import "../themes/colors"
 @import "../layout/section"
+@import "../components/cards"
+
+//TODO work on styling cards
 
 main
   .main-content
-    .section-content
-      .card
-        background-color: $color-white-ish
-        text-transform: capitalize
-        border: 2px solid $color-dark-red
-        @include border-radius(0)
-
-        .card-title
-          padding-top: 1.5em
-
-          i
-            font-size: 3em
-            color: $color-dark-red
-
-        .card-body
-          color: black
-          min-height: 100px
-
-          p
-            font-weight: 500
-            font-size: .95em
-
-        &:hover,
-        &:focus
-          @include border-radius(0)
-          @include shadow-md
-          text-decoration: none
-          background-color: $color-dark-red
-          border-color: $color-dark-red
+    .functionality-section
+      .section-content
+        .card
+          background-color: white
+          text-transform: capitalize
+          @include border-radius
 
           .card-title
+            padding-top: 2em
+
             i
-              color: $color-white-ish
+              font-size: 3em
+              color: $color-dark-red
 
           .card-body
+            color: black
+            min-height: 100px
+
             p
-              color: $color-white-ish
+              font-weight: 500
+              font-size: .95em
+              vertical-align: bottom
+
+          &:hover,
+          &:focus
+            @include border-radius
+            @include shadow-md
+            text-decoration: none
+            background-color: $color-dark-red
+            border-color: $color-dark-red
+
+            .card-title
+              i
+                color: $color-white-ish
+
+            .card-body
+              p
+                color: $color-white-ish
+
+    .card-summaries
+      .card
+        margin-bottom: 1em
+
+        .card-body
+          table
+            tr
+              align-items: center
+              text-transform: capitalize
+              td
+                p
+                  margin: 0
+
+                p:not(.text-muted)
+                  font-weight: 600
+
+          img
+            width: 30px
+            height: 30px
+            object-fit: cover
 
 @media only screen and (min-width: 600px)
   main

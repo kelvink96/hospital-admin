@@ -1,0 +1,22 @@
+@import "../abstracts/mixins"
+
+.card
+  @include border-radius
+  padding: 0
+  border: none
+  @include shadow-sm
+
+  .card-header
+    @include border-radius
+    text-transform: capitalize
+    background-color: transparent
+    padding: 0
+    border: none
+
+  .card-body
+    padding: 0
+
+  .card-footer
+    background-color: transparent
+    padding: 0
+    border: none

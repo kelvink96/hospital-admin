@@ -88,7 +88,9 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 .side-nav {
-  margin: 1em 0;
+  padding: 1em 0;
+  min-height: 100vh;
+  background-color: white;
 }
 .side-nav .list-group .list-group-item {
   border: none;
@@ -112,12 +114,14 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
 
 main {
   width: 100vw;
+  background-color: #FAFAFA;
+  min-height: 100vh;
 }
 main .side-nav {
   width: 15%;
 }
 main .main-content {
-  width: 75%;
+  width: 85%;
 }
 
 /* Color Theme Swatches in Hex */
@@ -129,28 +133,52 @@ main .main-content {
   margin: 1em;
 }
 
-main .main-content .section-content .card {
-  background-color: #f9f9f9;
+.card {
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+  border-radius: 0;
   text-transform: capitalize;
-  border: 2px solid #a8001f;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+.card .card-body {
+  padding: 0;
+}
+.card .card-footer {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+main .main-content .functionality-section .section-content .card {
+  background-color: white;
+  text-transform: capitalize;
   border-radius: 0;
 }
-main .main-content .section-content .card .card-title {
-  padding-top: 1.5em;
+main .main-content .functionality-section .section-content .card .card-title {
+  padding-top: 2em;
 }
-main .main-content .section-content .card .card-title i {
+main .main-content .functionality-section .section-content .card .card-title i {
   font-size: 3em;
   color: #a8001f;
 }
-main .main-content .section-content .card .card-body {
+main .main-content .functionality-section .section-content .card .card-body {
   color: black;
   min-height: 100px;
 }
-main .main-content .section-content .card .card-body p {
+main .main-content .functionality-section .section-content .card .card-body p {
   font-weight: 500;
   font-size: 0.95em;
+  vertical-align: bottom;
 }
-main .main-content .section-content .card:hover, main .main-content .section-content .card:focus {
+main .main-content .functionality-section .section-content .card:hover, main .main-content .functionality-section .section-content .card:focus {
   border-radius: 0;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
@@ -159,11 +187,29 @@ main .main-content .section-content .card:hover, main .main-content .section-con
   background-color: #a8001f;
   border-color: #a8001f;
 }
-main .main-content .section-content .card:hover .card-title i, main .main-content .section-content .card:focus .card-title i {
+main .main-content .functionality-section .section-content .card:hover .card-title i, main .main-content .functionality-section .section-content .card:focus .card-title i {
   color: #f9f9f9;
 }
-main .main-content .section-content .card:hover .card-body p, main .main-content .section-content .card:focus .card-body p {
+main .main-content .functionality-section .section-content .card:hover .card-body p, main .main-content .functionality-section .section-content .card:focus .card-body p {
   color: #f9f9f9;
+}
+main .main-content .card-summaries .card {
+  margin-bottom: 1em;
+}
+main .main-content .card-summaries .card .card-body table tr {
+  align-items: center;
+  text-transform: capitalize;
+}
+main .main-content .card-summaries .card .card-body table tr td p {
+  margin: 0;
+}
+main .main-content .card-summaries .card .card-body table tr td p:not(.text-muted) {
+  font-weight: 600;
+}
+main .main-content .card-summaries .card .card-body img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 600px) {

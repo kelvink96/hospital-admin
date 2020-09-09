@@ -1,7 +1,10 @@
 extends _layout
 
-block links
+append links
 	link(rel='stylesheet' href='../SiteAssets/css/pages/dashboard.css')
+	link(rel='stylesheet' href='../SiteAssets/css/vendors/Chart.min.css')
+	script(src='../SiteAssets/js/vendors/Chart.bundle.min.js')
+	script(src='../SiteAssets/js/dashboard.js')
 
 block content
 	.section.functionality-section
@@ -49,4 +52,225 @@ block content
 								i.fas.fa-user-nurse
 						.card-body
 							p add nurse
+	.section.card-summaries
+		.section-content
+			.row
+				.col-md-6.col-sm-12
+					.card
+						.card-header
+							h5 recent activities
+						.card-body
+							canvas#recent-activity-chart
+				.col-md-3.col-sm-12
+					.card
+						.card-header
+							h5 total bookings
+						.card-body
+							canvas#bookings-chart
+				.col-md-3.col-sm-12
+					.card
+						.card-header
+							h5 diseases summary
+						.card-body
+							canvas#diseases-chart
+				.col-md-4.col-sm-12
+					.card
+						.card-header
+							h5 top treatments
+						.card-body
+							ol(type='1')
+								li consultation
+								li scaling
+								li root canal
+								li bleaching
+								li x-rays
+						.card-footer
+							a(href='')
+								| more
+				.col-md-4.col-sm-12
+					.card
+						.card-header
+							h5 total counts
+						.card-body
+							.row
+								.col-md-6
+									i.fas.fa-users
+									h4 100
+									p total users
+								.col-md-6
+									i.fas.fa-user-md
+									h4 12
+									p total doctors
+								.col-md-6
+									i.fas.fa-user-injured
+									h4 3210
+									p total patients
+								.col-md-6
+									i.fas.fa-hospital
+									h4 40
+									p total clinics
+				.col-md-4.col-sm-12
+					.card
+						.card-header
+							h5 recent patients
+						.card-body
+							table.table.table-borderless.table-hover
+								tbody
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
 
+				.col-md-6.col-sm-12
+					.card
+						.card-header
+							h5 doctors list
+						.card-body
+							table.table.table-borderless.table-hover
+								tbody
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td.text-right
+											p +271289178
+										td.text-right
+											button.btn.btn-outline-secondary.btn-sm appointment
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td.text-right
+											p +271289178
+										td.text-right
+											button.btn.btn-outline-secondary.btn-sm appointment
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td.text-right
+											p +271289178
+										td.text-right
+											button.btn.btn-outline-secondary.btn-sm appointment
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td.text-right
+											p +271289178
+										td.text-right
+											button.btn.btn-outline-secondary.btn-sm appointment
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
+				.col-md-6.col-sm-12
+					.card
+						.card-header
+							h5 upcoming appointments
+						.card-body
+							table.table.table-borderless.table-hover
+								tbody
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td.text-right
+											p 24y
+										td.text-right
+											button.btn
+												i.fas.fa-check-circle
+											button.btn
+												i.fas.fa-times-circle
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td.text-right
+											p 24y
+										td.text-right
+											button.btn
+												i.fas.fa-check-circle
+											button.btn
+												i.fas.fa-times-circle
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td.text-right
+											p 24y
+										td.text-right
+											button.btn
+												i.fas.fa-check-circle
+											button.btn
+												i.fas.fa-times-circle
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
+									tr
+										td
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										td
+											p john doe
+											small.text-muted dentist
+										td
+											p.text-muted male
+										td.text-right
+											p 24y
+										td.text-right
+											button.btn
+												i.fas.fa-check-circle
+											button.btn
+												i.fas.fa-times-circle
+										td
+											button.btn.btn-sm
+												i.fas.fa-ellipsis-h
