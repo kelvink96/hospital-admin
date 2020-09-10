@@ -133,6 +133,10 @@ main .main-content {
   margin: 1em;
 }
 
+.card-deck {
+  margin-bottom: 1.5em;
+}
+
 .card {
   border-radius: 0;
   padding: 0;
@@ -163,7 +167,7 @@ main .main-content .functionality-section .section-content .card {
   border-radius: 0;
 }
 main .main-content .functionality-section .section-content .card .card-title {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 main .main-content .functionality-section .section-content .card .card-title i {
   font-size: 3em;
@@ -171,11 +175,10 @@ main .main-content .functionality-section .section-content .card .card-title i {
 }
 main .main-content .functionality-section .section-content .card .card-body {
   color: black;
-  min-height: 100px;
+  margin: 1em 0;
 }
 main .main-content .functionality-section .section-content .card .card-body p {
   font-weight: 500;
-  font-size: 0.95em;
   vertical-align: bottom;
 }
 main .main-content .functionality-section .section-content .card:hover, main .main-content .functionality-section .section-content .card:focus {
@@ -195,6 +198,12 @@ main .main-content .functionality-section .section-content .card:hover .card-bod
 }
 main .main-content .card-summaries .card {
   margin-bottom: 1em;
+}
+main .main-content .card-summaries .card .card-header {
+  padding: 1em;
+}
+main .main-content .card-summaries .card .card-body {
+  padding: 0.5em 1em;
 }
 main .main-content .card-summaries .card .card-body table tr {
   align-items: center;
