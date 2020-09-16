@@ -1,0 +1,100 @@
+@import "../themes/colors"
+@import "../layout/section"
+@import "../components/cards"
+@import "../components/dropdowns"
+@import "../components/tables"
+
+main
+  .title-filters-section
+    .buttons-wrapper
+      display: inline-flex
+      float: right
+
+      .dropdown, .switch-view-btns
+        margin-left: 1em
+
+      .dropdown
+        a, .btn
+          &::after
+            margin-left: 1.5em
+
+  .patients-card-view
+    .card
+      padding: 1.5em
+
+      .card-header
+        align-items: baseline
+
+        img
+          width: 80px
+          height: 80px
+          object-fit: cover
+
+        a
+          float: right
+          color: darkgray
+          font-size: 1.1em
+
+      .card-body
+        padding: 1em 0
+
+        h5, p, label
+          text-transform: capitalize
+          margin: 0
+
+        .card-subsection-title
+          margin-bottom: .5em
+
+          p
+            font-size: .9em
+
+        .card-subsection-body
+          label
+            font-size: .8em
+
+          p
+            font-size: .95em
+            font-weight: 500
+            margin-bottom: .5em
+
+      &:hover,
+      &:focus
+        @include shadow-lg
+        @include scale
+        @include transition
+
+  .patients-table-view
+    table, .table
+      border-collapse: separate
+      border-spacing: 0 .5em
+      border: none
+
+      thead
+        tr
+          @include shadow-sm
+          background-color: $color-white
+
+          th
+            padding: 1em
+            border: none
+
+      tbody
+        tr
+          @include shadow-sm
+          background-color: $color-white
+
+          td
+            text-transform: capitalize
+            border: none
+            padding: 1em
+
+            img
+              width: 30px
+              height: 30px
+              object-fit: cover
+
+          &:hover,
+          &:focus
+            @include scale
+            @include transition
+            @include shadow-lg

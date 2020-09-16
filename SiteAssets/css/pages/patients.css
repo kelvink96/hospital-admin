@@ -1,0 +1,140 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.section {
+  margin: 2em;
+}
+.section .section-content {
+  margin: 1em;
+}
+
+.card-deck {
+  margin-bottom: 1.5em;
+}
+
+.card {
+  border-radius: 0;
+  padding: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+  border-radius: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+.card .card-body {
+  padding: 0;
+}
+.card .card-footer {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+}
+
+table thead tr th {
+  text-transform: capitalize;
+}
+
+main .title-filters-section .buttons-wrapper {
+  display: inline-flex;
+  float: right;
+}
+main .title-filters-section .buttons-wrapper .dropdown, main .title-filters-section .buttons-wrapper .switch-view-btns {
+  margin-left: 1em;
+}
+main .title-filters-section .buttons-wrapper .dropdown a::after, main .title-filters-section .buttons-wrapper .dropdown .btn::after {
+  margin-left: 1.5em;
+}
+main .patients-card-view .card {
+  padding: 1.5em;
+}
+main .patients-card-view .card .card-header {
+  align-items: baseline;
+}
+main .patients-card-view .card .card-header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+main .patients-card-view .card .card-header a {
+  float: right;
+  color: darkgray;
+  font-size: 1.1em;
+}
+main .patients-card-view .card .card-body {
+  padding: 1em 0;
+}
+main .patients-card-view .card .card-body h5, main .patients-card-view .card .card-body p, main .patients-card-view .card .card-body label {
+  text-transform: capitalize;
+  margin: 0;
+}
+main .patients-card-view .card .card-body .card-subsection-title {
+  margin-bottom: 0.5em;
+}
+main .patients-card-view .card .card-body .card-subsection-title p {
+  font-size: 0.9em;
+}
+main .patients-card-view .card .card-body .card-subsection-body label {
+  font-size: 0.8em;
+}
+main .patients-card-view .card .card-body .card-subsection-body p {
+  font-size: 0.95em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+main .patients-card-view .card:hover, main .patients-card-view .card:focus {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  transform: scale(1.02, 1.02);
+  transition: all ease-in-out 150ms;
+}
+main .patients-table-view table, main .patients-table-view .table {
+  border-collapse: separate;
+  border-spacing: 0 0.5em;
+  border: none;
+}
+main .patients-table-view table thead tr, main .patients-table-view .table thead tr {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+main .patients-table-view table thead tr th, main .patients-table-view .table thead tr th {
+  padding: 1em;
+  border: none;
+}
+main .patients-table-view table tbody tr, main .patients-table-view .table tbody tr {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+main .patients-table-view table tbody tr td, main .patients-table-view .table tbody tr td {
+  text-transform: capitalize;
+  border: none;
+  padding: 1em;
+}
+main .patients-table-view table tbody tr td img, main .patients-table-view .table tbody tr td img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+main .patients-table-view table tbody tr:hover, main .patients-table-view table tbody tr:focus, main .patients-table-view .table tbody tr:hover, main .patients-table-view .table tbody tr:focus {
+  transform: scale(1.02, 1.02);
+  transition: all ease-in-out 150ms;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+/*# sourceMappingURL=patients.css.map */

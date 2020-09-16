@@ -4,19 +4,21 @@ html
 		meta(name='viewport' control='width=device-width, intial-scale=1')
 		link(rel='stylesheet' href='../SiteAssets/css/vendors/bootstrap.min.css')
 		link(rel='stylesheet' href='../SiteAssets/css/vendors/all.min.css')
+		link(rel='stylesheet' href='../SiteAssets/css/pages/layout.css')
 		link(rel='icon' href='../SiteAssets/images/qafya-icon.ico')
 		script(src='../SiteAssets/js/vendors/jquery.min.js')
 		script(src='../SiteAssets/js/vendors/bootstrap.bundle.min.js')
+		script(src='../SiteAssets/js/global.js')
 		block links
 
 	body
 		header
-			nav.navbar.navbar-expand-lg.shadow-sm.sticky-top
+			nav.navbar.navbar-expand-lg.shadow-sm.fixed-top
 				a.navbar-brand(href='')
 					img(src='../SiteAssets/images/qafya-logo.png')
 				button.navbar-toggler(type='button' data-target='#navbarContent' data-toggle='collapse')
 					i.fas.fa-bars
-				h5.nav-link.page-title dashboard
+				h5.nav-link Qafya
 				.collapse.navbar-collapse#navbarContent
 					ul.navbar-nav.ml-auto
 						li.nav-item.dropdown.dropleft
@@ -70,14 +72,14 @@ html
 									i.fas.fa-cog.mr-2
 									| settings
 		main
-			.side-nav
+			.side-nav.shadow-sm
 				ul.list-group
 					li.list-group-item
-						a(href='')
+						a(href='dashboard.html')
 							i.fas.fa-shapes.fa-fw
 							| dashboard
 					li.list-group-item
-						a(href='')
+						a(href='patients.html')
 							i.fas.fa-hospital-user.fa-fw
 							| patients
 					li.list-group-item
@@ -100,8 +102,7 @@ html
 						a(href='')
 							i.fas.fa-chart-pie.fa-fw
 							| reports
-					li.list-group-item
-						hr.divider
+					hr.divider
 					li.list-group-item
 						a(href='')
 							i.fas.fa-user-shield.fa-fw

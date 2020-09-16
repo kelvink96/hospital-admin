@@ -1,0 +1,21 @@
+@import "../layout/body"
+@import "../layout/nav"
+@import "../layout/side-nav"
+
+main
+  width: 100vw
+  background-color: $color-white-ish
+  min-height: 100vh
+
+  .side-nav, .main-content
+    margin-top: 70px
+
+  .side-nav
+    width: 15%
+
+  .main-content
+    width: 85%
+
+@media only screen and (min-width: 600px)
+  main
+    display: flex

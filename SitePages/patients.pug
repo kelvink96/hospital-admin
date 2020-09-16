@@ -1,0 +1,172 @@
+extends _layout
+
+append links
+	link(rel='stylesheet' href='../SiteAssets/css/pages/patients.css')
+	script(src='../SiteAssets/js/patients.js')
+
+block content
+	.section.title-filters-section
+		.row
+			.col-md-8
+				h5.nav-link.page-title.text-capitalize
+			.col-md-4.buttons-wrapper
+				.dropdown
+					a.btn.btn-secondary.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						| filter
+					.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
+						a.dropdown-item(href='#') Action
+						a.dropdown-item(href='#') Another action
+						a.dropdown-item(href='#') Something else here
+				.dropdown
+					a.btn.btn-secondary.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						| sort by
+					.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
+						a.dropdown-item(href='#') Action
+						a.dropdown-item(href='#') Another action
+						a.dropdown-item(href='#') Something else here
+				.switch-view-btns
+					.btn-group.btn-group-toggle(data-toggle='buttons')
+						label.btn.btn-secondary.active
+							input#card-view-btn(type='radio', name='options', checked='')
+							i.fas.fa-th
+						label.btn.btn-secondary
+							input#table-view-btn(type='radio', name='options')
+							i.fas.fa-list-ul
+	.section.patients-card-view
+		.row
+			.col-md-3
+				.card
+					.card-header
+						.card-img-top
+							img(src='https://source.unsplash.com/random').rounded-circle
+							a(href='').view-more
+								i.fas.fa-ellipsis-h
+					.card-body
+						.card-subsection-title
+							h5 john doe
+							p.text-muted patient-id: 2189178
+						.card-subsection-body
+							label.text-muted age
+							p 29
+							label.text-muted date of birth
+							p 21/12/1993
+							label.text-muted diagnosis
+							p consultancy
+					.card-footer
+			.col-md-3
+				.card
+					.card-header
+						.card-img-top
+							img(src='https://source.unsplash.com/random').rounded-circle
+							a(href='').view-more
+								i.fas.fa-ellipsis-h
+					.card-body
+						.card-subsection-title
+							h5 john doe
+							p.text-muted patient-id: 2189178
+						.card-subsection-body
+							label.text-muted age
+							p 29
+							label.text-muted date of birth
+							p 21/12/1993
+							label.text-muted diagnosis
+							p consultancy
+					.card-footer
+			.col-md-3
+				.card
+					.card-header
+						.card-img-top
+							img(src='https://source.unsplash.com/random').rounded-circle
+							a(href='').view-more
+								i.fas.fa-ellipsis-h
+					.card-body
+						.card-subsection-title
+							h5 john doe
+							p.text-muted patient-id: 2189178
+						.card-subsection-body
+							label.text-muted age
+							p 29
+							label.text-muted date of birth
+							p 21/12/1993
+							label.text-muted diagnosis
+							p consultancy
+					.card-footer
+			.col-md-3
+				.card
+					.card-header
+						.card-img-top
+							img(src='https://source.unsplash.com/random').rounded-circle
+							a(href='').view-more
+								i.fas.fa-ellipsis-h
+					.card-body
+						.card-subsection-title
+							h5 john doe
+							p.text-muted patient-id: 2189178
+						.card-subsection-body
+							label.text-muted age
+							p 29
+							label.text-muted date of birth
+							p 21/12/1993
+							label.text-muted diagnosis
+							p consultancy
+					.card-footer
+	.section.patients-table-view.no-display
+		table.table.table-hover
+			thead
+				tr
+					th patient ID
+					th patient name
+					th age
+					th date of birth
+					th diagnosis
+					th triage
+					th
+			tbody
+				tr
+					td 2189178
+					td
+						img.rounded-circle(src='https://placebeard.it/640x360')
+						span.ml-2 john doe
+					td 29 yo
+					td 21/03/1992
+					td cancer
+					td urgent
+					td.text-right
+						a(href='').btn
+							i.fas.fa-ellipsis-h
+				tr
+					td 2189178
+					td
+						img.rounded-circle(src='https://placebeard.it/640x360')
+						span.ml-2 john doe
+					td 29 yo
+					td 21/03/1992
+					td cancer
+					td urgent
+					td.text-right
+						a(href='').btn
+							i.fas.fa-ellipsis-h
+				tr
+					td 2189178
+					td
+						img.rounded-circle(src='https://placebeard.it/640x360')
+						span.ml-2 john doe
+					td 29 yo
+					td 21/03/1992
+					td cancer
+					td urgent
+					td.text-right
+						a(href='').btn
+							i.fas.fa-ellipsis-h
+				tr
+					td 2189178
+					td
+						img.rounded-circle(src='https://placebeard.it/640x360')
+						span.ml-2 john doe
+					td 29 yo
+					td 21/03/1992
+					td cancer
+					td urgent
+					td.text-right
+						a(href='').btn
+							i.fas.fa-ellipsis-h

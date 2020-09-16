@@ -4,12 +4,23 @@
 @mixin transition($style, $timeout)
   transition: all $style $timeout
 
+@mixin shadow-sm()
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
+
 @mixin shadow-md()
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25)
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25)
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25)
 
-@mixin shadow-sm()
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
+@mixin shadow-lg()
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35)
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35)
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35)
+
+@mixin scale()
+  transform: scale(1.02, 1.02)
+
+@mixin transition()
+  transition: all ease-in-out 150ms

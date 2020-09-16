@@ -12,10 +12,10 @@ function initCharts() {
 	var recentActivitesChart = new Chart(ctx3, {
 		type: 'line',
 		data: {
-			labels: ['Jan', 'Feb', 'March', 'April'],
+			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
 			datasets: [{
 				label: '# of patients',
-				data: [12, 19, 3, 5],
+				data: [12, 19, 3, 5, 1, 2, 4, 15],
 				backgroundColor: [
 					'rgba(255, 99, 132, 0.7)',
 					'rgba(54, 162, 235, 0.7)',
@@ -59,7 +59,7 @@ function initCharts() {
 			labels: ['Red', 'Blue', 'Yellow', 'Green'],
 			datasets: [{
 				label: '# of Votes',
-				data: [12, 19, 3, 5],
+				data: [13, 1, 8, 15],
 				backgroundColor: [
 					'rgba(255, 99, 132, 0.7)',
 					'rgba(54, 162, 235, 0.7)',
