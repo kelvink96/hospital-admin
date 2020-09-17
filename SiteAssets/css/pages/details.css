@@ -1,0 +1,53 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.section {
+  margin: 2em;
+}
+.section .section-content {
+  margin: 1em;
+}
+
+.card-deck {
+  margin-bottom: 1.5em;
+}
+
+.card {
+  border-radius: 0;
+  padding: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+  border-radius: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+.card .card-body {
+  padding: 0;
+}
+.card .card-footer {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.patient-details-section .patients-details-card-wrapper {
+  border-left: 1px solid #cccccc;
+}
+.patient-details-section .card {
+  margin-bottom: 1.5em;
+}
+.patient-details-section .mini-card .card-header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.patient-details-section .mini-card .card-footer button {
+  width: 100%;
+}
+
+/*# sourceMappingURL=details.css.map */

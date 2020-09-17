@@ -1,0 +1,103 @@
+extends _layout
+
+append links
+	link(rel='stylesheet' href='../SiteAssets/css/pages/details.css')
+
+block content
+	.section.row
+		.col-md-8
+			nav(aria-label='breadcrumb')
+				ol.breadcrumb
+					li.breadcrumb-item
+						a(href='patients.html') patients
+					li.breadcrumb-item.active(aria-current='page') john doe
+		.col-md-4.text-right
+			button.btn.btn-dark
+				i.las.la-edit
+				| edit patient
+	.section.patient-details-section
+		.row
+			.col-md-8
+				.row
+					.col-sm-12
+						.card
+							.row
+								.col-md-4
+									.mini-card.text-center
+										.card-header
+											img.rounded-circle(src='https://placebeard.it/640x360')
+										.card-body
+											h3 john doe
+											small.text-muted johndoe@abc.com
+											h5 age
+											p 26
+										.card-footer
+											button.btn.btn-dark
+												i.las.la-sms
+												| send message
+								.col-md-8.patients-details-card-wrapper
+									.mini-card
+										.card-body
+											.row
+												.col-md-4
+													.form-group
+														label gender
+														input.form-control(readonly value="male")
+												.col-md-4
+													.form-group
+														label date of birth
+														input.form-control(readonly value="27/10/1986")
+												.col-md-4
+													.form-group
+														label phone number
+														input.form-control(readonly value="(254) 727 4432")
+												.col-md-4
+													.form-group
+														label address
+														input.form-control(readonly value="75th, xy avenue")
+												.col-md-4
+													.form-group
+														label city
+														input.form-control(readonly value="new york")
+												.col-md-4
+													.form-group
+														label zip code
+														input.form-control(readonly value="21332")
+												.col-md-4
+													.form-group
+														label member status
+														input.form-control(readonly value="active")
+												.col-md-4
+													.form-group
+														label registered dare
+														input.form-control(readonly value="21/02/2018")
+					.col-sm-12
+						.card
+							.card-header
+								h5 appointments
+							.card-body
+								ul#myTab.nav.nav-tabs(role='tablist')
+									li.nav-item(role='presentation')
+										a#upcoming-appointments-tab.nav-link.active(data-toggle='tab', href='#upcoming-appointments', role='tab', aria-controls='upcoming-appointments', aria-selected='true') upcoming-appointments
+									li.nav-item(role='presentation')
+										a#past-appointments-tab.nav-link(data-toggle='tab', href='#past-appointments', role='tab', aria-controls='past-appointments', aria-selected='false') past-appointments
+									li.nav-item(role='presentation')
+										a#medical-records-tab.nav-link(data-toggle='tab', href='#medical-records', role='tab', aria-controls='medical-records', aria-selected='false') medical-records
+								#myTabContent.tab-content
+									#upcoming-appointments.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='upcoming-appointments-tab')
+										.media
+											.align-self-center.mr-3
+												p 24/05/2020
+											.media-body
+												p hello
+											.media-body
+												p hello
+									#past-appointments.tab-pane.fade(role='tabpanel', aria-labelledby='past-appointments-tab') ...
+									#medical-records.tab-pane.fade(role='tabpanel', aria-labelledby='medical-records-tab') ...
+			.col-md-4
+				.card
+					.card-header
+						h5 notes
+				.card
+					.card-header
+						h5 files / documents
