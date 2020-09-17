@@ -3,7 +3,7 @@ html
 		title Admin
 		meta(name='viewport' control='width=device-width, intial-scale=1')
 		link(rel='stylesheet' href='../SiteAssets/css/vendors/bootstrap.min.css')
-		link(rel='stylesheet' href='../SiteAssets/css/vendors/all.min.css')
+		link(rel='stylesheet' href='../SiteAssets/css/vendors/line-awesome.min.css')
 		link(rel='stylesheet' href='../SiteAssets/css/pages/layout.css')
 		link(rel='icon' href='../SiteAssets/images/qafya-icon.ico')
 		script(src='../SiteAssets/js/vendors/jquery.min.js')
@@ -17,14 +17,14 @@ html
 				a.navbar-brand(href='')
 					img(src='../SiteAssets/images/qafya-logo.png')
 				button.navbar-toggler(type='button' data-target='#navbarContent' data-toggle='collapse')
-					i.fas.fa-bars
+					i.las.la-bars
 				h5.nav-link Qafya
 				.collapse.navbar-collapse#navbarContent
 					ul.navbar-nav.ml-auto
 						li.nav-item.dropdown.dropleft
 							a.nav-link.notification-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 								span.badge.badge-pill.badge-primary(style='float:right;margin-bottom:-10px;')
-								i.fas.fa-bell
+								i.las.la-bell
 							.dropdown-menu.notification-dropdown-menu.shadow-lg(aria-labelledby='notification-dropdown')
 								.dropdown-title
 									a(href='') notifications
@@ -66,50 +66,50 @@ html
 								| jane doe
 							.dropdown-menu.shadow-lg(aria-labelledby='profile-dropdown')
 								a.dropdown-item(href='#')
-									i.fas.fa-user.mr-2
+									i.las.la-user.mr-2
 									| profile
 								a.dropdown-item(href='#')
-									i.fas.fa-cog.mr-2
+									i.las.la-cog.mr-2
 									| settings
 		main
 			.side-nav.shadow-sm
 				ul.list-group
 					li.list-group-item
 						a(href='dashboard.html')
-							i.fas.fa-shapes.fa-fw
+							i.las.la-shapes.la-lw
 							| dashboard
 					li.list-group-item
 						a(href='patients.html')
-							i.fas.fa-hospital-user.fa-fw
+							i.las.la-user-injured.la-lw
 							| patients
 					li.list-group-item
 						a(href='')
-							i.fas.fa-clipboard-list.fa-fw
+							i.las.la-clipboard-list.la-lw
 							| activities
 					li.list-group-item
 						a(href='')
-							i.fas.fa-shopping-cart.fa-fw
+							i.las.la-shopping-cart.la-lw
 							| procurement
 					li.list-group-item
 						a(href='')
-							i.fas.fa-users.fa-fw
+							i.las.la-users.la-lw
 							| employees
 					li.list-group-item
 						a(href='')
-							i.fas.fa-tools.fa-fw
+							i.las.la-tools.la-lw
 							| tools
 					li.list-group-item
 						a(href='')
-							i.fas.fa-chart-pie.fa-fw
+							i.las.la-chart-pie.la-lw
 							| reports
 					hr.divider
 					li.list-group-item
 						a(href='')
-							i.fas.fa-user-shield.fa-fw
+							i.las.la-user-shield.la-lw
 							| account
 					li.list-group-item
 						a(href='')
-							i.fas.fa-cogs.fa-fw
+							i.las.la-cogs.la-lw
 							| settings
 			.main-content
 				.container-fluid
