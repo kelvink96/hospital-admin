@@ -1,0 +1,36 @@
+@import "../themes/colors"
+@import "../abstracts/mixins"
+
+.btn
+  @include border-radius
+  text-transform: capitalize
+
+  i
+    margin-right: .5em
+
+  &:hover,
+  &:focus
+    @include transition
+    outline: none
+    box-shadow: none
+
+.btn-dark-red-f
+  background-color: $color-dark-red
+  color: white
+
+  &:hover,
+  &:focus
+    background-color: transparent
+    border: 1px solid $color-dark-red
+    color: $color-dark-red
+
+.btn-dark-red-o
+  background-color: transparent
+  color: $color-dark-red
+  border: 1px solid $color-dark-red
+
+  &:hover,
+  &:focus
+    background-color: $color-dark-red
+    border: 1px solid transparent
+    color: white

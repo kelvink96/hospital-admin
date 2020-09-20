@@ -1,5 +1,9 @@
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
+i {
+  font-size: 1.2em;
+}
+
 .section {
   margin: 2em;
 }
@@ -25,6 +29,7 @@
   background-color: transparent;
   padding: 0;
   border: none;
+  vertical-align: center;
 }
 .card .card-body {
   padding: 0;
@@ -39,6 +44,7 @@
 /* Color Theme Swatches in RGBA */
 label {
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 .label-sm {
@@ -105,6 +111,71 @@ label {
   color: #333333;
 }
 
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn {
+  border-radius: 0;
+  text-transform: capitalize;
+}
+.btn i {
+  margin-right: 0.5em;
+}
+.btn:hover, .btn:focus {
+  transition: all ease-in-out 150ms;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-dark-red-f {
+  background-color: #a8001f;
+  color: white;
+}
+.btn-dark-red-f:hover, .btn-dark-red-f:focus {
+  background-color: transparent;
+  border: 1px solid #a8001f;
+  color: #a8001f;
+}
+
+.btn-dark-red-o {
+  background-color: transparent;
+  color: #a8001f;
+  border: 1px solid #a8001f;
+}
+.btn-dark-red-o:hover, .btn-dark-red-o:focus {
+  background-color: #a8001f;
+  border: 1px solid transparent;
+  color: white;
+}
+
+.title-section {
+  vertical-align: center;
+  padding: 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.title-section > .col-md-8, .title-section > .col-md-4 {
+  padding: 0;
+}
+.title-section nav {
+  padding: 0;
+}
+.title-section .breadcrumb {
+  margin: 0;
+  background-color: transparent;
+}
+.title-section .breadcrumb .breadcrumb-item {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.title-section .breadcrumb .breadcrumb-item a {
+  color: #a8001f;
+}
+.title-section .breadcrumb .breadcrumb-item a:hover, .title-section .breadcrumb .breadcrumb-item a:focus {
+  text-decoration: none;
+}
+.title-section button {
+  margin-top: 0.35em;
+}
+
 .patient-details-section .patients-details-card-wrapper {
   border-left: 1px solid #cccccc;
 }
@@ -115,81 +186,162 @@ label {
   width: 80px;
   height: 80px;
   object-fit: cover;
+  margin-bottom: 0.5em;
+}
+.patient-details-section .mini-card .card-body {
+  margin-bottom: 0.5em;
+}
+.patient-details-section .mini-card .card-body h4, .patient-details-section .mini-card .card-body h5, .patient-details-section .mini-card .card-body small, .patient-details-section .mini-card .card-body p {
+  padding: 0 0 0.25em 0;
+  margin: 0;
+  text-transform: capitalize;
 }
 .patient-details-section .mini-card .card-footer button {
   width: 100%;
 }
+.patient-details-section .nav, .patient-details-section .nav-tabs {
+  border-bottom: 1px solid #cccccc;
+}
+.patient-details-section .nav li a, .patient-details-section .nav li .nav-link, .patient-details-section .nav .nav-item a, .patient-details-section .nav .nav-item .nav-link, .patient-details-section .nav-tabs li a, .patient-details-section .nav-tabs li .nav-link, .patient-details-section .nav-tabs .nav-item a, .patient-details-section .nav-tabs .nav-item .nav-link {
+  border: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333333;
+  border-radius: 0;
+}
+.patient-details-section .nav li .active, .patient-details-section .nav .nav-item .active, .patient-details-section .nav-tabs li .active, .patient-details-section .nav-tabs .nav-item .active {
+  background-color: white;
+  color: #a8001f;
+  border-bottom: 2px solid #a8001f;
+}
 .patient-details-section .tab-content {
   background-color: #f9f9f9;
-  border-radius: 0.5em;
 }
-.patient-details-section .tab-content .section-title {
+.patient-details-section .tab-content .tab-pane {
   margin-top: 1em;
+}
+.patient-details-section .tab-content .tab-pane .section-title {
   border-bottom: 1px solid #d8d8d8;
   padding: 1em;
 }
-.patient-details-section .tab-content .media {
+.patient-details-section .tab-content .tab-pane .media {
   border-bottom: 1px solid #d8d8d8;
   padding: 0.5em 1em;
 }
-.patient-details-section .tab-content .media .align-self-center {
+.patient-details-section .tab-content .tab-pane .media .align-self-center {
   border-right: 1.5px solid #d8d8d8;
   padding: 1em;
 }
-.patient-details-section .tab-content .media .align-self-center p, .patient-details-section .tab-content .media .align-self-center h3 {
+.patient-details-section .tab-content .tab-pane .media .align-self-center p, .patient-details-section .tab-content .tab-pane .media .align-self-center h3 {
   margin: 0;
   text-align: right;
   text-transform: capitalize;
   color: #333333;
 }
-.patient-details-section .tab-content .media .media-body .row {
+.patient-details-section .tab-content .tab-pane .media .media-body .row {
   margin: 0 0.5em;
   padding: 0.5em 0;
 }
-.patient-details-section .tab-content .media .media-body .row label:not(.label-sm), .patient-details-section .tab-content .media .media-body .row p {
+.patient-details-section .tab-content .tab-pane .media .media-body .row label:not(.label-sm), .patient-details-section .tab-content .tab-pane .media .media-body .row p {
   width: 19%;
 }
-.patient-details-section .tab-content .media .media-body .row label, .patient-details-section .tab-content .media .media-body .row p {
+.patient-details-section .tab-content .tab-pane .media .media-body .row label, .patient-details-section .tab-content .tab-pane .media .media-body .row p {
   font-size: 0.85em;
   padding-left: 0.5em;
   text-transform: capitalize;
 }
-.patient-details-section .tab-content .media .media-body .row label {
+.patient-details-section .tab-content .tab-pane .media .media-body .row label {
   height: 40px;
 }
-.patient-details-section .tab-content .media .media-body .row label:nth-of-type(1) {
-  border-top-right-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
+.patient-details-section .tab-content .tab-pane .media .media-body .row label:nth-of-type(1) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   padding-top: 0.75em;
 }
-.patient-details-section .tab-content .media .media-body .row label:nth-of-type(2) {
-  border-radius: 0.5em;
+.patient-details-section .tab-content .tab-pane .media .media-body .row label:nth-of-type(2) {
+  border-radius: 5px;
 }
-.patient-details-section .tab-content .media .media-body .row label i {
+.patient-details-section .tab-content .tab-pane .media .media-body .row label i {
   margin-right: 0.5em;
 }
-.patient-details-section .tab-content .media .media-body .row .label-sm {
+.patient-details-section .tab-content .tab-pane .media .media-body .row .label-sm {
   text-align: center;
-  padding-top: 0.5em;
+  padding-top: 0.75em;
   font-weight: 400;
 }
-.patient-details-section .tab-content .media .media-body .row .btn {
+.patient-details-section .tab-content .tab-pane .media .media-body .row .btn {
   padding: 0.25em;
 }
-.patient-details-section .tab-content .media .media-body .row a {
+.patient-details-section .tab-content .tab-pane .media .media-body .row a {
   width: 5%;
   text-align: center;
 }
-.patient-details-section .tab-content .media .media-body .row p, .patient-details-section .tab-content .media .media-body .row a {
+.patient-details-section .tab-content .tab-pane .media .media-body .row p, .patient-details-section .tab-content .tab-pane .media .media-body .row a {
   padding-top: 0.5em;
   color: #666666;
   text-align: center;
   margin: 0;
 }
-.patient-details-section .tab-content .media .media-body .row p i, .patient-details-section .tab-content .media .media-body .row a i {
+.patient-details-section .tab-content .tab-pane .media .media-body .row p i, .patient-details-section .tab-content .tab-pane .media .media-body .row a i {
   vertical-align: center;
   margin-right: 0.5em;
   font-size: 1em;
+}
+.patient-details-section .files-card .card-body, .patient-details-section .notes-card .card-body {
+  margin: 1em 0;
+}
+.patient-details-section .notes-card .card-body {
+  background-color: #f9f9f9;
+  padding: 0.5em;
+}
+.patient-details-section .notes-card .card-body textarea, .patient-details-section .notes-card .card-body .form-control {
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1em;
+}
+.patient-details-section .notes-card .card-footer {
+  text-transform: capitalize;
+}
+.patient-details-section .notes-card .card-footer .float-left i {
+  color: #a8001f;
+  margin-right: 0.5em;
+}
+.patient-details-section .files-card .card-body .list-group .list-group-item {
+  padding: 1em 0.5em;
+  text-transform: capitalize;
+  color: #333333;
+  border: 1px solid #d8d8d8;
+  margin: 0.25em 0;
+}
+.patient-details-section .files-card .card-body .list-group .list-group-item .float-right small, .patient-details-section .files-card .card-body .list-group .list-group-item .float-right .text-muted {
+  text-transform: uppercase;
+}
+.patient-details-section .files-card .card-body .list-group .list-group-item:hover, .patient-details-section .files-card .card-body .list-group .list-group-item:focus {
+  text-decoration: none;
+  border: 1px solid #d8d8d8;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02, 1.02);
+  transition: all ease-in-out 150ms;
+}
+.patient-details-section .files-card .card-body .list-group .list-group-item:hover small, .patient-details-section .files-card .card-body .list-group .list-group-item:hover .text-muted, .patient-details-section .files-card .card-body .list-group .list-group-item:focus small, .patient-details-section .files-card .card-body .list-group .list-group-item:focus .text-muted {
+  display: none;
+}
+.patient-details-section .files-card .card-body .list-group .list-group-item:hover .action-buttons, .patient-details-section .files-card .card-body .list-group .list-group-item:focus .action-buttons {
+  display: block;
+  transition: all ease-in-out 150ms;
+}
+.patient-details-section .files-card .card-body .list-group .list-group-item:hover .action-buttons button, .patient-details-section .files-card .card-body .list-group .list-group-item:focus .action-buttons button {
+  padding: 0.25em;
+  text-align: center;
+  margin-right: 0.2em;
+}
+.patient-details-section .files-card .card-body .list-group .list-group-item:hover .action-buttons button i, .patient-details-section .files-card .card-body .list-group .list-group-item:focus .action-buttons button i {
+  vertical-align: bottom;
+  text-align: right;
+  margin: 0;
 }
 
 /*# sourceMappingURL=details.css.map */

@@ -1,0 +1,19 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn {
+  border-radius: 0;
+}
+.btn:hover, .btn:focus {
+  transition: all ease-in-out 150ms;
+}
+
+.btn-dark-red-f {
+  background-color: #a8001f;
+  color: white;
+}
+.btn-dark-red-f:hover, .btn-dark-red-f:focus {
+  background-color: transparent;
+  border: 1px solid #a8001f;
+}
+
+/*# sourceMappingURL=buttons.css.map */

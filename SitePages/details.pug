@@ -4,7 +4,7 @@ append links
 	link(rel='stylesheet' href='../SiteAssets/css/pages/details.css')
 
 block content
-	.section.row
+	.section.row.title-section
 		.col-md-8
 			nav(aria-label='breadcrumb')
 				ol.breadcrumb
@@ -12,7 +12,7 @@ block content
 						a(href='patients.html') patients
 					li.breadcrumb-item.active(aria-current='page') john doe
 		.col-md-4.text-right
-			button.btn.btn-dark
+			button.btn.btn-dark-red-f
 				i.las.la-edit
 				| edit patient
 	.section.patient-details-section
@@ -25,14 +25,14 @@ block content
 								.col-md-4
 									.mini-card.text-center
 										.card-header
-											img.rounded-circle(src='https://placebeard.it/640x360')
+											img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
 										.card-body
-											h3 john doe
+											h4 john doe
 											small.text-muted johndoe@abc.com
 											h5 age
 											p 26
 										.card-footer
-											button.btn.btn-dark
+											button.btn.btn-dark-red-f
 												i.las.la-sms
 												| send message
 								.col-md-8.patients-details-card-wrapper
@@ -73,20 +73,18 @@ block content
 														input.form-control(readonly value="21/02/2018")
 					.col-sm-12
 						.card
-							.card-header
-								h5 appointments
 							.card-body
 								ul#myTab.nav.nav-tabs(role='tablist')
 									li.nav-item(role='presentation')
-										a#upcoming-appointments-tab.nav-link.active(data-toggle='tab', href='#upcoming-appointments', role='tab', aria-controls='upcoming-appointments', aria-selected='true') upcoming-appointments
+										a#upcoming-appointments-tab.nav-link.active(data-toggle='tab', href='#upcoming-appointments', role='tab', aria-controls='upcoming-appointments', aria-selected='true') upcoming appointments
 									li.nav-item(role='presentation')
-										a#past-appointments-tab.nav-link(data-toggle='tab', href='#past-appointments', role='tab', aria-controls='past-appointments', aria-selected='false') past-appointments
+										a#past-appointments-tab.nav-link(data-toggle='tab', href='#past-appointments', role='tab', aria-controls='past-appointments', aria-selected='false') past appointments
 									li.nav-item(role='presentation')
-										a#medical-records-tab.nav-link(data-toggle='tab', href='#medical-records', role='tab', aria-controls='medical-records', aria-selected='false') medical-records
+										a#medical-records-tab.nav-link(data-toggle='tab', href='#medical-records', role='tab', aria-controls='medical-records', aria-selected='false') medical records
 								#myTabContent.tab-content
 									#upcoming-appointments.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='upcoming-appointments-tab')
 										.section-title.text-right
-											button.btn.btn-dark
+											button.btn.btn-dark-red-f
 												i.las.la-expand
 												| show more appointments
 										.media
@@ -160,9 +158,67 @@ block content
 									#past-appointments.tab-pane.fade(role='tabpanel', aria-labelledby='past-appointments-tab') ...
 									#medical-records.tab-pane.fade(role='tabpanel', aria-labelledby='medical-records-tab') ...
 			.col-md-4
-				.card
+				.card.notes-card
 					.card-header
 						h5 notes
-				.card
+							button.btn.btn-dark-red-f.float-right see all
+					.card-body
+						textarea.form-control(placeholder='you can write patient notes over here' rows='6')
+						button.btn.btn-dark-red-f.float-right
+							i.las.la-save
+							| save note
+					.card-footer
+						.float-left
+							p
+								i.las.la-user
+								| dr. jekyll
+						.float-right
+							p 04, may, 2020
+				.card.files-card
 					.card-header
 						h5 files / documents
+							button.btn.btn-dark-red-f.float-right
+								i.las.la-file-medical
+								| add file
+					.card-body
+						.list-group.list-group-flush
+							a(href="#").list-group-item
+								i.las.la-file-excel
+								| check up results.csv
+								.float-right
+									small.text-muted 123kb
+									.action-buttons.no-display
+										button.btn.btn-sm.btn-dark-red-f
+											i.las.la-trash
+										button.btn.btn-sm.btn-dark-red-f
+											i.las.la-download
+							a(href="#").list-group-item
+								i.las.la-file-excel
+								| dental prescriptions.csv
+								.float-right
+									small.text-muted 3.5mb
+									.action-buttons.no-display
+										button.btn.btn-sm.btn-dark-red-f
+											i.las.la-trash
+										button.btn.btn-sm.btn-dark-red-f
+											i.las.la-download
+							a(href="#").list-group-item
+								i.las.la-file-pdf
+								| x-ray.pdf
+								.float-right
+									small.text-muted 2.1mb
+									.action-buttons.no-display
+										button.btn.btn-sm.btn-dark-red-f
+											i.las.la-trash
+										button.btn.btn-sm.btn-dark-red-f
+											i.las.la-download
+							a(href="#").list-group-item
+								i.las.la-file-word
+								| consultancy-report.word
+								.float-right
+									small.text-muted 2mb
+									.action-buttons.no-display
+										button.btn.btn-sm.btn-dark-red-f
+											i.las.la-trash
+										button.btn.btn-sm.btn-dark-red-f
+											i.las.la-download

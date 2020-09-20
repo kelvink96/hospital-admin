@@ -25,6 +25,7 @@
   background-color: transparent;
   padding: 0;
   border: none;
+  vertical-align: center;
 }
 .card .card-body {
   padding: 0;
