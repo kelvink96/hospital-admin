@@ -7,6 +7,10 @@
   margin: 1em;
 }
 
+i {
+  font-size: 1.2em;
+}
+
 .card-deck {
   margin-bottom: 1.5em;
 }
@@ -45,6 +49,113 @@ table thead tr th {
   text-transform: capitalize;
 }
 
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn {
+  border-radius: 0;
+  text-transform: capitalize;
+}
+.btn i {
+  margin-right: 0.5em;
+}
+.btn:hover, .btn:focus {
+  transition: all ease-in-out 150ms;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-dark-red-f, main .title-filters-section .buttons-wrapper .switch-view-btns .active {
+  background-color: #a8001f;
+  color: white;
+}
+.btn-dark-red-f:hover, main .title-filters-section .buttons-wrapper .switch-view-btns .active:hover, .btn-dark-red-f:focus, main .title-filters-section .buttons-wrapper .switch-view-btns .active:focus {
+  background-color: transparent;
+  border: 1px solid #a8001f;
+  color: #a8001f;
+}
+
+.btn-dark-red-o {
+  background-color: transparent;
+  color: #a8001f;
+  border: 1px solid #a8001f;
+}
+.btn-dark-red-o:hover, .btn-dark-red-o:focus {
+  background-color: #a8001f;
+  border: 1px solid transparent;
+  color: white;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+label {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.label-sm {
+  padding: 0.1em 1em;
+}
+
+.label-green {
+  background-color: rgba(40, 217, 255, 0.1);
+  color: var(--green);
+}
+
+.label-green-bl {
+  background-color: rgba(40, 217, 255, 0.1);
+  color: var(--green);
+  border-left: 3px solid var(--green);
+}
+
+.label-orange {
+  background-color: rgba(255, 171, 56, 0.1);
+  color: var(--orange);
+}
+
+.label-orange-bl {
+  background-color: rgba(255, 171, 56, 0.1);
+  color: var(--orange);
+  border-left: 3px solid var(--orange);
+}
+
+.label-blue {
+  background-color: rgba(71, 139, 229, 0.1);
+  color: var(--blue);
+}
+
+.label-blue-bl {
+  background-color: rgba(71, 139, 229, 0.1);
+  color: var(--blue);
+  border-left: 3px solid var(--blue);
+}
+
+.label-pink {
+  background-color: rgba(250, 84, 84, 0.1);
+  color: var(--pink);
+}
+
+.label-pink-bl {
+  background-color: rgba(250, 84, 84, 0.1);
+  color: var(--pink);
+  border-left: 3px solid var(--pink);
+}
+
+.label-grey {
+  background-color: #d8d8d8;
+  color: #333333;
+}
+
+.label-grey-bl {
+  background-color: #d8d8d8;
+  color: #333333;
+  border-left: 3px solid #333333;
+}
+
+.label-cream {
+  background-color: rgba(250, 235, 215, 0.7);
+  color: #333333;
+}
+
 main .title-filters-section .buttons-wrapper {
   display: inline-flex;
   float: right;
@@ -54,6 +165,10 @@ main .title-filters-section .buttons-wrapper .dropdown, main .title-filters-sect
 }
 main .title-filters-section .buttons-wrapper .dropdown a::after, main .title-filters-section .buttons-wrapper .dropdown .btn::after {
   margin-left: 1.5em;
+}
+main .title-filters-section .buttons-wrapper .switch-view-btns .btn-group i {
+  font-size: 1.5em;
+  margin: 0;
 }
 main .patients-card-view .card {
   padding: 1.5em;
@@ -68,8 +183,11 @@ main .patients-card-view .card .card-header img {
 }
 main .patients-card-view .card .card-header a {
   float: right;
-  color: darkgray;
+  color: #a8001f;
   font-size: 1.1em;
+}
+main .patients-card-view .card .card-header .view-more {
+  font-size: 0.8em;
 }
 main .patients-card-view .card .card-body {
   padding: 1em 0;
@@ -98,6 +216,7 @@ main .patients-card-view .card:hover, main .patients-card-view .card:focus {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
   transform: scale(1.02, 1.02);
   transition: all ease-in-out 150ms;
+  cursor: pointer;
 }
 main .patients-table-view table, main .patients-table-view .table {
   border-collapse: separate;
@@ -124,11 +243,15 @@ main .patients-table-view table tbody tr td, main .patients-table-view .table tb
   text-transform: capitalize;
   border: none;
   padding: 1em;
+  vertical-align: baseline;
 }
 main .patients-table-view table tbody tr td img, main .patients-table-view .table tbody tr td img {
   width: 30px;
   height: 30px;
   object-fit: cover;
+}
+main .patients-table-view table tbody tr td label, main .patients-table-view .table tbody tr td label {
+  padding: 0.25em 0.5em;
 }
 main .patients-table-view table tbody tr:hover, main .patients-table-view table tbody tr:focus, main .patients-table-view .table tbody tr:hover, main .patients-table-view .table tbody tr:focus {
   transform: scale(1.02, 1.02);
@@ -136,6 +259,7 @@ main .patients-table-view table tbody tr:hover, main .patients-table-view table 
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=patients.css.map */
