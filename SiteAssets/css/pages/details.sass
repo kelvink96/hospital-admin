@@ -22,6 +22,14 @@
         width: 100%
 
   .tab-content
+    background-color: $color-white-ish
+    border-radius: .5em
+
+    .section-title
+      margin-top: 1em
+      border-bottom: 1px solid $color-lighter-grey
+      padding: 1em
+
     .media
       border-bottom: 1px solid $color-lighter-grey
       padding: .5em 1em
@@ -34,38 +42,52 @@
           margin: 0
           text-align: right
           text-transform: capitalize
-          color: $color-dark-grey
+          color: $color-darker-grey
 
       .media-body
         .row
           margin: 0 .5em
           padding: .5em 0
 
-          label, p, a
-            width: 16.667%
+          label:not(.label-sm), p
+            width: 19%
+
+          label, p
             font-size: .85em
             padding-left: .5em
             text-transform: capitalize
 
           label
-            text-align: left
-            padding-top: .5em
+            height: 40px
 
             &:nth-of-type(1)
               border-top-right-radius: .5em
               border-bottom-right-radius: .5em
+              padding-top: .75em
 
             &:nth-of-type(2)
               border-radius: .5em
-              text-align: center
-              padding-left: 0
+
+            i
+              margin-right: .5em
+
+          .label-sm
+            text-align: center
+            padding-top: .5em
+            font-weight: 400
 
           .btn
             padding: .25em
 
+          a
+            width: 5%
+            text-align: center
+
           p, a
             padding-top: .5em
             color: $color-dark-grey
+            text-align: center
+            margin: 0
 
             i
               vertical-align: center
