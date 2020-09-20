@@ -11,14 +11,14 @@ block content
 				h5.nav-link.page-title.text-capitalize
 			.col-md-4.buttons-wrapper
 				.dropdown
-					a.btn.btn-secondary.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+					a.btn.btn-dark-red-f.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 						| filter
 					.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
 						a.dropdown-item(href='#') Action
 						a.dropdown-item(href='#') Another action
 						a.dropdown-item(href='#') Something else here
 				.dropdown
-					a.btn.btn-secondary.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+					a.btn.btn-dark-red-f.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 						| sort by
 					.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
 						a.dropdown-item(href='#') Action
@@ -26,10 +26,10 @@ block content
 						a.dropdown-item(href='#') Something else here
 				.switch-view-btns
 					.btn-group.btn-group-toggle(data-toggle='buttons')
-						label.btn.btn-secondary.active
+						label.btn.btn-dark-red-o.active
 							input#card-view-btn(type='radio', name='options', checked='')
 							i.las.la-th
-						label.btn.btn-secondary
+						label.btn.btn-dark-red-o
 							input#table-view-btn(type='radio', name='options')
 							i.las.la-list-ul
 	.section.patients-card-view
@@ -40,7 +40,7 @@ block content
 						.card-img-top
 							img(src='https://source.unsplash.com/random').rounded-circle
 							a(href='details.html').view-more
-								i.las.la-ellipsis-h
+								| view profile
 					.card-body
 						.card-subsection-title
 							h5 john doe
@@ -59,7 +59,7 @@ block content
 						.card-img-top
 							img(src='https://source.unsplash.com/random').rounded-circle
 							a(href='details.html').view-more
-								i.las.la-ellipsis-h
+								| view profile
 					.card-body
 						.card-subsection-title
 							h5 john doe
@@ -78,7 +78,7 @@ block content
 						.card-img-top
 							img(src='https://source.unsplash.com/random').rounded-circle
 							a(href='details.html').view-more
-								i.las.la-ellipsis-h
+								| view profile
 					.card-body
 						.card-subsection-title
 							h5 john doe
@@ -97,7 +97,7 @@ block content
 						.card-img-top
 							img(src='https://source.unsplash.com/random').rounded-circle
 							a(href='details.html').view-more
-								i.las.la-ellipsis-h
+								| view profile
 					.card-body
 						.card-subsection-title
 							h5 john doe
@@ -125,48 +125,52 @@ block content
 				tr
 					td 2189178
 					td
-						img.rounded-circle(src='https://placebeard.it/640x360')
+						img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
 						span.ml-2 john doe
 					td 29 yo
 					td 21/03/1992
 					td cancer
-					td urgent
-					td.text-right
-						a(href='').btn
-							i.las.la-ellipsis-h
+					td
+						label.label-pink urgent
+					td
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
+							| view profile
 				tr
 					td 2189178
 					td
-						img.rounded-circle(src='https://placebeard.it/640x360')
+						img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
 						span.ml-2 john doe
 					td 29 yo
 					td 21/03/1992
 					td cancer
-					td urgent
-					td.text-right
-						a(href='').btn
-							i.las.la-ellipsis-h
+					td
+						label.label-orange checkup
+					td
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
+							| view profile
 				tr
 					td 2189178
 					td
-						img.rounded-circle(src='https://placebeard.it/640x360')
+						img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
 						span.ml-2 john doe
 					td 29 yo
 					td 21/03/1992
 					td cancer
-					td urgent
-					td.text-right
-						a(href='').btn
-							i.las.la-ellipsis-h
+					td
+						label.label-blue x-ray
+					td
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
+							| view profile
 				tr
 					td 2189178
 					td
-						img.rounded-circle(src='https://placebeard.it/640x360')
+						img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
 						span.ml-2 john doe
 					td 29 yo
 					td 21/03/1992
 					td cancer
-					td urgent
-					td.text-right
-						a(href='').btn
-							i.las.la-ellipsis-h
+					td
+						label.label-green consultancy
+					td
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
+							| view profile

@@ -1,8 +1,11 @@
 @import "../themes/colors"
 @import "../layout/section"
+@import "../base/icons"
 @import "../components/cards"
 @import "../components/dropdowns"
 @import "../components/tables"
+@import "../components/buttons"
+@import "../components/labels"
 
 main
   .title-filters-section
@@ -18,6 +21,15 @@ main
           &::after
             margin-left: 1.5em
 
+      .switch-view-btns
+        .btn-group
+          i
+            font-size: 1.5em
+            margin: 0
+
+        .active
+          @extend .btn-dark-red-f
+
   .patients-card-view
     .card
       padding: 1.5em
@@ -32,8 +44,11 @@ main
 
         a
           float: right
-          color: darkgray
+          color: $color-dark-red
           font-size: 1.1em
+
+        .view-more
+          font-size: .8em
 
       .card-body
         padding: 1em 0
@@ -62,6 +77,7 @@ main
         @include shadow-lg
         @include scale
         @include transition
+        cursor: pointer
 
   .patients-table-view
     table, .table
@@ -87,14 +103,19 @@ main
             text-transform: capitalize
             border: none
             padding: 1em
+            vertical-align: baseline
 
             img
               width: 30px
               height: 30px
               object-fit: cover
 
+            label
+              padding: .25em .5em
+
           &:hover,
           &:focus
             @include scale
             @include transition
             @include shadow-lg
+            cursor: pointer
