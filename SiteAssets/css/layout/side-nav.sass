@@ -1,4 +1,5 @@
 @import "../themes/colors"
+@import "../base/icons"
 
 .side-nav
   padding: 1em 0
@@ -8,22 +9,16 @@
   .list-group
     .list-group-item
       border: none
+      text-transform: capitalize
+      color: $color-darker-grey
+      text-decoration: none
 
       i
         margin-right: .5em
 
-      a
-        text-transform: capitalize
-        color: black
-
-        &:hover
-          text-decoration: none
-
       &:hover
         background-color: $color-dark-red
-
-        a
-          color: $color-white-ish
+        color: $color-white-ish
 
     hr, .divider
       width: 100%

@@ -1,7 +1,7 @@
 html
 	head
 		title Admin
-		meta(name='viewport' control='width=device-width, intial-scale=1')
+		meta(name='viewport' control='width=device-width, initial-scale=1')
 		link(rel='stylesheet' href='../SiteAssets/css/vendors/bootstrap.min.css')
 		link(rel='stylesheet' href='../SiteAssets/css/vendors/line-awesome.min.css')
 		link(rel='stylesheet' href='../SiteAssets/css/pages/layout.css')
@@ -73,44 +73,35 @@ html
 									| settings
 		main
 			.side-nav.shadow-sm
-				ul.list-group
-					li.list-group-item
-						a(href='dashboard.html')
-							i.las.la-shapes.la-lw
-							| dashboard
-					li.list-group-item
-						a(href='patients.html')
-							i.las.la-user-injured.la-lw
-							| patients
-					li.list-group-item
-						a(href='')
-							i.las.la-clipboard-list.la-lw
-							| activities
-					li.list-group-item
-						a(href='')
-							i.las.la-shopping-cart.la-lw
-							| procurement
-					li.list-group-item
-						a(href='')
-							i.las.la-users.la-lw
-							| employees
-					li.list-group-item
-						a(href='')
-							i.las.la-tools.la-lw
-							| tools
-					li.list-group-item
-						a(href='')
-							i.las.la-chart-pie.la-lw
-							| reports
+				ul.list-group.list-group-flush
+					a(href='dashboard.html').list-group-item
+						i.las.la-shapes.la-lw
+						| dashboard
+					a(href='patients.html').list-group-item
+						i.las.la-user-injured.la-lw
+						| patients
+					a(href='').list-group-item
+						i.las.la-clipboard-list.la-lw
+						| activities
+					a(href='').list-group-item
+						i.las.la-shopping-cart.la-lw
+						| procurement
+					a(href='').list-group-item
+						i.las.la-users.la-lw
+						| employees
+					a(href='').list-group-item
+						i.las.la-tools.la-lw
+						| tools
+					a(href='').list-group-item
+						i.las.la-chart-pie.la-lw
+						| reports
 					hr.divider
-					li.list-group-item
-						a(href='')
-							i.las.la-user-shield.la-lw
-							| account
-					li.list-group-item
-						a(href='')
-							i.las.la-cogs.la-lw
-							| settings
+					a(href='').list-group-item
+						i.las.la-user-shield.la-lw
+						| account
+					a(href='').list-group-item
+						i.las.la-cogs.la-lw
+						| settings
 			.main-content
 				.container-fluid
 					block content
