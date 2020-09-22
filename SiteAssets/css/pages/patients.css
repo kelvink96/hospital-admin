@@ -231,14 +231,12 @@ main .patients-table-view table, main .patients-table-view .table {
   border: none;
 }
 main .patients-table-view table thead tr, main .patients-table-view .table thead tr {
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: transparent;
 }
 main .patients-table-view table thead tr th, main .patients-table-view .table thead tr th {
   padding: 1em;
   border: none;
+  color: #666666;
 }
 main .patients-table-view table tbody tr, main .patients-table-view .table tbody tr {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
