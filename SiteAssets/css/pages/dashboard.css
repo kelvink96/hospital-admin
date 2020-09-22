@@ -39,8 +39,62 @@
   border: none;
 }
 
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn {
+  border-radius: 0;
+  text-transform: capitalize;
+}
+.btn i {
+  margin-right: 0.5em;
+}
+.btn:hover, .btn:focus {
+  transition: all ease-in-out 150ms;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-dark-red-f {
+  background-color: #a8001f;
+  color: white;
+}
+.btn-dark-red-f:hover, .btn-dark-red-f:focus {
+  background-color: transparent;
+  border: 1px solid #a8001f;
+  color: #a8001f;
+}
+
+.btn-dark-red-o {
+  background-color: transparent;
+  color: #a8001f;
+  border: 1px solid #a8001f;
+}
+.btn-dark-red-o:hover, .btn-dark-red-o:focus {
+  background-color: #a8001f;
+  border: 1px solid transparent;
+  color: white;
+}
+
+main .main-content .welcome-section .welcome-content-card .welcome-text-wrapper h5 {
+  text-transform: capitalize;
+}
+main .main-content .welcome-section .welcome-content-card .welcome-img-wrapper img {
+  width: 60%;
+}
+main .main-content .welcome-section .app-stats-card .card-body i {
+  color: #a8001f;
+  margin-bottom: 0.25em;
+}
+main .main-content .welcome-section .app-stats-card .card-body h4, main .main-content .welcome-section .app-stats-card .card-body p, main .main-content .welcome-section .app-stats-card .card-body a {
+  margin: 0;
+  text-transform: capitalize;
+  color: #333333;
+}
+main .main-content .welcome-section .app-stats-card .card-body a:hover, main .main-content .welcome-section .app-stats-card .card-body a:focus {
+  color: #a8001f;
+}
 main .main-content .functionality-section .section-content .card {
-  background-color: white;
+  background-color: #a8001f;
   text-transform: capitalize;
   border-radius: 0;
 }
@@ -49,7 +103,7 @@ main .main-content .functionality-section .section-content .card .card-title {
 }
 main .main-content .functionality-section .section-content .card .card-title i {
   font-size: 3em;
-  color: #a8001f;
+  color: #f9f9f9;
 }
 main .main-content .functionality-section .section-content .card .card-body {
   color: black;
@@ -58,21 +112,24 @@ main .main-content .functionality-section .section-content .card .card-body {
 main .main-content .functionality-section .section-content .card .card-body p {
   font-weight: 500;
   vertical-align: bottom;
+  color: #f9f9f9;
 }
 main .main-content .functionality-section .section-content .card:hover, main .main-content .functionality-section .section-content .card:focus {
   border-radius: 0;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  transition: all ease-in-out 150ms;
+  transform: scale(1.02, 1.02);
   text-decoration: none;
-  background-color: #a8001f;
-  border-color: #a8001f;
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
 }
 main .main-content .functionality-section .section-content .card:hover .card-title i, main .main-content .functionality-section .section-content .card:focus .card-title i {
-  color: #f9f9f9;
+  color: #a8001f;
 }
 main .main-content .functionality-section .section-content .card:hover .card-body p, main .main-content .functionality-section .section-content .card:focus .card-body p {
-  color: #f9f9f9;
+  color: #a8001f;
 }
 main .main-content .card-summaries .card {
   margin-bottom: 1em;

@@ -1,15 +1,40 @@
 @import "../themes/colors"
 @import "../layout/section"
 @import "../components/cards"
-
-//TODO work on styling cards
+@import "../components/buttons"
 
 main
   .main-content
+    .welcome-section
+      .welcome-content-card
+        .welcome-text-wrapper
+          h5
+            text-transform: capitalize
+
+        .welcome-img-wrapper
+          img
+            width: 60%
+
+      .app-stats-card
+        .card-body
+          i
+            color: $color-dark-red
+            margin-bottom: .25em
+
+          h4, p, a
+            margin: 0
+            text-transform: capitalize
+            color: $color-darker-grey
+
+          a
+            &:hover,
+            &:focus
+              color: $color-dark-red
+
     .functionality-section
       .section-content
         .card
-          background-color: white
+          background-color: $color-dark-red
           text-transform: capitalize
           @include border-radius
 
@@ -18,7 +43,7 @@ main
 
             i
               font-size: 3em
-              color: $color-dark-red
+              color: $color-white-ish
 
           .card-body
             color: black
@@ -27,22 +52,25 @@ main
             p
               font-weight: 500
               vertical-align: bottom
+              color: $color-white-ish
 
           &:hover,
           &:focus
             @include border-radius
             @include shadow-md
+            @include transition
+            @include scale
             text-decoration: none
-            background-color: $color-dark-red
-            border-color: $color-dark-red
+            background-color: $color-white-ish
+            border-color: $color-white-ish
 
             .card-title
               i
-                color: $color-white-ish
+                color: $color-dark-red
 
             .card-body
               p
-                color: $color-white-ish
+                color: $color-dark-red
 
     .card-summaries
       .card
