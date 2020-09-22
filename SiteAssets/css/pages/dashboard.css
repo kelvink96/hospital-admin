@@ -3,6 +3,9 @@
 .section {
   margin: 2em;
 }
+.section .page-title {
+  text-transform: capitalize;
+}
 .section .section-content {
   margin: 1em;
 }

@@ -3,6 +3,9 @@
 .section {
   margin: 2em;
 }
+.section .page-title {
+  text-transform: capitalize;
+}
 .section .section-content {
   margin: 1em;
 }
@@ -90,6 +93,10 @@ table thead tr th {
 label {
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.label-md {
+  padding: 0.5em;
 }
 
 .label-sm {

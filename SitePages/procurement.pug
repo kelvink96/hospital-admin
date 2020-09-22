@@ -1,0 +1,124 @@
+extends _layout
+
+append links
+	link(rel='stylesheet' href='../SiteAssets/css/pages/procurement.css')
+
+block content
+	.section.title-section
+		.row
+			.col-md-6
+				h5.page-title
+			.col-md-6.text-right
+				button.btn.btn-dark-red-f
+					i.las.la-plus
+					| create request
+	.section.filters-section
+		.row
+			.col-sm-8
+				button.btn.btn-dark-red-o.mr-2
+					i.las.la-filter
+					| filter
+				button.btn.btn-dark-red-o
+					i.las.la-sort
+					| sort
+			.col-sm-4
+				.input-group
+					.input-group-prepend
+						span.input-group-text
+							i.las.la-search
+					input.form-control(placeholder='search by title, owner, or vendor')
+	.section.content-section
+		table.table.table-hover.table-borderless
+			thead
+				tr
+					th inquiries
+					th items
+					th date created
+					th created by
+					th status
+					th
+			tbody
+				tr
+					td
+						p hospital stretchers
+						small.text-muted POR/2901/21
+					td 200
+					td 11 apr 2020
+					td john doe
+					td
+						label.label-orange.label-md ongoing
+					td
+						button.btn.btn-dark-red-o.text-center
+							i.las.la-ellipsis-h
+				tr
+					td
+						p defibrillators
+						small.text-muted POR/2901/22
+					td 120
+					td 13 apr 2020
+					td john doe
+					td
+						label.label-blue.label-md pending
+					td
+						button.btn.btn-dark-red-o.text-center
+							i.las.la-ellipsis-h
+				tr
+					td
+						p anaesthesia machines
+						small.text-muted POR/2901/23
+					td 20
+					td 13 apr 2020
+					td john doe
+					td
+						label.label-blue.label-md pending
+					td
+						button.btn.btn-dark-red-o.text-center
+							i.las.la-ellipsis-h
+				tr
+					td
+						p patient monitors
+						small.text-muted POR/2901/24
+					td 20
+					td 13 apr 2020
+					td john doe
+					td
+						label.label-orange.label-md outgoing
+					td
+						button.btn.btn-dark-red-o.text-center
+							i.las.la-ellipsis-h
+				tr
+					td
+						p sterilizers
+						small.text-muted POR/2901/25
+					td 23
+					td 13 apr 2020
+					td john doe
+					td
+						label.label-orange.label-md outgoing
+					td
+						button.btn.btn-dark-red-o.text-center
+							i.las.la-ellipsis-h
+				tr
+					td
+						p surgical tables
+						small.text-muted POR/2901/26
+					td 230
+					td 13 apr 2020
+					td john doe
+					td
+						label.label-orange.label-md outgoing
+					td
+						button.btn.btn-dark-red-o.text-center
+							i.las.la-ellipsis-h
+				tr
+					td
+						p surgical lights
+						small.text-muted POR/2901/27
+					td 102
+					td 13 apr 2020
+					td john doe
+					td
+						label.label-orange.label-md outgoing
+					td
+						button.btn.btn-dark-red-o.text-center
+							i.las.la-ellipsis-h

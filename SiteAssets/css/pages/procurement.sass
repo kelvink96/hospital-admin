@@ -1,0 +1,38 @@
+@import "../themes/colors"
+@import "../base/icons"
+@import "../layout/section"
+@import "../components/labels"
+@import "../components/tables"
+@import "../components/buttons"
+
+.filters-section
+  input, .input-group-text
+    border-radius: 0
+
+.content-section
+  table, .table
+    border-collapse: separate
+    border-spacing: 0 .5em
+
+    thead
+      background-color: transparent
+
+      tr
+        th
+          color: $color-dark-grey
+
+    tbody
+      tr
+        background-color: $color-white
+        @include shadow-sm
+        text-transform: capitalize
+
+        td
+          vertical-align: middle
+
+          button, .btn
+            i
+              margin: 0
+
+          p
+            margin: 0

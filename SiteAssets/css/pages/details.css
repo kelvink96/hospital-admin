@@ -7,6 +7,9 @@ i {
 .section {
   margin: 2em;
 }
+.section .page-title {
+  text-transform: capitalize;
+}
 .section .section-content {
   margin: 1em;
 }
@@ -45,6 +48,10 @@ i {
 label {
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.label-md {
+  padding: 0.5em;
 }
 
 .label-sm {
@@ -194,6 +201,10 @@ label {
 .patient-details-section .mini-card .card-body h4, .patient-details-section .mini-card .card-body h5, .patient-details-section .mini-card .card-body small, .patient-details-section .mini-card .card-body p {
   padding: 0 0 0.25em 0;
   margin: 0;
+  text-transform: capitalize;
+}
+.patient-details-section .mini-card .card-body input {
+  border-radius: 0;
   text-transform: capitalize;
 }
 .patient-details-section .mini-card .card-footer button {
