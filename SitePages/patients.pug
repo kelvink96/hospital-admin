@@ -14,16 +14,19 @@ block content
 					a.btn.btn-dark-red-o.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 						| filter
 					.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
-						a.dropdown-item(href='#') Action
-						a.dropdown-item(href='#') Another action
-						a.dropdown-item(href='#') Something else here
+						a.dropdown-item(href='#') age
+						a.dropdown-item(href='#') diagnosis
+						a.dropdown-item(href='#') triage
 				.dropdown
 					a.btn.btn-dark-red-o.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 						| sort by
 					.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
-						a.dropdown-item(href='#') Action
-						a.dropdown-item(href='#') Another action
-						a.dropdown-item(href='#') Something else here
+						a.dropdown-item(href='#') patient id
+						a.dropdown-item(href='#') patient name
+						a.dropdown-item(href='#') age
+						a.dropdown-item(href='#') date of birth
+						a.dropdown-item(href='#') diagnosis
+						a.dropdown-item(href='#') triage
 				.switch-view-btns
 					.btn-group.btn-group-toggle(data-toggle='buttons')
 						label.btn.btn-dark-red-o.active
@@ -38,7 +41,7 @@ block content
 				.card
 					.card-header
 						.card-img-top
-							img(src='https://source.unsplash.com/random').rounded-circle
+							img(src=assetsDirectory+'/images/people.svg' loading='lazy').rounded-circle
 							a(href='details.html').view-more
 								| view profile
 					.card-body
@@ -57,7 +60,7 @@ block content
 				.card
 					.card-header
 						.card-img-top
-							img(src='https://source.unsplash.com/random').rounded-circle
+							img(src=assetsDirectory+'/images/people.svg' loading='lazy').rounded-circle
 							a(href='details.html').view-more
 								| view profile
 					.card-body
@@ -76,7 +79,7 @@ block content
 				.card
 					.card-header
 						.card-img-top
-							img(src='https://source.unsplash.com/random').rounded-circle
+							img(src=assetsDirectory+'/images/people.svg' loading='lazy').rounded-circle
 							a(href='details.html').view-more
 								| view profile
 					.card-body
@@ -95,7 +98,7 @@ block content
 				.card
 					.card-header
 						.card-img-top
-							img(src='https://source.unsplash.com/random').rounded-circle
+							img(src=assetsDirectory+'/images/people.svg' loading='lazy').rounded-circle
 							a(href='details.html').view-more
 								| view profile
 					.card-body
@@ -125,7 +128,7 @@ block content
 				tr
 					td 2189178
 					td
-						img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
+						img.rounded-circle(src=assetsDirectory+'/images/people.svg' loading='lazy')
 						span.ml-2 john doe
 					td 29 yo
 					td 21/03/1992
@@ -138,39 +141,39 @@ block content
 				tr
 					td 2189178
 					td
-						img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
+						img.rounded-circle(src=assetsDirectory+'/images/people.svg' loading='lazy')
 						span.ml-2 john doe
 					td 29 yo
 					td 21/03/1992
 					td cancer
 					td
-						label.label-orange checkup
+						label.label-pink urgent
 					td
 						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
 							| view profile
 				tr
 					td 2189178
 					td
-						img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
+						img.rounded-circle(src=assetsDirectory+'/images/people.svg' loading='lazy')
 						span.ml-2 john doe
 					td 29 yo
 					td 21/03/1992
 					td cancer
 					td
-						label.label-blue x-ray
+						label.label-pink urgent
 					td
 						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
 							| view profile
 				tr
 					td 2189178
 					td
-						img.rounded-circle(src='https://placebeard.it/640x360' loading='lazy')
+						img.rounded-circle(src=assetsDirectory+'/images/people.svg' loading='lazy')
 						span.ml-2 john doe
 					td 29 yo
 					td 21/03/1992
 					td cancer
 					td
-						label.label-green consultancy
+						label.label-pink urgent
 					td
 						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
 							| view profile

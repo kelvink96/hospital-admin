@@ -11,7 +11,7 @@
 }
 
 i {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .card-deck {
@@ -46,6 +46,9 @@ i {
 .dropdown-menu {
   border: none;
   border-radius: 0;
+}
+.dropdown-menu a {
+  text-transform: capitalize;
 }
 
 table thead tr th {
@@ -249,6 +252,7 @@ main .patients-table-view table tbody tr td, main .patients-table-view .table tb
   border: none;
   padding: 1em;
   vertical-align: baseline;
+  font-weight: 500;
 }
 main .patients-table-view table tbody tr td img, main .patients-table-view .table tbody tr td img {
   width: 30px;
