@@ -7,18 +7,25 @@
   background-color: white
 
   .list-group
+    position: fixed
+    width: inherit
+
     .list-group-item
-      border: none
+      width: 101%
       text-transform: capitalize
       color: $color-darker-grey
       text-decoration: none
+      border: 1px solid transparent
 
       i
         margin-right: .5em
 
-      &:hover
+      &:hover,
+      &:focus
         background-color: $color-dark-red
-        color: $color-white-ish
+        border: 1px solid $color-dark-red
+        color: $color-white
+        @include transition
 
     hr, .divider
       width: 100%

@@ -75,6 +75,10 @@
   color: white;
 }
 
+main .main-content .welcome-section .welcome-content-card {
+  padding-left: 2em;
+  padding-right: 2em;
+}
 main .main-content .welcome-section .welcome-content-card .welcome-text-wrapper h5 {
   text-transform: capitalize;
 }
@@ -97,6 +101,9 @@ main .main-content .functionality-section .section-content .card {
   background-color: #a8001f;
   text-transform: capitalize;
   border-radius: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
 }
 main .main-content .functionality-section .section-content .card .card-title {
   padding-top: 1em;
@@ -116,14 +123,11 @@ main .main-content .functionality-section .section-content .card .card-body p {
 }
 main .main-content .functionality-section .section-content .card:hover, main .main-content .functionality-section .section-content .card:focus {
   border-radius: 0;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   transition: all ease-in-out 150ms;
   transform: scale(1.02, 1.02);
   text-decoration: none;
-  background-color: #f9f9f9;
-  border-color: #f9f9f9;
+  background-color: white;
+  border-color: white;
 }
 main .main-content .functionality-section .section-content .card:hover .card-title i, main .main-content .functionality-section .section-content .card:focus .card-title i {
   color: #a8001f;

@@ -7,6 +7,9 @@ main
   .main-content
     .welcome-section
       .welcome-content-card
+        padding-left: 2em
+        padding-right: 2em
+
         .welcome-text-wrapper
           h5
             text-transform: capitalize
@@ -37,6 +40,7 @@ main
           background-color: $color-dark-red
           text-transform: capitalize
           @include border-radius
+          @include shadow-md
 
           .card-title
             padding-top: 1em
@@ -57,12 +61,11 @@ main
           &:hover,
           &:focus
             @include border-radius
-            @include shadow-md
             @include transition
             @include scale
             text-decoration: none
-            background-color: $color-white-ish
-            border-color: $color-white-ish
+            background-color: $color-white
+            border-color: $color-white
 
             .card-title
               i

@@ -105,18 +105,25 @@ i {
   min-height: 100vh;
   background-color: white;
 }
+.side-nav .list-group {
+  position: fixed;
+  width: inherit;
+}
 .side-nav .list-group .list-group-item {
-  border: none;
+  width: 101%;
   text-transform: capitalize;
   color: #333333;
   text-decoration: none;
+  border: 1px solid transparent;
 }
 .side-nav .list-group .list-group-item i {
   margin-right: 0.5em;
 }
-.side-nav .list-group .list-group-item:hover {
+.side-nav .list-group .list-group-item:hover, .side-nav .list-group .list-group-item:focus {
   background-color: #a8001f;
-  color: #f9f9f9;
+  border: 1px solid #a8001f;
+  color: white;
+  transition: all ease-in-out 150ms;
 }
 .side-nav .list-group hr, .side-nav .list-group .divider {
   width: 100%;
