@@ -1,0 +1,110 @@
+extends _layout
+
+append links
+	link(rel='stylesheet' href=assetsDirectory + '/css/pages/specialists.css')
+block content
+	.section.title-section
+		h5.nav-link.page-title
+	.section.filters-section.justify-content-between
+		.dropdowns-wrapper
+			.dropdown
+				a.btn.btn-dark-red-o.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+					| filter
+				.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
+					a.dropdown-item(href='#') name
+					a.dropdown-item(href='#') gender
+					a.dropdown-item(href='#') specialization
+					a.dropdown-item(href='#') email
+					a.dropdown-item(href='#') phone no.
+					a.dropdown-item(href='#') address
+			.dropdown
+				a.btn.btn-dark-red-o.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+					| sort by
+				.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
+					a.dropdown-item(href='#') name
+					a.dropdown-item(href='#') gender
+					a.dropdown-item(href='#') specialization
+					a.dropdown-item(href='#') email
+					a.dropdown-item(href='#') phone no.
+					a.dropdown-item(href='#') address
+		.buttons-wrapper
+			button.btn.btn-dark-red-f
+				i.las.la-plus-circle
+				| add a new specialist
+	.section.specialists-table-view
+		table.table.table-hover
+			thead
+				tr
+					th name
+					th gender
+					th specialization
+					th email
+					th phone no.
+					th address
+					th
+					th
+			tbody
+				tr
+					td
+						img.rounded-circle.mr-1(src=assetsDirectory + '/images/doctor (1).svg' loading='lazy')
+						span.ml-2 john doe
+					td.text-muted male
+					td dentist
+					td.text-lowercase.text-muted
+						a(href='') abc@def.com
+					td (254)455-0391
+					td.text-muted
+						a(href='') new york, US
+					td
+						button.btn.btn-sm.btn-dark-red-f appointment
+					td
+						a(href='')
+							i.las.la-ellipsis-h
+				tr
+					td
+						img.rounded-circle.mr-1(src=assetsDirectory + '/images/doctor (1).svg' loading='lazy')
+						span.ml-2 john doe
+					td.text-muted male
+					td radiology
+					td.text-lowercase.text-muted
+						a(href='') abc@def.com
+					td (254)455-0391
+					td.text-muted
+						a(href='') new york, US
+					td
+						button.btn.btn-sm.btn-dark-red-f appointment
+					td
+						a(href='')
+							i.las.la-ellipsis-h
+				tr
+					td
+						img.rounded-circle.mr-1(src=assetsDirectory + '/images/doctor (1).svg' loading='lazy')
+						span.ml-2 john doe
+					td.text-muted female
+					td heart surgeon
+					td.text-lowercase.text-muted
+						a(href='') abc@def.com
+					td (254)455-0391
+					td.text-muted
+						a(href='') new york, US
+					td
+						button.btn.btn-sm.btn-dark-red-f appointment
+					td
+						a(href='')
+							i.las.la-ellipsis-h
+				tr
+					td
+						img.rounded-circle.mr-1(src=assetsDirectory + '/images/doctor (1).svg' loading='lazy')
+						span.ml-2 john doe
+					td.text-muted male
+					td neurologist
+					td.text-lowercase.text-muted
+						a(href='') abc@def.com
+					td (254)455-0391
+					td.text-muted
+						a(href='') new york, US
+					td
+						button.btn.btn-sm.btn-dark-red-f appointment
+					td
+						a(href='')
+							i.las.la-ellipsis-h

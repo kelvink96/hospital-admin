@@ -1,0 +1,158 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.section {
+  margin: 2em;
+}
+.section .page-title {
+  text-transform: capitalize;
+}
+.section .section-content {
+  margin: 1em;
+}
+
+i {
+  font-size: 1em;
+}
+
+.card-deck {
+  margin-bottom: 1.5em;
+}
+
+.card {
+  border-radius: 0;
+  padding: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+  border-radius: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  vertical-align: center;
+}
+.card .card-body {
+  padding: 0;
+}
+.card .card-footer {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+}
+.dropdown-menu a {
+  text-transform: capitalize;
+}
+
+table thead tr th {
+  text-transform: capitalize;
+}
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+.btn {
+  border-radius: 0;
+  text-transform: capitalize;
+}
+.btn i {
+  margin-right: 0.5em;
+}
+.btn:hover, .btn:focus {
+  transition: all ease-in-out 150ms;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-dark-red-f {
+  background-color: #a8001f;
+  color: white;
+}
+.btn-dark-red-f:hover, .btn-dark-red-f:focus {
+  background-color: transparent;
+  border: 1px solid #a8001f;
+  color: #a8001f;
+}
+
+.btn-dark-red-o {
+  background-color: transparent;
+  color: #a8001f;
+  border: 1px solid #a8001f;
+}
+.btn-dark-red-o:hover, .btn-dark-red-o:focus {
+  background-color: #a8001f;
+  border: 1px solid transparent;
+  color: white;
+}
+
+main .title-section {
+  margin-left: 1em;
+}
+main .filters-section {
+  margin-left: 1em;
+  display: flex;
+}
+main .filters-section .dropdowns-wrapper {
+  display: flex;
+}
+main .filters-section .dropdowns-wrapper .dropdown {
+  margin-left: 1em;
+}
+main .filters-section .dropdowns-wrapper .dropdown a::after, main .filters-section .dropdowns-wrapper .dropdown .btn::after {
+  margin-left: 1.5em;
+}
+main .specialists-table-view table, main .specialists-table-view .table {
+  border-collapse: separate;
+  border-spacing: 0 0.25em;
+}
+main .specialists-table-view table thead tr, main .specialists-table-view .table thead tr {
+  background-color: transparent;
+}
+main .specialists-table-view table thead tr th, main .specialists-table-view .table thead tr th {
+  padding: 1em;
+  border: none;
+  color: #666666;
+}
+main .specialists-table-view table tbody tr, main .specialists-table-view .table tbody tr {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+main .specialists-table-view table tbody tr td, main .specialists-table-view .table tbody tr td {
+  text-transform: capitalize;
+  border: none;
+  padding: 1em;
+  vertical-align: baseline;
+  font-weight: 500;
+}
+main .specialists-table-view table tbody tr td img, main .specialists-table-view .table tbody tr td img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+main .specialists-table-view table tbody tr td label, main .specialists-table-view .table tbody tr td label {
+  padding: 0.25em 0.5em;
+}
+main .specialists-table-view table tbody tr td a, main .specialists-table-view .table tbody tr td a {
+  color: #666666;
+}
+main .specialists-table-view table tbody tr td a:hover, main .specialists-table-view table tbody tr td a:focus, main .specialists-table-view .table tbody tr td a:hover, main .specialists-table-view .table tbody tr td a:focus {
+  text-decoration: underline;
+}
+main .specialists-table-view table tbody tr:hover, main .specialists-table-view table tbody tr:focus, main .specialists-table-view .table tbody tr:hover, main .specialists-table-view .table tbody tr:focus {
+  transition: all ease-in-out 150ms;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  transform: scale(1.02, 1.02);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=specialists.css.map */
