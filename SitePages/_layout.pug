@@ -1,21 +1,23 @@
+-var assetsDirectory = '../SiteAssets'
+
 html
 	head
 		title Admin
 		meta(name='viewport' control='width=device-width, initial-scale=1')
-		link(rel='stylesheet' href='../SiteAssets/css/vendors/bootstrap.min.css')
-		link(rel='stylesheet' href='../SiteAssets/css/vendors/line-awesome.min.css')
-		link(rel='stylesheet' href='../SiteAssets/css/pages/layout.css')
-		link(rel='icon' href='../SiteAssets/images/qafya-icon.ico')
-		script(src='../SiteAssets/js/vendors/jquery.min.js')
-		script(src='../SiteAssets/js/vendors/bootstrap.bundle.min.js')
-		script(src='../SiteAssets/js/global.js')
+		link(rel='stylesheet' href=assetsDirectory+'/css/vendors/bootstrap.min.css')
+		link(rel='stylesheet' href=assetsDirectory+'/css/vendors/line-awesome.min.css')
+		link(rel='stylesheet' href=assetsDirectory+'/css/pages/layout.css')
+		link(rel='icon' href=assetsDirectory+'/images/qafya-icon.ico')
+		script(src=assetsDirectory+'/js/vendors/jquery.min.js')
+		script(src=assetsDirectory+'/js/vendors/bootstrap.bundle.min.js')
+		script(src=assetsDirectory+'/js/global.js')
 		block links
 
 	body
 		header
 			nav.navbar.navbar-expand-lg.shadow-sm.fixed-top
 				a.navbar-brand(href='')
-					img(src='../SiteAssets/images/qafya-logo.png')
+					img(src=assetsDirectory+'/images/qafya-logo.png')
 				button.navbar-toggler(type='button' data-target='#navbarContent' data-toggle='collapse')
 					i.las.la-bars
 				h5.nav-link Qafya
@@ -34,21 +36,21 @@ html
 									ul.list-unstyled
 										li.media
 											a(href='').notification-card
-												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
+												img.mr-3.rounded-circle(src=assetsDirectory+'/images/information.svg', alt='...')
 												.media-body
 													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
 													small.text-muted 21.03.2020, 13.02
 										li.media
 											a(href='').notification-card
-												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
+												img.mr-3.rounded-circle(src=assetsDirectory+'/images/information.svg', alt='...')
 												.media-body
 													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
 													small.text-muted 21.03.2020, 13.02
 										li.media
 											a(href='').notification-card
-												img.mr-3.rounded-circle(src='../SiteAssets/images/information.svg', alt='...')
+												img.mr-3.rounded-circle(src=assetsDirectory+'/images/information.svg', alt='...')
 												.media-body
 													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
@@ -60,7 +62,7 @@ html
 								span.vertical-divider
 						li.nav-item
 							a.nav-link(href='#')
-								img.rounded-circle(src='../SiteAssets/images/person.jpg')
+								img.rounded-circle(src=assetsDirectory+'/images/person.jpg')
 						li.nav-item.dropdown.dropleft
 							a.nav-link.profile-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 								| jane doe
@@ -80,13 +82,13 @@ html
 					a(href='patients.html').list-group-item
 						i.las.la-user-injured.la-lw
 						| patients
-					a(href='').list-group-item
+					a(href='specialists.html').list-group-item
 						i.las.la-clinic-medical.la-lw
 						| specialists
 					a(href='procurement.html').list-group-item
 						i.las.la-shopping-cart.la-lw
 						| procurement
-					a(href='').list-group-item
+					a(href='notifications.html').list-group-item
 						i.las.la-sms.la-lw
 						| notifications
 					hr.divider
