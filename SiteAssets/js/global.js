@@ -13,5 +13,7 @@ function pageTitleSorter() {
 		$('.page-title').html('details')
 	} else if (url.includes('procurement')) {
 		$('.page-title').html('procurement')
+	}  else if (url.includes('specialists')) {
+		$('.page-title').html('specialists')
 	}
 }

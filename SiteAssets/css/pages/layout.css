@@ -12,6 +12,9 @@ html, body {
   border: none;
   border-radius: 0;
 }
+.dropdown-menu a {
+  text-transform: capitalize;
+}
 
 nav, .navbar {
   background-color: #f9f9f9;
@@ -97,7 +100,7 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 i {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .side-nav {
