@@ -75,69 +75,6 @@
   color: white;
 }
 
-.btn-dark-blue-f {
-  background-color: #00417c;
-  color: white;
-}
-.btn-dark-blue-f:hover, .btn-dark-blue-f:focus {
-  background-color: transparent;
-  border: 1px solid #00417c;
-  color: #00417c;
-}
-
-.btn-dark-blue-o {
-  background-color: transparent;
-  color: #00417c;
-  border: 1px solid #00417c;
-}
-.btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
-  background-color: #00417c;
-  border: 1px solid transparent;
-  color: white;
-}
-
-.btn-dark-grey-f {
-  background-color: #666666;
-  color: white;
-}
-.btn-dark-grey-f:hover, .btn-dark-grey-f:focus {
-  background-color: transparent;
-  border: 1px solid #666666;
-  color: #666666;
-}
-
-.btn-dark-grey-o {
-  background-color: transparent;
-  color: #666666;
-  border: 1px solid #666666;
-}
-.btn-dark-grey-o:hover, .btn-dark-grey-o:focus {
-  background-color: #666666;
-  border: 1px solid transparent;
-  color: white;
-}
-
-.btn-light-grey-f {
-  background-color: #cccccc;
-  color: #333333;
-}
-.btn-light-grey-f:hover, .btn-light-grey-f:focus {
-  background-color: transparent;
-  border: 1px solid #333333;
-  color: #cccccc;
-}
-
-.btn-light-grey-o {
-  background-color: transparent;
-  color: #cccccc;
-  border: 1px solid #cccccc;
-}
-.btn-light-grey-o:hover, .btn-light-grey-o:focus {
-  background-color: #cccccc;
-  border: 1px solid transparent;
-  color: white;
-}
-
 main .main-content .welcome-section .welcome-content-card {
   padding-left: 2em;
   padding-right: 2em;
