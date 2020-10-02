@@ -1,0 +1,105 @@
+extends _layout
+
+append links
+	link(rel='stylesheet' href=assetsDirectory + '/css/pages/notifications.css')
+
+block content
+	.section
+		h5.page-title.nav-link
+	.section
+		.row
+			.col-md-3.tags-section
+				.card
+					.card-header
+						h5 tags
+					.card-body
+						button.btn.btn-sm.btn-dark-red-f.mr-2.mb-2
+							| all
+							b.ml-1 125
+						button.btn.btn-sm.btn-dark-red-o.mr-2.mb-2
+							| today
+							b.ml-1 45
+						button.btn.btn-sm.btn-dark-red-o.mr-2.mb-2
+							| yesterday
+							b.ml-1 21
+						button.btn.btn-sm.btn-dark-red-o.mr-2.mb-2
+							| this week
+							b.ml-1 221
+						button.btn.btn-sm.btn-dark-red-o.mr-2.mb-2
+							| this month
+							b.ml-1 756
+						button.btn.btn-sm.btn-dark-red-o.mr-2.mb-2
+							| unread
+							b.ml-1 66
+						button.btn.btn-sm.btn-dark-red-o.mr-2.mb-2
+							| starred
+							b.ml-1 66
+			.col-md-9.notifications-section
+				.card
+					h5.text-muted.title today
+					.card-body
+						ul.list-unstyled
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p 2 patient entries added
+									span.text-muted 16.12 by
+									a(href='')  john doe
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p A message has arrived from your manager
+									span.text-muted 14.12 by
+									a(href='')  you
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p You were mentioned in a comment in project A
+									span.text-muted 10.12 by
+									a(href='')  you
+					h5.text-muted.title yesterday
+					.card-body
+						ul.list-unstyled
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p 2 patient entries added
+									span.text-muted 16.12 by
+									a(href='')  john doe
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p A message has arrived from your manager
+									span.text-muted 14.12 by
+									a(href='')  you
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p You were mentioned in a comment in project A
+									span.text-muted 10.12 by
+									a(href='')  you
+					h5.text-muted.title earlier this week
+					.card-body
+						ul.list-unstyled
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p 2 patient entries added
+									span.text-muted 16.12 by
+									a(href='')  john doe
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p A message has arrived from your manager
+									span.text-muted 14.12 by
+									a(href='')  you
+							li.media
+								img.mr-3(src=assetsDirectory + '/images/man.svg' alt='...').rounded-circle
+								.media-body
+									p You were mentioned in a comment in project A
+									span.text-muted 10.12 by
+									a(href='')  you
+					.card-footer.text-center
+						button.btn.btn-dark-red-f
+							i.las.la-chevron-circle-down
+							| show more

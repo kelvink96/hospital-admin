@@ -13,7 +13,9 @@ function pageTitleSorter() {
 		$('.page-title').html('details')
 	} else if (url.includes('procurement')) {
 		$('.page-title').html('procurement')
-	}  else if (url.includes('specialists')) {
+	} else if (url.includes('specialists')) {
 		$('.page-title').html('specialists')
+	} else if (url.includes('notifications')) {
+		$('.page-title').html('notifications')
 	}
 }

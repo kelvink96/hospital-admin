@@ -1,0 +1,44 @@
+@import "../themes/colors"
+@import "../layout/section"
+@import "../base/icons"
+@import "../components/cards"
+@import "../components/dropdowns"
+@import "../components/tables"
+@import "../components/buttons"
+
+main
+  .card
+    .card-header
+      margin-bottom: 1em
+
+  .notifications-section
+    .card
+      .title
+        text-transform: capitalize
+        margin: 1em
+
+      .media
+        padding: 1em
+        border-bottom: 1px solid $color-lighter-grey
+
+        img
+          width: 50px
+          height: 50px
+
+        .media-body
+          font-weight: 500
+
+          p
+            margin: 0
+
+          a
+            text-transform: capitalize
+            color: $color-dark-red
+
+          span, a
+            font-size: .9em
+
+      .card-footer
+        padding: 1em
+
+
