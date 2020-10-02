@@ -1,10 +1,10 @@
 extends _layout
 
 append links
-	link(rel='stylesheet' href='../SiteAssets/css/pages/dashboard.css')
-	link(rel='stylesheet' href='../SiteAssets/css/vendors/Chart.min.css')
-	script(src='../SiteAssets/js/vendors/Chart.bundle.min.js')
-	script(src='../SiteAssets/js/dashboard.js')
+	link(rel='stylesheet' href=assetsDirectory + '/css/pages/dashboard.css')
+	link(rel='stylesheet' href=assetsDirectory + '/css/vendors/Chart.min.css')
+	script(src=assetsDirectory + '/js/vendors/Chart.bundle.min.js')
+	script(src=assetsDirectory + '/js/dashboard.js')
 
 block content
 	.section
