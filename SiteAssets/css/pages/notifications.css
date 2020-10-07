@@ -91,6 +91,48 @@ table thead tr th {
   color: white;
 }
 
+.btn-dark-blue-f {
+  background-color: #00417c;
+  color: white;
+}
+.btn-dark-blue-f:hover, .btn-dark-blue-f:focus {
+  background-color: transparent;
+  border: 1px solid #00417c;
+  color: #00417c;
+}
+
+.btn-dark-blue-o {
+  background-color: transparent;
+  color: #00417c;
+  border: 1px solid #00417c;
+}
+.btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
+  background-color: #00417c;
+  border: 1px solid transparent;
+  color: white;
+}
+
+.btn-darker-grey-f {
+  background-color: #333333;
+  color: white;
+}
+.btn-darker-grey-f:hover, .btn-darker-grey-f:focus {
+  background-color: transparent;
+  border: 1px solid #333333;
+  color: #333333;
+}
+
+.btn-darker-grey-o {
+  background-color: transparent;
+  color: #333333;
+  border: 1px solid #333333;
+}
+.btn-darker-grey-o:hover, .btn-darker-grey-o:focus {
+  background-color: #333333;
+  border: 1px solid transparent;
+  color: white;
+}
+
 main .card .card-header {
   margin-bottom: 1em;
 }
