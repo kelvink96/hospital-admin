@@ -28,11 +28,13 @@ i {
 }
 .card .card-header {
   border-radius: 0;
-  text-transform: capitalize;
   background-color: transparent;
   padding: 0;
   border: none;
   vertical-align: center;
+}
+.card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header h4, .card .card-header h5, .card .card-header h6 {
+  text-transform: capitalize;
 }
 .card .card-body {
   padding: 0;
@@ -129,8 +131,14 @@ i {
   color: white;
 }
 
+.section .card {
+  margin-bottom: 1.5em;
+}
 .section .card .card-header {
-  margin-bottom: 1em;
+  padding: 1em 1em 0 1em;
+}
+.section .card .card-header p {
+  margin: 0;
 }
 .section .card .card-body img {
   width: 100%;
@@ -141,18 +149,14 @@ i {
   margin: 0;
 }
 .section .card .card-body .sub-section {
-  padding: 0;
-}
-.section .card .card-body .sub-section .sub-section-title {
-  margin-bottom: 1em;
+  padding: 1em;
 }
 .section .card .card-body .sub-section .sub-section-title h6 {
   text-transform: uppercase;
   color: #666666;
 }
 .section .card .card-body .sub-section .sub-section-body {
-  padding: 1em 1.5em;
-  border: 1px solid #cccccc;
+  padding: 1em 0;
 }
 
 /*# sourceMappingURL=settings.css.map */

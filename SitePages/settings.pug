@@ -10,7 +10,7 @@ block content
 		.card.container
 			.card-header
 				h5 personal details
-				p this section contains your basic profile information like name, email etc
+				p This section contains your basic profile information like name, email etc
 			.card-body
 				.sub-section.col-md-8
 					.sub-section-title
@@ -21,13 +21,69 @@ block content
 								img(src=assetsDirectory+'/images/doctor.svg').rounded-circle
 							.col-md-6
 								.d-flex.mb-2
-									button.btn.btn-dark-red-f
+									button.btn.btn-sm.btn-dark-red-f
 										i.las.la-upload
 										| upload new photo
-									button.btn.btn-darker-grey-o.ml-2
+									button.btn.btn-sm.btn-darker-grey-o.ml-2
 										i.las.la-trash
 										| remove
 								p You can upload .jpg, .gif or .png image files
 								p max file size
 									b  3mb
+				.sub-section.col-md-8
+					.sub-section-title
+						h6 profile details
+					.sub-section-body
+						.user-details-form
+							.form-row
+								.form-group.col-sm-6
+									label first name
+									input.form-control(value='jane')
+								.form-group.col-sm-6
+									label last name
+									input.form-control(value='doe')
+								.form-group.col-sm-8
+									label email address
+									input.form-control(value='abc@def.com')
+								.form-group.col-sm-8
+									label telephone number
+									input.form-control(value='+243989120' type='tel')
+							button.btn.btn-dark-red-f.mt-4
+								| save changes
+		.card.container
+			.card-header
+				h5 password
+				p A secure password and updated recovery info help protect your account.
+			.card-body
+				.sub-section.col-md-8
+					.sub-section-body
+						.user-password-form
+							.form-row
+								.form-group.col-sm-8
+									label current password
+									input.form-control(value='password' type='password')
+								.form-group.col-sm-8
+									label new password
+									input.form-control(value='abc@def.com' type='password')
+								.form-group.col-sm-8
+									label re-type new password
+									input.form-control(value='abc@def.com' type='password')
+							button.btn.btn-dark-red-f.mt-4(disabled)
+								| change my password
+		.card.container
+			.card-header
+				h5 newsletters and notifications
+				p control newsletter subscriptions and email notifications
+			.card-body
+				.sub-section.col-md-8
+					.sub-section-body
+						.user-notifications-form
+							.custom-control.custom-switch
+								input#customSwitch1.custom-control-input(type='checkbox')
+								label.custom-control-label(for='customSwitch1') Subscribe to our monthly newsletter
+							.custom-control.custom-switch
+								input#customSwitch2.custom-control-input(type='checkbox')
+								label.custom-control-label(for='customSwitch2') Enable custom notifications via email
+							button.btn.btn-dark-red-f.mt-4
+								| save changes
 

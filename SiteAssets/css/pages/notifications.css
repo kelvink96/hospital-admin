@@ -28,11 +28,13 @@ i {
 }
 .card .card-header {
   border-radius: 0;
-  text-transform: capitalize;
   background-color: transparent;
   padding: 0;
   border: none;
   vertical-align: center;
+}
+.card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header h4, .card .card-header h5, .card .card-header h6 {
+  text-transform: capitalize;
 }
 .card .card-body {
   padding: 0;
