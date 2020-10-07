@@ -1,0 +1,33 @@
+extends _layout
+
+append links
+	link(rel='stylesheet' href=assetsDirectory + '/css/pages/settings.css')
+
+block content
+	.section
+		h5.page-title settings
+	.section
+		.card.container
+			.card-header
+				h5 personal details
+				p this section contains your basic profile information like name, email etc
+			.card-body
+				.sub-section.col-md-8
+					.sub-section-title
+						h6 profile picture
+					.sub-section-body
+						.row
+							.col-md-2
+								img(src=assetsDirectory+'/images/doctor.svg').rounded-circle
+							.col-md-6
+								.d-flex.mb-2
+									button.btn.btn-dark-red-f
+										i.las.la-upload
+										| upload new photo
+									button.btn.btn-darker-grey-o.ml-2
+										i.las.la-trash
+										| remove
+								p You can upload .jpg, .gif or .png image files
+								p max file size
+									b  3mb
+
