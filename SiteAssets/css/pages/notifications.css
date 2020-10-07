@@ -116,8 +116,12 @@ main .notifications-section .card .media .media-body a {
   text-transform: capitalize;
   color: #a8001f;
 }
+main .notifications-section .card .media .media-body a:hover, main .notifications-section .card .media .media-body a:focus {
+  text-decoration: none;
+  font-weight: bold;
+}
 main .notifications-section .card .media .media-body span, main .notifications-section .card .media .media-body a {
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 main .notifications-section .card .card-footer {
   padding: 1em;
