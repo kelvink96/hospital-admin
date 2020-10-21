@@ -4,6 +4,8 @@
 @import "../components/cards"
 @import "../components/dropdowns"
 @import "../components/buttons"
+@import "../components/labels"
+@import "../components/inputs"
 
 .section
   .card
@@ -24,6 +26,9 @@
       p
         margin: 0
 
+      label
+        text-transform: capitalize
+
       .sub-section
         padding: 1em
 
@@ -34,3 +39,7 @@
 
         .sub-section-body
           padding: 1em 0
+
+          .custom-control-input:checked ~ .custom-control-label::before
+            background-color: $color-dark-red
+            border-color: $color-dark-red

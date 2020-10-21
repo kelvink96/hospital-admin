@@ -49,6 +49,7 @@ block content
 									label telephone number
 									input.form-control(value='+243989120' type='tel')
 							button.btn.btn-dark-red-f.mt-4
+								i.las.la-save
 								| save changes
 		.card.container
 			.card-header
@@ -68,12 +69,13 @@ block content
 								.form-group.col-sm-8
 									label re-type new password
 									input.form-control(value='abc@def.com' type='password')
-							button.btn.btn-dark-red-f.mt-4(disabled)
+							button.btn.btn-dark-red-f.mt-4
+								i.las.la-sync
 								| change my password
 		.card.container
 			.card-header
 				h5 newsletters and notifications
-				p control newsletter subscriptions and email notifications
+				p Control newsletter subscriptions and email notifications
 			.card-body
 				.sub-section.col-md-8
 					.sub-section-body
@@ -82,8 +84,9 @@ block content
 								input#customSwitch1.custom-control-input(type='checkbox')
 								label.custom-control-label(for='customSwitch1') Subscribe to our monthly newsletter
 							.custom-control.custom-switch
-								input#customSwitch2.custom-control-input(type='checkbox')
+								input#customSwitch2.custom-control-input(type='checkbox' checked)
 								label.custom-control-label(for='customSwitch2') Enable custom notifications via email
 							button.btn.btn-dark-red-f.mt-4
+								i.las.la-save
 								| save changes
 
