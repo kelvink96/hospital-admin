@@ -7,18 +7,15 @@
 @import "../components/buttons"
 
 main
-  .title-section
-    margin-left: 1em
-
   .filters-section
-    margin-left: 1em
     display: flex
 
     .dropdowns-wrapper
       display: flex
 
       .dropdown
-        margin-left: 1em
+        &:last-of-type
+          margin-left: 1em
 
       .dropdown
         a, .btn
@@ -28,16 +25,17 @@ main
   .specialists-table-view
     table, .table
       border-collapse: separate
-      border-spacing: 0 .25em
+      border-spacing: 0 .5em
 
       thead
         tr
-          background-color: transparent
+          background-color: $color-white
+          @include shadow-sm
 
           th
             padding: 1em
             border: none
-            color: $color-dark-grey
+            color: $color-darker-grey
 
       tbody
         tr

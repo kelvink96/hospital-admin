@@ -15,11 +15,13 @@
     border-spacing: 0 .5em
 
     thead
-      background-color: transparent
-
       tr
+        background-color: $color-white
+        @include shadow-sm
+
         th
-          color: $color-dark-grey
+          color: $color-darker-grey
+          padding: 1em
 
     tbody
       tr

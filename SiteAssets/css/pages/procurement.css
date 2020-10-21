@@ -179,11 +179,15 @@ table thead tr th {
   border-collapse: separate;
   border-spacing: 0 0.5em;
 }
-.content-section table thead, .content-section .table thead {
-  background-color: transparent;
+.content-section table thead tr, .content-section .table thead tr {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .content-section table thead tr th, .content-section .table thead tr th {
-  color: #666666;
+  color: #333333;
+  padding: 1em;
 }
 .content-section table tbody tr, .content-section .table tbody tr {
   background-color: white;
