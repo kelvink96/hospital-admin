@@ -72,11 +72,11 @@ table thead tr th {
   box-shadow: none;
 }
 
-.btn-dark-red-f, main .title-filters-section .buttons-wrapper .switch-view-btns .active {
+.btn-dark-red-f, main .buttons-wrapper .switch-view-btns .active {
   background-color: #a8001f;
   color: white;
 }
-.btn-dark-red-f:hover, main .title-filters-section .buttons-wrapper .switch-view-btns .active:hover, .btn-dark-red-f:focus, main .title-filters-section .buttons-wrapper .switch-view-btns .active:focus {
+.btn-dark-red-f:hover, main .buttons-wrapper .switch-view-btns .active:hover, .btn-dark-red-f:focus, main .buttons-wrapper .switch-view-btns .active:focus {
   background-color: transparent;
   border: 1px solid #a8001f;
   color: #a8001f;
@@ -210,17 +210,19 @@ label {
   color: #333333;
 }
 
-main .title-filters-section .buttons-wrapper {
-  display: inline-flex;
-  float: right;
-}
-main .title-filters-section .buttons-wrapper .dropdown, main .title-filters-section .buttons-wrapper .switch-view-btns {
+main .title-section {
   margin-left: 1em;
 }
-main .title-filters-section .buttons-wrapper .dropdown a::after, main .title-filters-section .buttons-wrapper .dropdown .btn::after {
+main .buttons-wrapper {
+  display: flex;
+}
+main .buttons-wrapper .dropdown:not(:first-of-type), main .buttons-wrapper .switch-view-btns {
+  margin-left: 1em;
+}
+main .buttons-wrapper .dropdown a::after, main .buttons-wrapper .dropdown .btn::after {
   margin-left: 1.5em;
 }
-main .title-filters-section .buttons-wrapper .switch-view-btns .btn-group i {
+main .buttons-wrapper .switch-view-btns .btn-group i {
   font-size: 1.5em;
   margin: 0;
 }
@@ -278,12 +280,15 @@ main .patients-table-view table, main .patients-table-view .table {
   border: none;
 }
 main .patients-table-view table thead tr, main .patients-table-view .table thead tr {
-  background-color: transparent;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 main .patients-table-view table thead tr th, main .patients-table-view .table thead tr th {
   padding: 1em;
   border: none;
-  color: #666666;
+  color: #333333;
 }
 main .patients-table-view table tbody tr, main .patients-table-view .table tbody tr {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);

@@ -8,27 +8,28 @@
 @import "../components/labels"
 
 main
-  .title-filters-section
-    .buttons-wrapper
-      display: inline-flex
-      float: right
+  .title-section
+    margin-left: 1em
 
-      .dropdown, .switch-view-btns
-        margin-left: 1em
+  .buttons-wrapper
+    display: flex
 
-      .dropdown
-        a, .btn
-          &::after
-            margin-left: 1.5em
+    .dropdown:not(:first-of-type), .switch-view-btns
+      margin-left: 1em
 
-      .switch-view-btns
-        .btn-group
-          i
-            font-size: 1.5em
-            margin: 0
+    .dropdown
+      a, .btn
+        &::after
+          margin-left: 1.5em
 
-        .active
-          @extend .btn-dark-red-f
+    .switch-view-btns
+      .btn-group
+        i
+          font-size: 1.5em
+          margin: 0
+
+      .active
+        @extend .btn-dark-red-f
 
   .patients-card-view
     .card
@@ -87,12 +88,13 @@ main
 
       thead
         tr
-          background-color: transparent
+          background-color: $color-white
+          @include shadow-sm
 
           th
             padding: 1em
             border: none
-            color: $color-dark-grey
+            color: $color-darker-grey
 
       tbody
         tr
