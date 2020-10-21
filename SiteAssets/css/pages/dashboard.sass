@@ -4,12 +4,14 @@
 @import "../components/buttons"
 
 main
+  // GENERAL OVERRIDES
+  .section
+    .section-content
+      margin: 0
+
   .main-content
     .welcome-section
       .welcome-content-card
-        padding-left: 2em
-        padding-right: 2em
-
         .welcome-text-wrapper
           h5
             text-transform: capitalize
@@ -41,6 +43,7 @@ main
           text-transform: capitalize
           @include border-radius
           @include shadow-md
+          border: 1.5px solid $color-dark-red
 
           .card-title
             padding-top: 1em
@@ -65,7 +68,6 @@ main
             @include scale
             text-decoration: none
             background-color: $color-white
-            border-color: $color-white
 
             .card-title
               i
@@ -77,13 +79,16 @@ main
 
     .card-summaries
       .card
-        margin-bottom: 1em
+        margin-bottom: .5em
 
         .card-header
-          padding: 1em
+          padding: .5em
 
         .card-body
-          padding: .5em 1em
+          padding: .5em
+
+          i
+            color: $color-dark-red
 
           table
             tr

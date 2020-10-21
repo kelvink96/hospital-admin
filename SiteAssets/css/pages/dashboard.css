@@ -11,7 +11,7 @@
 }
 
 .card-deck {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
 }
 
 .card {
@@ -119,9 +119,8 @@
   color: white;
 }
 
-main .main-content .welcome-section .welcome-content-card {
-  padding-left: 2em;
-  padding-right: 2em;
+main .section .section-content {
+  margin: 0;
 }
 main .main-content .welcome-section .welcome-content-card .welcome-text-wrapper h5 {
   text-transform: capitalize;
@@ -148,6 +147,7 @@ main .main-content .functionality-section .section-content .card {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  border: 1.5px solid #a8001f;
 }
 main .main-content .functionality-section .section-content .card .card-title {
   padding-top: 1em;
@@ -171,7 +171,6 @@ main .main-content .functionality-section .section-content .card:hover, main .ma
   transform: scale(1.02, 1.02);
   text-decoration: none;
   background-color: white;
-  border-color: white;
 }
 main .main-content .functionality-section .section-content .card:hover .card-title i, main .main-content .functionality-section .section-content .card:focus .card-title i {
   color: #a8001f;
@@ -180,13 +179,16 @@ main .main-content .functionality-section .section-content .card:hover .card-bod
   color: #a8001f;
 }
 main .main-content .card-summaries .card {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 main .main-content .card-summaries .card .card-header {
-  padding: 1em;
+  padding: 0.5em;
 }
 main .main-content .card-summaries .card .card-body {
-  padding: 0.5em 1em;
+  padding: 0.5em;
+}
+main .main-content .card-summaries .card .card-body i {
+  color: #a8001f;
 }
 main .main-content .card-summaries .card .card-body table tr {
   align-items: center;
