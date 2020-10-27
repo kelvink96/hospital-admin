@@ -4,25 +4,27 @@ html
 	head
 		title Admin
 		meta(name='viewport' control='width=device-width, initial-scale=1')
-		link(rel='stylesheet' href=assetsDirectory+'/css/vendors/bootstrap.min.css')
-		link(rel='stylesheet' href=assetsDirectory+'/css/vendors/line-awesome.min.css')
-		link(rel='stylesheet' href=assetsDirectory+'/css/pages/layout.css')
-		link(rel='icon' href=assetsDirectory+'/images/qafya-icon.ico')
-		script(src=assetsDirectory+'/js/vendors/jquery.min.js')
-		script(src=assetsDirectory+'/js/vendors/bootstrap.bundle.min.js')
-		script(src=assetsDirectory+'/js/global.js')
+		link(rel='stylesheet' href=assetsDirectory + '/css/vendors/bootstrap.min.css')
+		link(rel='stylesheet' href=assetsDirectory + '/css/vendors/line-awesome.min.css')
+		link(rel='stylesheet' href=assetsDirectory + '/css/pages/layout.css')
+		link(rel='icon' href=assetsDirectory + '/images/covid-19.ico')
+		script(src=assetsDirectory + '/js/vendors/jquery.min.js')
+		script(src=assetsDirectory + '/js/vendors/bootstrap.bundle.min.js')
+		script(src=assetsDirectory + '/js/global.js')
 		block links
-
 	body
 		header
 			nav.navbar.navbar-expand-lg.shadow-sm.fixed-top
 				a.navbar-brand(href='')
-					img(src=assetsDirectory+'/images/qafya-logo.png')
+					img(src=assetsDirectory + '/images/hospital-website.svg')
 				button.navbar-toggler(type='button' data-target='#navbarContent' data-toggle='collapse')
 					i.las.la-bars
-				h5.nav-link Qafya
+				h5.nav-link i~Afya
 				.collapse.navbar-collapse#navbarContent
 					ul.navbar-nav.ml-auto
+						li.nav-item
+							a.nav-link
+								i.las.la-question-circle
 						li.nav-item.dropdown.dropleft
 							a.nav-link.notification-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 								span.badge.badge-pill.badge-primary(style='float:right;margin-bottom:-10px;')
@@ -36,21 +38,21 @@ html
 									ul.list-unstyled
 										li.media
 											a(href='').notification-card
-												img.mr-3.rounded-circle(src=assetsDirectory+'/images/information.svg', alt='...')
+												img.mr-3.rounded-circle(src=assetsDirectory + '/images/information.svg', alt='...')
 												.media-body
 													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
 													small.text-muted 21.03.2020, 13.02
 										li.media
 											a(href='').notification-card
-												img.mr-3.rounded-circle(src=assetsDirectory+'/images/information.svg', alt='...')
+												img.mr-3.rounded-circle(src=assetsDirectory + '/images/information.svg', alt='...')
 												.media-body
 													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
 													small.text-muted 21.03.2020, 13.02
 										li.media
 											a(href='').notification-card
-												img.mr-3.rounded-circle(src=assetsDirectory+'/images/information.svg', alt='...')
+												img.mr-3.rounded-circle(src=assetsDirectory + '/images/information.svg', alt='...')
 												.media-body
 													h6.mt-0.mb-1 List-based media object
 													p Cras sit amet nibh libero, in gravida nulla.
@@ -62,7 +64,7 @@ html
 								span.vertical-divider
 						li.nav-item
 							a.nav-link(href='#')
-								img.rounded-circle(src=assetsDirectory+'/images/person.jpg')
+								img.rounded-circle(src=assetsDirectory + '/images/person.jpg')
 						li.nav-item.dropdown.dropleft
 							a.nav-link.profile-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 								| jane doe
@@ -91,10 +93,25 @@ html
 					a(href='notifications.html').list-group-item
 						i.las.la-sms.la-lw
 						| notifications
-					hr.divider
 					a(href='settings.html').list-group-item
 						i.las.la-cogs.la-lw
 						| settings
+					hr.divider
+					.aob-items
+						.card
+							.card-header
+								img(src=assetsDirectory + '/images/covid-19.svg')
+							.card-body
+								p
+									u
+										i.las.la-globe
+										| world
+								p infected -
+									u 43,341,451
+								p deaths -
+									u 1,157,509
+							.card-footer
+								a(href='https://covid19.who.int' target='_blank').btn.btn-dark-red-f.btn-sm view covid-19 info
 			.main-content
 				.container-fluid
 					block content

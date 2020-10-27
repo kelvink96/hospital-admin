@@ -119,6 +119,10 @@
   color: white;
 }
 
+footer .container-fluid {
+  padding: 1em;
+}
+
 main .section .section-content {
   margin: 0;
 }
@@ -220,7 +224,7 @@ main .main-content .card-summaries .card .card-footer .view-more {
   font-weight: 500;
   border-radius: 1.25em;
   background-color: #d8d8d8;
-  border: 1.5px solid #d8d8d8;
+  border: 2px solid #d8d8d8;
   text-decoration: none;
 }
 main .main-content .card-summaries .card .card-footer .view-more i {
@@ -231,7 +235,7 @@ main .main-content .card-summaries .card .card-footer .view-more i {
   border-radius: 50%;
 }
 main .main-content .card-summaries .card .card-footer .view-more:hover, main .main-content .card-summaries .card .card-footer .view-more:focus {
-  border: 1.5px solid #666666;
+  border: 2px solid #333333;
   transition: all ease-in-out 150ms;
   background-color: #d8d8d8;
 }
