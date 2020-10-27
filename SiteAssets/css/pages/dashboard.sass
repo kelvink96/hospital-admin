@@ -106,3 +106,35 @@ main
             width: 30px
             height: 30px
             object-fit: cover
+
+          ol[type="1"]
+            li
+              font-weight: 500
+              text-transform: capitalize
+
+        .card-footer
+          text-align: right
+          padding: .5em 1em
+
+          .view-more
+            padding: .5em 1em
+            color: $color-darker-grey
+            text-transform: capitalize
+            font-weight: 500
+            border-radius: 1.25em
+            background-color: $color-lighter-grey
+            border: 1.5px solid $color-lighter-grey
+            text-decoration: none
+
+            i
+              margin-left: 1.5em
+              background-color: $color-dark-red
+              padding: .25em
+              color: $color-white-ish
+              border-radius: 50%
+
+            &:hover,
+            &:focus
+              border: 1.5px solid $color-dark-grey
+              @include transition
+              background-color: $color-lighter-grey

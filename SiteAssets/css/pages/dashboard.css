@@ -205,5 +205,35 @@ main .main-content .card-summaries .card .card-body img {
   height: 30px;
   object-fit: cover;
 }
+main .main-content .card-summaries .card .card-body ol[type="1"] li {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+main .main-content .card-summaries .card .card-footer {
+  text-align: right;
+  padding: 0.5em 1em;
+}
+main .main-content .card-summaries .card .card-footer .view-more {
+  padding: 0.5em 1em;
+  color: #333333;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-radius: 1.25em;
+  background-color: #d8d8d8;
+  border: 1.5px solid #d8d8d8;
+  text-decoration: none;
+}
+main .main-content .card-summaries .card .card-footer .view-more i {
+  margin-left: 1.5em;
+  background-color: #a8001f;
+  padding: 0.25em;
+  color: #f9f9f9;
+  border-radius: 50%;
+}
+main .main-content .card-summaries .card .card-footer .view-more:hover, main .main-content .card-summaries .card .card-footer .view-more:focus {
+  border: 1.5px solid #666666;
+  transition: all ease-in-out 150ms;
+  background-color: #d8d8d8;
+}
 
 /*# sourceMappingURL=dashboard.css.map */
