@@ -29,6 +29,17 @@
         @include shadow-sm
         @include transition
 
+
+    .active
+      background-color: $color-dark-red
+      color: $color-white-ish
+
+      &:hover,
+      &:focus
+        border: 1px solid $color-dark-red
+        background-color: transparent
+        color: $color-dark-red
+
     .aob-items, .side-nav-footer
       padding: .5em 1em
 

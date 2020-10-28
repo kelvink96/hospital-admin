@@ -136,6 +136,15 @@ i {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 150ms;
 }
+.side-nav .list-group .active {
+  background-color: #a8001f;
+  color: #f9f9f9;
+}
+.side-nav .list-group .active:hover, .side-nav .list-group .active:focus {
+  border: 1px solid #a8001f;
+  background-color: transparent;
+  color: #a8001f;
+}
 .side-nav .list-group .aob-items, .side-nav .list-group .side-nav-footer {
   padding: 0.5em 1em;
 }
