@@ -49,9 +49,13 @@ nav .navbar-collapse .navbar-nav .nav-item .nav-link img, .navbar .navbar-collap
   height: 40px;
   object-fit: cover;
 }
-nav .navbar-collapse .navbar-nav .nav-item .nav-link .fa-bell, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link .fa-bell {
-  font-size: 1.2em;
+nav .navbar-collapse .navbar-nav .nav-item .nav-link .las, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link .las {
+  font-size: 1.3em;
+  color: #666666;
+}
+nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover a, nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover .las, nav .navbar-collapse .navbar-nav .nav-item .nav-link:focus a, nav .navbar-collapse .navbar-nav .nav-item .nav-link:focus .las, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover a, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover .las, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus a, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:focus .las {
   color: #a8001f;
+  cursor: pointer;
 }
 nav .navbar-collapse .navbar-nav .dropdown-menu a, .navbar .navbar-collapse .navbar-nav .dropdown-menu a {
   text-transform: capitalize;
@@ -127,6 +131,9 @@ i {
   background-color: #a8001f;
   border: 1px solid #a8001f;
   color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 150ms;
 }
 .side-nav .list-group .aob-items, .side-nav .list-group .side-nav-footer {
@@ -137,6 +144,7 @@ i {
 }
 .side-nav .list-group .aob-items .card, .side-nav .list-group .side-nav-footer .card {
   background-color: #f9f9f9;
+  border: 1px solid #cccccc;
 }
 .side-nav .list-group .aob-items .card .card-header, .side-nav .list-group .side-nav-footer .card .card-header {
   text-align: center;
