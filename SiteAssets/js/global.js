@@ -8,5 +8,5 @@ function pageTitleSorter() {
 	let splitUrl = url.split('/'),
 		composedUrl = splitUrl[splitUrl.length - 1].split('.')[0];
 	$('.side-nav .list-group').find('.list-group-item:contains(' + composedUrl + ')').addClass('active');
-	$('.page-title').html(b);
+	$('.page-title').html(composedUrl);
 }
