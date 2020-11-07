@@ -141,6 +141,9 @@ label {
 /* Extra small devices (phones, 600px and down) */
 .btn {
   border-radius: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   text-transform: capitalize;
 }
 .btn i {
@@ -391,11 +394,10 @@ label {
 }
 .patient-details-section .files-card .card-body .list-group .list-group-item:hover, .patient-details-section .files-card .card-body .list-group .list-group-item:focus {
   text-decoration: none;
-  border: 1px solid #d8d8d8;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  transform: scale(1.02, 1.02);
+  border-color: transparent;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   transition: all ease-in-out 150ms;
 }
 .patient-details-section .files-card .card-body .list-group .list-group-item:hover small, .patient-details-section .files-card .card-body .list-group .list-group-item:hover .text-muted, .patient-details-section .files-card .card-body .list-group .list-group-item:focus small, .patient-details-section .files-card .card-body .list-group .list-group-item:focus .text-muted {
