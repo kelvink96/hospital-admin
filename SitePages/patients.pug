@@ -5,26 +5,27 @@ append links
 	script(src=assetsDirectory + '/js/patients.js')
 
 block content
-	.section.title-filters-section
+	.section.title-section
 		h5.page-title
-	.section.buttons-wrapper
-		.dropdown
-			a.btn.btn-dark-red-o.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-				| filter
-			.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
-				a.dropdown-item(href='#') age
-				a.dropdown-item(href='#') diagnosis
-				a.dropdown-item(href='#') triage
-		.dropdown
-			a.btn.btn-dark-red-o.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-				| sort by
-			.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
-				a.dropdown-item(href='#') patient id
-				a.dropdown-item(href='#') patient name
-				a.dropdown-item(href='#') age
-				a.dropdown-item(href='#') date of birth
-				a.dropdown-item(href='#') diagnosis
-				a.dropdown-item(href='#') triage
+	.section.filters-section
+		.dropdowns-wrapper
+			.dropdown
+				a.btn.btn-dark-red-o.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+					| filter
+				.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
+					a.dropdown-item(href='#') age
+					a.dropdown-item(href='#') diagnosis
+					a.dropdown-item(href='#') triage
+			.dropdown
+				a.btn.btn-dark-red-o.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+					| sort by
+				.dropdown-menu.shadow-lg(aria-labelledby='dropdownMenuLink')
+					a.dropdown-item(href='#') patient id
+					a.dropdown-item(href='#') patient name
+					a.dropdown-item(href='#') age
+					a.dropdown-item(href='#') date of birth
+					a.dropdown-item(href='#') diagnosis
+					a.dropdown-item(href='#') triage
 		.switch-view-btns
 			.btn-group.btn-group-toggle(data-toggle='buttons')
 				label.btn.btn-dark-red-o.active
@@ -115,8 +116,84 @@ block content
 							label.text-muted diagnosis
 							p emergency
 					.card-footer
+			.col-md-3
+				.card
+					.card-header
+						.card-img-top
+							img(src=assetsDirectory + '/images/people.svg' loading='lazy').rounded-circle
+							a(href='details.html').view-more
+								| view profile
+					.card-body
+						.card-subsection-title
+							h5 john doe
+							p.text-muted patient-id: 2189178
+						.card-subsection-body
+							label.text-muted age
+							p 29
+							label.text-muted date of birth
+							p 21/12/1993
+							label.text-muted diagnosis
+							p urgent
+					.card-footer
+			.col-md-3
+				.card
+					.card-header
+						.card-img-top
+							img(src=assetsDirectory + '/images/people.svg' loading='lazy').rounded-circle
+							a(href='details.html').view-more
+								| view profile
+					.card-body
+						.card-subsection-title
+							h5 john doe
+							p.text-muted patient-id: 2189178
+						.card-subsection-body
+							label.text-muted age
+							p 29
+							label.text-muted date of birth
+							p 21/12/1993
+							label.text-muted diagnosis
+							p non urgent
+					.card-footer
+			.col-md-3
+				.card
+					.card-header
+						.card-img-top
+							img(src=assetsDirectory + '/images/people.svg' loading='lazy').rounded-circle
+							a(href='details.html').view-more
+								| view profile
+					.card-body
+						.card-subsection-title
+							h5 john doe
+							p.text-muted patient-id: 2189178
+						.card-subsection-body
+							label.text-muted age
+							p 29
+							label.text-muted date of birth
+							p 21/12/1993
+							label.text-muted diagnosis
+							p resuscitation
+					.card-footer
+			.col-md-3
+				.card
+					.card-header
+						.card-img-top
+							img(src=assetsDirectory + '/images/people.svg' loading='lazy').rounded-circle
+							a(href='details.html').view-more
+								| view profile
+					.card-body
+						.card-subsection-title
+							h5 john doe
+							p.text-muted patient-id: 2189178
+						.card-subsection-body
+							label.text-muted age
+							p 29
+							label.text-muted date of birth
+							p 21/12/1993
+							label.text-muted diagnosis
+							p emergency
+					.card-footer
 	.section.patients-table-view.no-display
-		table.table.table-hover
+		table.table.table-hover.table-responsive-lg
 			thead
 				tr
 					th patient ID
@@ -138,7 +215,7 @@ block content
 					td
 						label.label-orange urgent
 					td
-						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-f
 							| view profile
 				tr
 					td 2189178
@@ -151,7 +228,7 @@ block content
 					td
 						label.label-green non urgent
 					td
-						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-f
 							| view profile
 				tr
 					td 2189178
@@ -164,7 +241,7 @@ block content
 					td
 						label.label-blue resuscitation
 					td
-						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-f
 							| view profile
 				tr
 					td 2189178
@@ -177,5 +254,57 @@ block content
 					td
 						label.label-pink emergency
 					td
-						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-o
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-f
+							| view profile
+				tr
+					td 2189178
+					td
+						img.rounded-circle(src=assetsDirectory + '/images/people.svg' loading='lazy')
+						span.ml-2 john doe
+					td 29 yo
+					td 21/03/1992
+					td cancer
+					td
+						label.label-orange urgent
+					td
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-f
+							| view profile
+				tr
+					td 2189178
+					td
+						img.rounded-circle(src=assetsDirectory + '/images/people.svg' loading='lazy')
+						span.ml-2 john doe
+					td 29 yo
+					td 21/03/1992
+					td cancer
+					td
+						label.label-green non urgent
+					td
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-f
+							| view profile
+				tr
+					td 2189178
+					td
+						img.rounded-circle(src=assetsDirectory + '/images/people.svg' loading='lazy')
+						span.ml-2 john doe
+					td 29 yo
+					td 21/03/1992
+					td cancer
+					td
+						label.label-blue resuscitation
+					td
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-f
+							| view profile
+				tr
+					td 2189178
+					td
+						img.rounded-circle(src=assetsDirectory + '/images/people.svg' loading='lazy')
+						span.ml-2 john doe
+					td 29 yo
+					td 21/03/1992
+					td cancer
+					td
+						label.label-pink emergency
+					td
+						a(href='details.html').view-more.btn.btn-sm.btn-dark-red-f
 							| view profile

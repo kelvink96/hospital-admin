@@ -20,6 +20,7 @@ i {
     margin: 1em 0.5em;
   }
 }
+/* Extra small devices (phones, 600px and down) */
 .card-deck {
   margin-bottom: 1.25em;
 }
@@ -137,6 +138,7 @@ label {
 
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
+/* Extra small devices (phones, 600px and down) */
 .btn {
   border-radius: 0;
   text-transform: capitalize;

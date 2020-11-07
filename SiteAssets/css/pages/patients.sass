@@ -11,16 +11,20 @@ main
   .title-section
     margin-left: 1em
 
-  .buttons-wrapper
+  .filters-section
     display: flex
 
-    .dropdown:not(:first-of-type), .switch-view-btns
-      margin-left: 1em
+    .dropdowns-wrapper
+      display: flex
+      margin-right: 1em
 
-    .dropdown
-      a, .btn
-        &::after
-          margin-left: 1.5em
+      .dropdown:not(:first-of-type), .switch-view-btns
+        margin-left: 1em
+
+      .dropdown
+        a, .btn
+          &::after
+            margin-left: 1.5em
 
     .switch-view-btns
       .btn-group
@@ -28,12 +32,13 @@ main
           font-size: 1.5em
           margin: 0
 
-      .active
-        @extend .btn-dark-red-f
+        .active
+          @extend .btn-dark-red-f
 
   .patients-card-view
     .card
       padding: 1.5em
+      margin-bottom: 1.5em
 
       .card-header
         align-items: baseline
@@ -50,6 +55,7 @@ main
 
         .view-more
           font-size: .8em
+          text-transform: capitalize
 
       .card-body
         padding: 1em 0
@@ -75,17 +81,13 @@ main
 
       &:hover,
       &:focus
-        @include shadow-lg
+        @include shadow-md
         @include scale
         @include transition
         cursor: pointer
 
   .patients-table-view
     table, .table
-      border-collapse: separate
-      border-spacing: 0 .5em
-      border: none
-
       thead
         tr
           background-color: $color-white
@@ -98,12 +100,10 @@ main
 
       tbody
         tr
-          @include shadow-sm
-          background-color: $color-white
+          background-color: transparent
 
           td
             text-transform: capitalize
-            border: none
             padding: 1em
             vertical-align: baseline
             font-weight: 500
@@ -118,7 +118,22 @@ main
 
           &:hover,
           &:focus
-            @include scale
+            background-color: $color-white
             @include transition
-            @include shadow-lg
+            @include shadow-sm-b
             cursor: pointer
+            border: none
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .filters-section
+    display: block !important
+
+    .dropdowns-wrapper
+      margin-bottom: .5em
+
+    .switch-view-btns
+      margin-bottom: .5em
+
+    .buttons-wrapper
+      display: block

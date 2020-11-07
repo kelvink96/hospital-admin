@@ -20,6 +20,7 @@ i {
   font-size: 1em;
 }
 
+/* Extra small devices (phones, 600px and down) */
 .card-deck {
   margin-bottom: 1.25em;
 }
@@ -60,6 +61,7 @@ i {
     padding: 0.75em;
   }
 }
+/* Extra small devices (phones, 600px and down) */
 .dropdown-menu {
   border: none;
   border-radius: 0;
@@ -70,6 +72,7 @@ i {
 
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
+/* Extra small devices (phones, 600px and down) */
 .btn {
   border-radius: 0;
   text-transform: capitalize;
