@@ -8,20 +8,18 @@ nav, .navbar
   padding-left: 2em
 
   .navbar-brand
-    color: $color-med-red
-    text-transform: uppercase
+    color: $color-darker-grey
 
     img
       width: 40px
       height: 40px
       object-fit: contain
-
-  .page-title
-    text-transform: capitalize
+      margin-right: 1em
 
   .navbar-collapse
     .navbar-nav
       align-items: center
+      margin-left: auto
 
       .nav-item
         .nav-link
@@ -93,3 +91,27 @@ nav, .navbar
 
           p
             margin: 0
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+
+nav, .navbar
+  display: inline-block
+
+  .navbar-brand
+    float: left
+
+  .dropdown-menu
+    position: absolute
+
+  .navbar-collapse
+    display: inline-block
+    float: right
+
+    .navbar-nav
+      display: inline-block
+
+      .nav-item
+        display: inline-flex
+
+
