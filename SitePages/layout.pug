@@ -3,7 +3,8 @@
 html
 	head
 		title Admin
-		meta(name='viewport' control='width=device-width, initial-scale=1')
+		meta(charset="UTF-8")
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 		link(rel='stylesheet' href=assetsDirectory + '/css/vendors/bootstrap.min.css')
 		link(rel='stylesheet' href=assetsDirectory + '/css/vendors/line-awesome.min.css')
 		link(rel='stylesheet' href=assetsDirectory + '/css/pages/layout.css')
@@ -17,7 +18,7 @@ html
 			nav.navbar.navbar-expand-lg.shadow-sm.fixed-top
 				a.navbar-brand(href='')
 					img(src=assetsDirectory + '/images/hospital-website.svg')
-					| i~Afya
+					span i~Afya
 				.navbar-collapse
 					ul.navbar-nav
 						li.nav-item
@@ -30,7 +31,7 @@ html
 							.dropdown-menu.notification-dropdown-menu.shadow-lg(aria-labelledby='notification-dropdown')
 								.dropdown-title
 									a(href='') notifications
-										span.ml-2.notifications-count (1)
+										span.ml-2.notifications-count (3)
 									a(href='').float-right mark all as read
 								.dropdown-body
 									ul.list-unstyled
@@ -61,41 +62,40 @@ html
 							.nav-link
 								span.vertical-divider
 						li.nav-item
-							a.nav-link(href='#')
-								img.rounded-circle(src=assetsDirectory + '/images/person.jpg')
-						li.nav-item.dropdown.dropleft
 							a.nav-link.profile-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-								| jane doe
-							.dropdown-menu.shadow-lg(aria-labelledby='profile-dropdown')
-								a.dropdown-item(href='#')
-									i.las.la-user.mr-2
-									| profile
-								a.dropdown-item(href='#')
-									i.las.la-cog.mr-2
-									| settings
+								img.rounded-circle(src=assetsDirectory + '/images/person.jpg')
+								span.d jane doe
+							.dropdown
+								.dropdown-menu.shadow-lg.profile-dropdown-menu(aria-labelledby='profile-dropdown')
+									a.dropdown-item(href='#')
+										i.las.la-user.mr-2
+										| profile
+									a.dropdown-item(href='#')
+										i.las.la-cog.mr-2
+										| settings
 		main
 			.side-nav.shadow-sm
 				ul.list-group.list-group-flush
 					a(href='dashboard.html').list-group-item
 						i.las.la-shapes.la-lw
-						| dashboard
+						span dashboard
 					a(href='patients.html').list-group-item
 						i.las.la-user-injured.la-lw
-						| patients
+						span patients
 					a(href='specialists.html').list-group-item
 						i.las.la-clinic-medical.la-lw
-						| specialists
+						span specialists
 					a(href='procurement.html').list-group-item
 						i.las.la-shopping-cart.la-lw
-						| procurement
+						span procurement
 					a(href='notifications.html').list-group-item
 						i.las.la-sms.la-lw
-						| notifications
+						span notifications
 					a(href='settings.html').list-group-item
 						i.las.la-cogs.la-lw
-						| settings
-					hr.divider
-					.aob-items
+						span settings
+					hr.divider.d-sm-none
+					.aob-items.d-sm-none
 						.card
 							.card-header
 								img(src=assetsDirectory + '/images/covid-19.svg')

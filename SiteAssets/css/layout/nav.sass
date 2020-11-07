@@ -34,6 +34,7 @@ nav, .navbar
             width: 40px
             height: 40px
             object-fit: cover
+            margin-right: 1em
 
           .las
             font-size: 1.3em
@@ -55,14 +56,14 @@ nav, .navbar
       .notification-dropdown-menu
         padding: 0
         width: 400px
+        margin-top: 2em
 
         .dropdown-title, .dropdown-footer
-          background-color: $color-dark-red
+          background-color: $color-darker-grey
           padding: .5em 1em
 
           a
             color: $color-white-ish
-
 
         .dropdown-body
           padding: 0
@@ -94,24 +95,56 @@ nav, .navbar
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
+  nav, .navbar
+    display: inline-block !important
+    padding: 1em
 
-nav, .navbar
-  display: inline-block
+    .navbar-brand
+      float: left
 
-  .navbar-brand
-    float: left
+      span
+        display: none
 
-  .dropdown-menu
-    position: absolute
+    .dropdown-menu
+      position: absolute
 
-  .navbar-collapse
-    display: inline-block
-    float: right
-
-    .navbar-nav
+    .navbar-collapse
       display: inline-block
+      float: right
 
-      .nav-item
-        display: inline-flex
+      .navbar-nav
+        display: inline-block
+
+        .nav-item
+          display: inline-flex
+
+          .nav-link
+            padding: .25em
+
+          .profile-dropdown
+            span
+              display: none
+
+          .vertical-divider
+            display: none
+
+          .notification-dropdown-menu
+            right: -62px
+            left: auto
+            width: 300px
+            margin-top: 3.8em
+
+            .dropdown-body
+              .media
+                .media-body
+                  p
+                    display: none
+
+          .profile-dropdown-menu
+            margin-top: 1.2em
+            left: auto
+            right: -30%
+
+
 
 
