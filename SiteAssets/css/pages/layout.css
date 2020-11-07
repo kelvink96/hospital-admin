@@ -22,19 +22,17 @@ nav, .navbar {
   padding-left: 2em;
 }
 nav .navbar-brand, .navbar .navbar-brand {
-  color: #f7002d;
-  text-transform: uppercase;
+  color: #333333;
 }
 nav .navbar-brand img, .navbar .navbar-brand img {
   width: 40px;
   height: 40px;
   object-fit: contain;
-}
-nav .page-title, .navbar .page-title {
-  text-transform: capitalize;
+  margin-right: 1em;
 }
 nav .navbar-collapse .navbar-nav, .navbar .navbar-collapse .navbar-nav {
   align-items: center;
+  margin-left: auto;
 }
 nav .navbar-collapse .navbar-nav .nav-item .nav-link, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   padding: 0.5em 0.75em;
@@ -99,6 +97,27 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body .med
 }
 nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .navbar .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p {
   margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+nav, .navbar {
+  display: inline-block;
+}
+nav .navbar-brand, .navbar .navbar-brand {
+  float: left;
+}
+nav .dropdown-menu, .navbar .dropdown-menu {
+  position: absolute;
+}
+nav .navbar-collapse, .navbar .navbar-collapse {
+  display: inline-block;
+  float: right;
+}
+nav .navbar-collapse .navbar-nav, .navbar .navbar-collapse .navbar-nav {
+  display: inline-block;
+}
+nav .navbar-collapse .navbar-nav .nav-item, .navbar .navbar-collapse .navbar-nav .nav-item {
+  display: inline-flex;
 }
 
 /* Color Theme Swatches in Hex */

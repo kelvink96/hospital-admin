@@ -17,11 +17,9 @@ html
 			nav.navbar.navbar-expand-lg.shadow-sm.fixed-top
 				a.navbar-brand(href='')
 					img(src=assetsDirectory + '/images/hospital-website.svg')
-				button.navbar-toggler(type='button' data-target='#navbarContent' data-toggle='collapse')
-					i.las.la-bars
-				h5.nav-link i~Afya
-				.collapse.navbar-collapse#navbarContent
-					ul.navbar-nav.ml-auto
+					| i~Afya
+				.navbar-collapse
+					ul.navbar-nav
 						li.nav-item
 							a.nav-link
 								i.las.la-question-circle
