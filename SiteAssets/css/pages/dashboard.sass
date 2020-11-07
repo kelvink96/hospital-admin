@@ -18,6 +18,8 @@ main
             text-transform: capitalize
 
         .welcome-img-wrapper
+          text-align: right
+
           img
             width: 60%
 
@@ -139,3 +141,88 @@ main
               border: 1.5px solid $color-dark-red
               @include transition
               background-color: transparent
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .welcome-section
+    .welcome-content-card
+      .card-body
+        .welcome-text-wrapper
+          text-align: center
+          margin: .5em 0
+
+          h5, p
+            margin-bottom: .5em
+
+        .welcome-img-wrapper
+          text-align: center !important
+
+          img
+            width: 50% !important
+
+    .app-stats-card
+      .card-body
+        .col-md-4
+          width: 33.33%
+
+          .las
+            font-size: 2em
+
+          p
+            margin: .35em 0 !important
+            font-size: .9em
+
+          h4
+            font-size: 1.3em
+            margin-bottom: .5em !important
+
+  .functionality-section
+    .card-deck
+      width: 100%
+      text-align: center
+      padding: 0
+
+      .card
+        width: 45%
+        display: inline-block
+        margin: .25em
+        padding: 0
+
+        .card-title
+          i
+            font-size: 1.5em
+
+        .card-body
+          margin: 0
+
+          p
+            font-size: .8em
+
+  .card-summaries
+    .card-deck
+      width: 100%
+
+      .card
+        margin-bottom: 1em !important
+
+        .card-body
+          padding: 0 !important
+
+        .card-footer
+          text-align: center !important
+
+      .total-counts-summary
+        .card-body
+          .col-md-6
+            width: 50%
+            text-align: center
+
+            i
+              font-size: 1.5em
+
+            h4
+              font-size: 1.3em
+
+            p
+              font-size: .9em
+

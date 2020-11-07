@@ -10,6 +10,12 @@
   margin: 1em;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section {
+    margin: 1em 0.5em;
+  }
+}
 i {
   font-size: 1em;
 }
@@ -45,6 +51,15 @@ i {
   border: none;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card-deck {
+    margin-bottom: 1em;
+  }
+  .card-deck .card {
+    padding: 0.75em;
+  }
+}
 .dropdown-menu {
   border: none;
   border-radius: 0;

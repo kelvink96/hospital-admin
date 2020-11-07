@@ -20,7 +20,7 @@ block content
 							.col-md-6.welcome-text-wrapper.align-self-center
 								h5 hello, dr. john doe
 								p Welcome to your dashboard
-							.col-md-6.welcome-img-wrapper.text-right
+							.col-md-6.welcome-img-wrapper
 								img(src='../SiteAssets/images/hello.svg')
 				.card.app-stats-card
 					.card-body
@@ -48,31 +48,31 @@ block content
 						.icon-wrapper
 							i.las.la-clinic-medical
 					.card-body
-						p add clinic
+						p add a clinic
 				a(href='').card.text-center
 					.card-title
 						.icon-wrapper
 							i.las.la-user-md
 					.card-body
-						p add specialist
+						p add a specialist
 				a(href='').card.text-center
 					.card-title
 						.icon-wrapper
 							i.las.la-user-plus
 					.card-body
-						p add user
+						p add a user
 				a(href='').card.text-center
 					.card-title
 						.icon-wrapper
 							i.las.la-user-lock
 					.card-body
-						p add clinic admin
+						p add an admin
 				a(href='').card.text-center
 					.card-title
 						.icon-wrapper
 							i.las.la-plus-circle
 					.card-body
-						p add staff
+						p add a staff
 	.section.card-summaries
 		.section-content
 			.card-deck
@@ -108,7 +108,7 @@ block content
 						a(href='').view-more
 							| more
 							i.las.la-angle-right
-				.card
+				.card.total-counts-summary
 					.card-header
 						h5 total counts
 					.card-body
@@ -137,7 +137,7 @@ block content
 					.card-header
 						h5 recent patients
 					.card-body
-						table.table.table-borderless.table-hover
+						table.table.table-hover.table-responsive-lg.table-borderless
 							tbody
 								tr
 									td
@@ -181,7 +181,7 @@ block content
 					.card-header
 						h5 doctors lists
 					.card-body
-						table.table.table-borderless.table-hover
+						table.table.table-borderless.table-hover.table-responsive-lg
 							tbody
 								tr
 									td
@@ -251,7 +251,7 @@ block content
 					.card-header
 						h5 upcoming appointments
 					.card-body
-						table.table.table-borderless.table-hover
+						table.table.table-borderless.table-hover.table-responsive-lg
 							tbody
 								tr
 									td

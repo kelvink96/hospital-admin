@@ -294,6 +294,9 @@ main .main-content {
   main .main-content {
     width: 87.5%;
   }
+  main .main-content .container-fluid:first-child {
+    padding-top: 1em;
+  }
 }
 
 /*# sourceMappingURL=layout.css.map */

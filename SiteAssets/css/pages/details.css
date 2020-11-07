@@ -14,6 +14,12 @@ i {
   margin: 1em;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section {
+    margin: 1em 0.5em;
+  }
+}
 .card-deck {
   margin-bottom: 1.25em;
 }
@@ -45,6 +51,15 @@ i {
   border: none;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card-deck {
+    margin-bottom: 1em;
+  }
+  .card-deck .card {
+    padding: 0.75em;
+  }
+}
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 label {
