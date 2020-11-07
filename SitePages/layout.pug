@@ -70,32 +70,33 @@ html
 									a.dropdown-item(href='#')
 										i.las.la-user.mr-2
 										| profile
-									a.dropdown-item(href='#')
+									a.dropd
+									own-item(href='#')
 										i.las.la-cog.mr-2
 										| settings
 		main
 			.side-nav.shadow-sm
 				ul.list-group.list-group-flush
-					a(href='dashboard.html').list-group-item
+					a(href='dashboard.html' data-toggle="tooltip" data-placement="bottom" title="Dashboard").list-group-item
 						i.las.la-shapes.la-lw
 						span dashboard
-					a(href='patients.html').list-group-item
+					a(href='patients.html' data-toggle="tooltip" data-placement="bottom" title="Patients").list-group-item
 						i.las.la-user-injured.la-lw
 						span patients
-					a(href='specialists.html').list-group-item
+					a(href='specialists.html' data-toggle="tooltip" data-placement="bottom" title="Specialists").list-group-item
 						i.las.la-clinic-medical.la-lw
 						span specialists
-					a(href='procurement.html').list-group-item
+					a(href='procurement.html' data-toggle="tooltip" data-placement="bottom" title="Procurement").list-group-item
 						i.las.la-shopping-cart.la-lw
 						span procurement
-					a(href='notifications.html').list-group-item
+					a(href='notifications.html' data-toggle="tooltip" data-placement="bottom" title="Notifications").list-group-item
 						i.las.la-sms.la-lw
 						span notifications
-					a(href='settings.html').list-group-item
+					a(href='settings.html' data-toggle="tooltip" data-placement="bottom" title="Settings").list-group-item
 						i.las.la-cogs.la-lw
 						span settings
-					hr.divider.d-sm-none
-					.aob-items.d-sm-none
+					hr.divider
+					.aob-items
 						.card
 							.card-header
 								img(src=assetsDirectory + '/images/covid-19.svg')

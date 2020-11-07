@@ -110,9 +110,6 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
   nav .navbar-brand, .navbar .navbar-brand {
     float: left;
   }
-  nav .navbar-brand span, .navbar .navbar-brand span {
-    display: none;
-  }
   nav .dropdown-menu, .navbar .dropdown-menu {
     position: absolute;
   }
@@ -125,14 +122,15 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
   }
   nav .navbar-collapse .navbar-nav .nav-item, .navbar .navbar-collapse .navbar-nav .nav-item {
     display: inline-flex;
+    margin-left: 0.5em;
   }
   nav .navbar-collapse .navbar-nav .nav-item .nav-link, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     padding: 0.25em;
   }
-  nav .navbar-collapse .navbar-nav .nav-item .profile-dropdown span, .navbar .navbar-collapse .navbar-nav .nav-item .profile-dropdown span {
-    display: none;
+  nav .navbar-collapse .navbar-nav .nav-item .nav-link img, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link img {
+    margin: 0;
   }
-  nav .navbar-collapse .navbar-nav .nav-item .vertical-divider, .navbar .navbar-collapse .navbar-nav .nav-item .vertical-divider {
+  nav .navbar-collapse .navbar-nav .nav-item .profile-dropdown span, .navbar .navbar-collapse .navbar-nav .nav-item .profile-dropdown span {
     display: none;
   }
   nav .navbar-collapse .navbar-nav .nav-item .notification-dropdown-menu, .navbar .navbar-collapse .navbar-nav .nav-item .notification-dropdown-menu {
@@ -240,19 +238,29 @@ i {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .side-nav .tooltip {
+    display: block;
+  }
   .side-nav .list-group .list-group-item {
     padding: 0.5em;
     margin-bottom: 0.1em;
+    width: 102%;
+    text-align: center;
   }
   .side-nav .list-group .list-group-item i {
     text-align: center;
     display: block;
     margin: 0 0 0.25em 0;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .side-nav .list-group .list-group-item span {
-    display: block;
-    text-align: center;
+    display: none;
+  }
+  .side-nav .list-group .divider {
+    display: none;
+  }
+  .side-nav .list-group .aob-items {
+    display: none;
   }
 }
 main {
@@ -277,6 +285,9 @@ main .main-content {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  main {
+    display: inline-flex;
+  }
   main .side-nav {
     width: 12.5%;
   }

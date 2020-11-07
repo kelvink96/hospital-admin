@@ -17,6 +17,7 @@
       text-decoration: none
       border: 1px solid transparent
       font-weight: 500
+      margin-bottom: .05em
 
       i
         margin-right: .5em
@@ -28,7 +29,6 @@
         color: $color-white
         @include shadow-sm
         @include transition
-
 
     .active
       background-color: $color-dark-red
@@ -66,6 +66,9 @@
             i
               margin-right: .5em
 
+            u
+              margin-left: .25em
+
         .card-footer
           margin-top: 1em
           text-align: center
@@ -77,3 +80,31 @@
     hr, .divider
       width: 100%
       margin: 1em 0
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .side-nav
+    .tooltip
+      display: block
+
+    .list-group
+      .list-group-item
+        padding: .5em
+        margin-bottom: .1em
+        width: 102%
+        text-align: center
+
+        i
+          text-align: center
+          display: block
+          margin: 0 0 .25em 0
+          font-size: 1.5em
+
+        span
+          display: none
+
+      .divider
+        display: none
+
+      .aob-items
+        display: none
