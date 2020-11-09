@@ -24,9 +24,6 @@ main
 
   .specialists-table-view
     table, .table
-      border-collapse: separate
-      border-spacing: 0 .5em
-
       thead
         tr
           background-color: $color-white
@@ -39,12 +36,10 @@ main
 
       tbody
         tr
-          @include shadow-sm
-          background-color: $color-white
+          background-color: transparent
 
           td
             text-transform: capitalize
-            border: none
             padding: 1em
             vertical-align: baseline
             font-weight: 500
@@ -67,6 +62,15 @@ main
           &:hover,
           &:focus
             @include transition
-            @include shadow-lg
-            @include scale
+            @include shadow-sm-b
+            background-color: $color-white
+            border: none
             cursor: pointer
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .filters-section
+    display: block !important
+
+    .buttons-wrapper
+      margin-top: .5em
