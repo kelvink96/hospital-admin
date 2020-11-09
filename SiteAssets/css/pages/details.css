@@ -20,6 +20,12 @@ i {
     margin: 1em 0.5em;
   }
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section {
+    margin: 1em 0.5em;
+  }
+}
 /* Extra small devices (phones, 600px and down) */
 .card-deck {
   margin-bottom: 1.25em;

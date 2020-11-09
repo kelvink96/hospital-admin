@@ -16,6 +16,12 @@
     margin: 1em 0.5em;
   }
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section {
+    margin: 1em 0.5em;
+  }
+}
 /* Extra small devices (phones, 600px and down) */
 .card-deck {
   margin-bottom: 1.25em;
@@ -321,6 +327,81 @@ main .main-content .card-summaries .card .card-footer .view-more:hover, main .ma
   }
   .card-summaries .card-deck .card .card-body {
     padding: 0 !important;
+  }
+  .card-summaries .card-deck .card .card-footer {
+    text-align: center !important;
+  }
+  .card-summaries .card-deck .total-counts-summary .card-body .col-md-6 {
+    width: 50%;
+    text-align: center;
+  }
+  .card-summaries .card-deck .total-counts-summary .card-body .col-md-6 i {
+    font-size: 1.5em;
+  }
+  .card-summaries .card-deck .total-counts-summary .card-body .col-md-6 h4 {
+    font-size: 1.3em;
+  }
+  .card-summaries .card-deck .total-counts-summary .card-body .col-md-6 p {
+    font-size: 0.9em;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .welcome-section .welcome-content-card .card-body .welcome-text-wrapper {
+    text-align: left;
+    margin: 0.5em 0;
+  }
+  .welcome-section .welcome-content-card .card-body .welcome-text-wrapper h5, .welcome-section .welcome-content-card .card-body .welcome-text-wrapper p {
+    margin-bottom: 0.5em;
+  }
+  .welcome-section .welcome-content-card .card-body .welcome-img-wrapper {
+    text-align: center !important;
+  }
+  .welcome-section .welcome-content-card .card-body .welcome-img-wrapper img {
+    width: 90% !important;
+    margin-top: 1em;
+  }
+  .welcome-section .app-stats-card .card-body .col-md-4 {
+    width: 33.33%;
+  }
+  .welcome-section .app-stats-card .card-body .col-md-4 .las {
+    font-size: 2em;
+  }
+  .welcome-section .app-stats-card .card-body .col-md-4 p {
+    margin: 0.35em 0 !important;
+    font-size: 0.9em;
+  }
+  .welcome-section .app-stats-card .card-body .col-md-4 h4 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em !important;
+  }
+
+  .functionality-section .card-deck {
+    text-align: center;
+    padding: 0;
+    display: block;
+  }
+  .functionality-section .card-deck .card {
+    width: 25%;
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+  .functionality-section .card-deck .card .card-title i {
+    font-size: 1.5em;
+  }
+  .functionality-section .card-deck .card .card-body {
+    margin: 0;
+  }
+  .functionality-section .card-deck .card .card-body p {
+    font-size: 0.8em;
+  }
+
+  .card-summaries .card-deck {
+    display: block;
+  }
+  .card-summaries .card-deck .card {
+    margin-bottom: 1.5em !important;
   }
   .card-summaries .card-deck .card .card-footer {
     text-align: center !important;
