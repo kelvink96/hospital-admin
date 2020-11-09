@@ -19,7 +19,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .section {
-    margin: 1em 0.5em;
+    margin: 1.5em 0.75em;
   }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -346,7 +346,7 @@ main .main-content .card-summaries .card .card-footer .view-more:hover, main .ma
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .welcome-section .welcome-content-card .card-body .welcome-text-wrapper {
     text-align: left;
     margin: 0.5em 0;

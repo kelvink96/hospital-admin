@@ -23,7 +23,7 @@ i {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .section {
-    margin: 1em 0.5em;
+    margin: 1.5em 0.75em;
   }
 }
 /* Color Theme Swatches in Hex */

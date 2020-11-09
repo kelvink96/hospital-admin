@@ -19,7 +19,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .section {
-    margin: 1em 0.5em;
+    margin: 1.5em 0.75em;
   }
 }
 i {
@@ -358,6 +358,14 @@ main .patients-table-view table tbody tr:hover, main .patients-table-view table 
   }
   .filters-section .buttons-wrapper {
     display: block;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .patients-card-view .col-md-3 {
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
   }
 }
 
