@@ -143,6 +143,52 @@ nav, .navbar
             left: auto
             right: -30%
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  nav, .navbar
+    display: inline-block !important
+    padding: 1em
 
+    .navbar-brand
+      float: left
 
+    .dropdown-menu
+      position: absolute
 
+    .navbar-collapse
+      display: inline-block
+      float: right
+
+      .navbar-nav
+        display: inline-block
+
+        .nav-item
+          display: inline-flex
+          margin-left: .5em
+
+          .nav-link
+            padding: .25em
+
+            img
+              margin: 0
+
+          .profile-dropdown
+            span
+              display: none
+
+          .notification-dropdown-menu
+            right: -278%
+            left: auto
+            width: 300px
+            margin-top: 3.8em
+
+            .dropdown-body
+              .media
+                .media-body
+                  p
+                    display: none
+
+          .profile-dropdown-menu
+            margin-top: 1.2em
+            left: auto
+            right: -30%
