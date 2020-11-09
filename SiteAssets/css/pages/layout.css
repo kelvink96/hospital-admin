@@ -136,7 +136,7 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
     display: none;
   }
   nav .navbar-collapse .navbar-nav .nav-item .notification-dropdown-menu, .navbar .navbar-collapse .navbar-nav .nav-item .notification-dropdown-menu {
-    right: -62px;
+    right: -278%;
     left: auto;
     width: 300px;
     margin-top: 3.8em;
