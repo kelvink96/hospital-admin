@@ -266,4 +266,24 @@ input, .form-control {
   border-color: #a8001f;
 }
 
+@media only screen and (max-width: 600px) {
+  .profile-section .card .card-body .sub-section .sub-section-body .col-md-2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-md-2 img {
+    width: 70%;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-md-6 .d-flex {
+    display: block !important;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-md-6 .d-flex button {
+    width: 100%;
+    margin-bottom: 0.75em;
+  }
+  .profile-section .card .card-body .sub-section .sub-section-body .col-md-6 .d-flex .ml-2 {
+    margin-left: 0 !important;
+  }
+}
+
 /*# sourceMappingURL=settings.css.map */
