@@ -225,6 +225,7 @@ label {
 }
 .title-section > .col-md-8, .title-section > .col-md-4 {
   padding: 0;
+  text-align: right;
 }
 .title-section nav {
   padding: 0;
@@ -298,6 +299,7 @@ label {
 .patient-details-section .tab-content .tab-pane .section-title {
   border-bottom: 1px solid #d8d8d8;
   padding: 1em;
+  text-align: right;
 }
 .patient-details-section .tab-content .tab-pane .media {
   border-bottom: 1px solid #d8d8d8;
@@ -306,6 +308,7 @@ label {
 .patient-details-section .tab-content .tab-pane .media .align-self-center {
   border-right: 1.5px solid #d8d8d8;
   padding: 1em;
+  margin-right: 1em;
 }
 .patient-details-section .tab-content .tab-pane .media .align-self-center p, .patient-details-section .tab-content .tab-pane .media .align-self-center h3 {
   margin: 0;
@@ -319,11 +322,13 @@ label {
 }
 .patient-details-section .tab-content .tab-pane .media .media-body .row label:not(.label-sm), .patient-details-section .tab-content .tab-pane .media .media-body .row p {
   width: 19%;
+  font-weight: 500;
 }
 .patient-details-section .tab-content .tab-pane .media .media-body .row label, .patient-details-section .tab-content .tab-pane .media .media-body .row p {
   font-size: 0.85em;
   padding-left: 0.5em;
   text-transform: capitalize;
+  font-weight: 500;
 }
 .patient-details-section .tab-content .tab-pane .media .media-body .row label {
   height: 40px;
@@ -342,7 +347,7 @@ label {
 .patient-details-section .tab-content .tab-pane .media .media-body .row .label-sm {
   text-align: center;
   padding-top: 0.75em;
-  font-weight: 400;
+  font-weight: 500;
 }
 .patient-details-section .tab-content .tab-pane .media .media-body .row .btn {
   padding: 0.25em;
@@ -361,6 +366,9 @@ label {
   vertical-align: center;
   margin-right: 0.5em;
   font-size: 1em;
+}
+.patient-details-section .files-card .card-header h5 button, .patient-details-section .notes-card .card-header h5 button {
+  float: right;
 }
 .patient-details-section .files-card .card-body, .patient-details-section .notes-card .card-body {
   margin: 1em 0;
@@ -416,6 +424,71 @@ label {
   vertical-align: bottom;
   text-align: right;
   margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title-section .col-md-8, .title-section .col-md-4 {
+    width: 50%;
+    padding: 0;
+  }
+  .title-section .col-md-8 .breadcrumb .breadcrumb-item {
+    padding-left: 0;
+  }
+  .title-section .col-md-4 {
+    text-align: right;
+  }
+  .title-section .col-md-4 button {
+    margin-bottom: 0.5em;
+  }
+
+  .patient-details-section .patients-details-card-wrapper {
+    border: none;
+  }
+  .patient-details-section .mini-card {
+    margin-bottom: 1em;
+  }
+  .patient-details-section .nav, .patient-details-section .nav-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+  .patient-details-section .nav li, .patient-details-section .nav .nav-item, .patient-details-section .nav-tabs li, .patient-details-section .nav-tabs .nav-item {
+    list-style-type: none;
+  }
+  .patient-details-section .tab-content .tab-pane .section-title {
+    text-align: center;
+  }
+  .patient-details-section .tab-content .tab-pane .media {
+    padding: 0;
+    display: block;
+    flex-wrap: nowrap;
+    align-items: normal;
+  }
+  .patient-details-section .tab-content .tab-pane .media .align-self-center, .patient-details-section .tab-content .tab-pane .media .media-body {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .patient-details-section .tab-content .tab-pane .media .align-self-center {
+    border-right: 0;
+  }
+  .patient-details-section .tab-content .tab-pane .media .align-self-center h3, .patient-details-section .tab-content .tab-pane .media .align-self-center p {
+    text-align: center;
+  }
+  .patient-details-section .tab-content .tab-pane .media .media-body .row {
+    display: block;
+    margin: 0;
+  }
+  .patient-details-section .tab-content .tab-pane .media .media-body .row label, .patient-details-section .tab-content .tab-pane .media .media-body .row p, .patient-details-section .tab-content .tab-pane .media .media-body .row i {
+    width: 100% !important;
+    height: 100%;
+    padding: 0.5em;
+    text-align: center;
+  }
+  .patient-details-section .files-card .list-group .list-group-item .float-right {
+    float: none !important;
+  }
 }
 
 /*# sourceMappingURL=details.css.map */

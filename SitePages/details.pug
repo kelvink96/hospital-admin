@@ -11,7 +11,7 @@ block content
 					li.breadcrumb-item
 						a(href='patients.html') patients
 					li.breadcrumb-item.active(aria-current='page') john doe
-		.col-md-4.text-right
+		.col-md-4
 			button.btn.btn-dark-red-f
 				i.las.la-edit
 				| edit patient
@@ -83,12 +83,12 @@ block content
 										a#medical-records-tab.nav-link(data-toggle='tab', href='#medical-records', role='tab', aria-controls='medical-records', aria-selected='false') medical records
 								#myTabContent.tab-content
 									#upcoming-appointments.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='upcoming-appointments-tab')
-										.section-title.text-right
+										.section-title
 											button.btn.btn-dark-red-f.btn-sm
 												i.las.la-calendar-plus
 												| create an appointment
 										.media
-											.align-self-center.mr-3
+											.align-self-center
 												p tue
 												h3 05
 												p 2020
@@ -161,7 +161,7 @@ block content
 				.card.notes-card
 					.card-header
 						h5 notes
-							button.btn.btn-dark-red-f.float-right.btn-sm see all
+							button.btn.btn-dark-red-f.btn-sm see all
 					.card-body
 						textarea.form-control(placeholder='you can write patient notes over here' rows='6')
 						button.btn.btn-dark-red-f.float-right.btn-sm
@@ -176,8 +176,8 @@ block content
 							p 04, may, 2020
 				.card.files-card
 					.card-header
-						h5 files / documents
-							button.btn.btn-dark-red-f.float-right.btn-sm
+						h5 files
+							button.btn.btn-dark-red-f.btn-sm
 								i.las.la-file-medical
 								| add file
 					.card-body
