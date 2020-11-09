@@ -139,10 +139,6 @@
   color: white;
 }
 
-footer .container-fluid {
-  padding: 1em;
-}
-
 main .section .section-content {
   margin: 0;
 }
@@ -226,6 +222,9 @@ main .main-content .card-summaries .card .card-body table tr td p {
 }
 main .main-content .card-summaries .card .card-body table tr td p:not(.text-muted) {
   font-weight: 600;
+}
+main .main-content .card-summaries .card .card-body table tr td button, main .main-content .card-summaries .card .card-body table tr td .btn {
+  box-shadow: none;
 }
 main .main-content .card-summaries .card .card-body img {
   width: 30px;

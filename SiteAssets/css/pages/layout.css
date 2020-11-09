@@ -273,6 +273,37 @@ i {
     display: none;
   }
 }
+footer {
+  display: none;
+}
+footer .page-footer .fixed-bottom {
+  background-color: #f9f9f9;
+  padding: 0.75em 0.5em;
+  border: 2px dashed #a8001f;
+}
+footer .page-footer .fixed-bottom a {
+  color: #333333;
+  text-transform: capitalize;
+  font-weight: 500;
+  width: 100%;
+}
+footer .page-footer .fixed-bottom a img {
+  height: 30px;
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    display: block;
+  }
+  footer .fixed-bottom a span {
+    margin-top: 0.35em;
+  }
+  footer .fixed-bottom:hover, footer .fixed-bottom:focus {
+    border-style: solid;
+    transition: all ease-in-out 150ms;
+  }
+}
 main {
   width: 100vw;
   background-color: #f9f9f9;
