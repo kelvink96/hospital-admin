@@ -19,7 +19,11 @@ main
 
       .media
         padding: 1em
-        border-bottom: 1px solid $color-lighter-grey
+        border-bottom: 1.5px solid $color-lighter-grey
+        border-top: 1.5px solid transparent
+        border-left: 1.5px solid transparent
+        border-right: 1.5px solid transparent
+        margin-bottom: .5em
 
         img
           width: 50px
@@ -43,7 +47,13 @@ main
           span, a
             font-size: .95em
 
+        &:hover,
+        &:focus
+          border: 1.5px solid $color-dark-red
+
       .card-footer
         padding: 1em
 
-
+@media only screen and (max-width: 600px)
+  .tags-section
+    margin-bottom: 1em

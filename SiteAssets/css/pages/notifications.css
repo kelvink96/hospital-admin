@@ -165,7 +165,11 @@ main .notifications-section .card .title {
 }
 main .notifications-section .card .media {
   padding: 1em;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1.5px solid #d8d8d8;
+  border-top: 1.5px solid transparent;
+  border-left: 1.5px solid transparent;
+  border-right: 1.5px solid transparent;
+  margin-bottom: 0.5em;
 }
 main .notifications-section .card .media img {
   width: 50px;
@@ -188,8 +192,17 @@ main .notifications-section .card .media .media-body a:hover, main .notification
 main .notifications-section .card .media .media-body span, main .notifications-section .card .media .media-body a {
   font-size: 0.95em;
 }
+main .notifications-section .card .media:hover, main .notifications-section .card .media:focus {
+  border: 1.5px solid #a8001f;
+}
 main .notifications-section .card .card-footer {
   padding: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .tags-section {
+    margin-bottom: 1em;
+  }
 }
 
 /*# sourceMappingURL=notifications.css.map */
