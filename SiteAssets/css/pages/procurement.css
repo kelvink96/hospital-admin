@@ -181,14 +181,14 @@ table thead tr th {
   color: white;
 }
 
+.title-section .col-md-6:last-of-type {
+  text-align: right;
+}
+
 .filters-section input, .filters-section .input-group-text {
   border-radius: 0;
 }
 
-.content-section table, .content-section .table {
-  border-collapse: separate;
-  border-spacing: 0 0.5em;
-}
 .content-section table thead tr, .content-section .table thead tr {
   background-color: white;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -200,20 +200,39 @@ table thead tr th {
   padding: 1em;
 }
 .content-section table tbody tr, .content-section .table tbody tr {
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
   text-transform: capitalize;
 }
 .content-section table tbody tr td, .content-section .table tbody tr td {
   vertical-align: middle;
+}
+.content-section table tbody tr td button, .content-section table tbody tr td .btn, .content-section .table tbody tr td button, .content-section .table tbody tr td .btn {
+  box-shadow: none;
 }
 .content-section table tbody tr td button i, .content-section table tbody tr td .btn i, .content-section .table tbody tr td button i, .content-section .table tbody tr td .btn i {
   margin: 0;
 }
 .content-section table tbody tr td p, .content-section .table tbody tr td p {
   margin: 0;
+}
+.content-section table tbody tr:hover, .content-section table tbody tr:focus, .content-section .table tbody tr:hover, .content-section .table tbody tr:focus {
+  transition: all ease-in-out 150ms;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-section .col-md-6:last-child {
+    text-align: left;
+  }
+
+  .filters-section .col-sm-8 {
+    margin-bottom: 0.75em;
+  }
 }
 
 /*# sourceMappingURL=procurement.css.map */

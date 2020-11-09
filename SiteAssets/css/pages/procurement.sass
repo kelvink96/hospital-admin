@@ -5,15 +5,16 @@
 @import "../components/tables"
 @import "../components/buttons"
 
+.title-section
+  .col-md-6:last-of-type
+    text-align: right
+
 .filters-section
   input, .input-group-text
     border-radius: 0
 
 .content-section
   table, .table
-    border-collapse: separate
-    border-spacing: 0 .5em
-
     thead
       tr
         background-color: $color-white
@@ -25,16 +26,35 @@
 
     tbody
       tr
-        background-color: $color-white
-        @include shadow-sm
+        background-color: transparent
         text-transform: capitalize
 
         td
           vertical-align: middle
 
           button, .btn
+            box-shadow: none
+
             i
               margin: 0
 
           p
             margin: 0
+
+        &:hover,
+        &:focus
+          @include transition
+          @include shadow-sm-b
+          background-color: $color-white
+          border: none
+          cursor: pointer
+
+@media only screen and (max-width: 600px)
+  .title-section
+    .col-md-6:last-child
+      text-align: left
+
+  .filters-section
+    .col-sm-8
+      margin-bottom: .75em
+
