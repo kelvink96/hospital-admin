@@ -107,7 +107,7 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
 @media only screen and (max-width: 600px) {
   nav, .navbar {
     display: inline-block !important;
-    padding: 1em;
+    padding: 0.5em 1em;
   }
   nav .navbar-brand, .navbar .navbar-brand {
     float: left;
@@ -127,7 +127,7 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
     margin-left: 0.5em;
   }
   nav .navbar-collapse .navbar-nav .nav-item .nav-link, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-    padding: 0.25em;
+    padding: 0.5em 0.25em 0.25em 0.25em;
   }
   nav .navbar-collapse .navbar-nav .nav-item .nav-link img, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link img {
     margin: 0;
@@ -154,7 +154,7 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   nav, .navbar {
     display: inline-block !important;
-    padding: 1em;
+    padding: 1em 2em;
   }
   nav .navbar-brand, .navbar .navbar-brand {
     float: left;
@@ -174,7 +174,7 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
     margin-left: 0.5em;
   }
   nav .navbar-collapse .navbar-nav .nav-item .nav-link, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-    padding: 0.25em;
+    padding: 0.5em 0.25em 0.25em 0.25em;
   }
   nav .navbar-collapse .navbar-nav .nav-item .nav-link img, .navbar .navbar-collapse .navbar-nav .nav-item .nav-link img {
     margin: 0;
@@ -222,6 +222,7 @@ i {
   border: 1px solid transparent;
   font-weight: 500;
   margin-bottom: 0.05em;
+  width: 101.5%;
 }
 .side-nav .list-group .list-group-item i {
   margin-right: 0.5em;
@@ -301,6 +302,7 @@ i {
     padding: 0.5em;
     margin-bottom: 0.1em;
     text-align: center;
+    width: 100%;
   }
   .side-nav .list-group .list-group-item i {
     text-align: center;
@@ -332,6 +334,7 @@ i {
     padding: 0.75em 0.5em 0.75em 0.5em;
     margin-bottom: 0.1em;
     text-align: center;
+    width: 100%;
   }
   .side-nav .list-group .list-group-item i {
     text-align: center;
