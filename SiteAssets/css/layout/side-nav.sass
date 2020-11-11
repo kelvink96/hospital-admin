@@ -1,5 +1,6 @@
 @import "../themes/colors"
 @import "../base/icons"
+@import "../components/cards"
 
 .side-nav
   padding: 1em 0
@@ -18,28 +19,30 @@
       text-decoration: none
       border: 1px solid transparent
       font-weight: 500
-      margin-bottom: .05em
-      width: 101.5%
+      margin-bottom: .01em
+      border-radius: 0
+      width: 101%
 
       i
         margin-right: .5em
+        font-size: 1.2em
 
       &:hover,
       &:focus
-        background-color: $color-dark-red
-        border: 1px solid $color-dark-red
+        background: linear-gradient(90deg, #A00000, #C62128)
+        border: 1px solid transparent
         color: $color-white
         @include shadow-sm
         @include transition
 
     .active
-      background-color: $color-dark-red
-      color: $color-white-ish
+      background: linear-gradient(90deg, #A00000, #C62128)
+      color: $color-white
 
       &:hover,
       &:focus
         border: 1px solid $color-dark-red
-        background-color: transparent
+        background: none
         color: $color-dark-red
 
     .aob-items, .side-nav-footer

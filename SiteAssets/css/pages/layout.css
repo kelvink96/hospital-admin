@@ -203,6 +203,56 @@ i {
   font-size: 1em;
 }
 
+/* Extra small devices (phones, 600px and down) */
+.card-deck {
+  margin-bottom: 1.25em;
+}
+
+.card {
+  border-radius: 0;
+  padding: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  vertical-align: center;
+}
+.card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header h4, .card .card-header h5, .card .card-header h6 {
+  text-transform: capitalize;
+}
+.card .card-body {
+  padding: 0;
+}
+.card .card-footer {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card-deck {
+    margin-bottom: 1em;
+  }
+  .card-deck .card {
+    padding: 0.75em;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .card-deck {
+    margin-bottom: 1em;
+  }
+  .card-deck .card {
+    padding: 1em;
+  }
+}
 .side-nav {
   padding: 1em 0;
   min-height: 100vh;
@@ -221,15 +271,17 @@ i {
   text-decoration: none;
   border: 1px solid transparent;
   font-weight: 500;
-  margin-bottom: 0.05em;
-  width: 101.5%;
+  margin-bottom: 0.01em;
+  border-radius: 0;
+  width: 101%;
 }
 .side-nav .list-group .list-group-item i {
   margin-right: 0.5em;
+  font-size: 1.2em;
 }
 .side-nav .list-group .list-group-item:hover, .side-nav .list-group .list-group-item:focus {
-  background-color: #a8001f;
-  border: 1px solid #a8001f;
+  background: linear-gradient(90deg, #A00000, #C62128);
+  border: 1px solid transparent;
   color: white;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -237,12 +289,12 @@ i {
   transition: all ease-in-out 150ms;
 }
 .side-nav .list-group .active {
-  background-color: #a8001f;
-  color: #f9f9f9;
+  background: linear-gradient(90deg, #A00000, #C62128);
+  color: white;
 }
 .side-nav .list-group .active:hover, .side-nav .list-group .active:focus {
   border: 1px solid #a8001f;
-  background-color: transparent;
+  background: none;
   color: #a8001f;
 }
 .side-nav .list-group .aob-items, .side-nav .list-group .side-nav-footer {
@@ -422,7 +474,7 @@ main .main-content {
   }
   main .main-content .container-fluid:first-child {
     padding-top: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
