@@ -21,7 +21,7 @@ i {
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   .section {
     margin: 1.5em 0.75em;
   }
@@ -236,7 +236,7 @@ table thead tr th {
     text-align: left;
   }
 
-  .filters-section .col-sm-8 {
+  .filters-section .col-md-6 {
     margin-bottom: 0.75em;
   }
 }

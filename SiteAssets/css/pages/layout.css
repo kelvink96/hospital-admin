@@ -151,7 +151,7 @@ nav .navbar-collapse .navbar-nav .notification-dropdown-menu .dropdown-body p, .
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   nav, .navbar {
     display: inline-block !important;
     padding: 1em;
@@ -216,7 +216,6 @@ i {
   width: inherit;
 }
 .side-nav .list-group .list-group-item {
-  width: 101%;
   text-transform: capitalize;
   color: #333333;
   text-decoration: none;
@@ -301,7 +300,6 @@ i {
   .side-nav .list-group .list-group-item {
     padding: 0.5em;
     margin-bottom: 0.1em;
-    width: 102%;
     text-align: center;
   }
   .side-nav .list-group .list-group-item i {
@@ -321,7 +319,7 @@ i {
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   .side-nav {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
@@ -331,9 +329,8 @@ i {
     display: block;
   }
   .side-nav .list-group .list-group-item {
-    padding: 0.5em;
+    padding: 0.75em 0.5em 0.75em 0.5em;
     margin-bottom: 0.1em;
-    width: 102%;
     text-align: center;
   }
   .side-nav .list-group .list-group-item i {
@@ -383,6 +380,12 @@ footer .page-footer .fixed-bottom a img {
     transition: all ease-in-out 150ms;
   }
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  footer {
+    display: block;
+  }
+}
 main {
   width: 100vw;
   background-color: #f9f9f9;
@@ -416,10 +419,11 @@ main .main-content {
   }
   main .main-content .container-fluid:first-child {
     padding-top: 1em;
+    margin-bottom: 3em;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   main {
     display: inline-flex;
   }
@@ -431,6 +435,7 @@ main .main-content {
   }
   main .main-content .container-fluid:first-child {
     padding-top: 1em;
+    margin-bottom: 5em;
   }
 }
 

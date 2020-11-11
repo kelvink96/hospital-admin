@@ -13,7 +13,6 @@
     width: inherit
 
     .list-group-item
-      width: 101%
       text-transform: capitalize
       color: $color-darker-grey
       text-decoration: none
@@ -95,7 +94,6 @@
       .list-group-item
         padding: .5em
         margin-bottom: .1em
-        width: 102%
         text-align: center
 
         i
@@ -114,7 +112,7 @@
         display: none
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px)
+@media only screen and (min-width: 601px) and (max-width: 768px)
   .side-nav
     @include shadow-md
 
@@ -123,9 +121,8 @@
 
     .list-group
       .list-group-item
-        padding: .5em
+        padding: .75em .5em .75em .5em
         margin-bottom: .1em
-        width: 102%
         text-align: center
 
         i

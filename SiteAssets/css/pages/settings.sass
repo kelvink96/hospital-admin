@@ -50,14 +50,14 @@
       .card-body
         .sub-section
           .sub-section-body
-            .col-md-2
+            .col-lg-2
               text-align: center
               margin-bottom: 1em
 
               img
                 width: 70%
 
-            .col-md-6
+            .col-lg-6
               .d-flex
                 display: block !important
 
@@ -67,3 +67,25 @@
 
                 .ml-2
                   margin-left: 0 !important
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px)
+  .profile-section
+    .card
+      .card-body
+        .sub-section
+          .sub-section-body
+            .col-lg-2
+              text-align: center
+
+              img
+                width: 80%
+
+            .col-lg-6
+              .d-flex
+                margin-top: 2em
+                margin-bottom: 0 !important
+
+                button
+                  width: 100%
+                  margin-bottom: .75em
