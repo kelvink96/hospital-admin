@@ -30,7 +30,32 @@
 @mixin transition()
   transition: all ease-in-out 150ms
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px)
-  @mixin scale()
-    transform: scale(1.01, 1.01)
+/* Pulse Grow
+@-webkit-keyframes hvr-pulse-grow
+  to
+    -webkit-transform: scale(1.05)
+    transform: scale(1.05)
+
+@keyframes hvr-pulse-grow
+  to
+    -webkit-transform: scale(1.05)
+    transform: scale(1.05)
+
+@mixin hvr-pulse-grow
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+
+  &:hover, &:focus, &:active
+    -webkit-animation-name: hvr-pulse-grow
+    animation-name: hvr-pulse-grow
+    -webkit-animation-duration: 0.3s
+    animation-duration: 0.3s
+    -webkit-animation-timing-function: linear
+    animation-timing-function: linear
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+    -webkit-animation-direction: alternate
+    animation-direction: alternate

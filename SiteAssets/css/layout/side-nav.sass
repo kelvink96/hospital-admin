@@ -17,11 +17,11 @@
       text-transform: capitalize
       color: $color-darker-grey
       text-decoration: none
-      border: 1px solid transparent
+      border: 1.5px solid transparent
       font-weight: 500
-      margin-bottom: .01em
       border-radius: 0
       width: 101%
+      margin-bottom: .25em
 
       i
         margin-right: .5em
@@ -29,21 +29,14 @@
 
       &:hover,
       &:focus
-        background: linear-gradient(90deg, #A00000, #C62128)
-        border: 1px solid transparent
-        color: $color-white
-        @include shadow-sm
+        border: 1.5px solid $color-dark-red
+        background: none
+        color: $color-dark-red
         @include transition
 
     .active
       background: linear-gradient(90deg, #A00000, #C62128)
       color: $color-white
-
-      &:hover,
-      &:focus
-        border: 1px solid $color-dark-red
-        background: none
-        color: $color-dark-red
 
     .aob-items, .side-nav-footer
       padding: .5em 1em

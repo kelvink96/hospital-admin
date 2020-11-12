@@ -26,7 +26,19 @@ i {
     margin: 1.5em 0.75em;
   }
 }
-/* Extra small devices (phones, 600px and down) */
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
 .card-deck {
   margin-bottom: 1.25em;
 }
@@ -153,7 +165,19 @@ label {
 
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
-/* Extra small devices (phones, 600px and down) */
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
 .btn {
   border-radius: 0;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -166,8 +190,23 @@ label {
   margin-right: 0.5em;
 }
 .btn:hover, .btn:focus {
-  transition: all ease-in-out 150ms;
-  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.btn:hover:hover, .btn:hover:focus, .btn:hover:active, .btn:focus:hover, .btn:focus:focus, .btn:focus:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 .btn-dark-red-f-gr {

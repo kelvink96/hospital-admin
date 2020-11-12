@@ -26,7 +26,19 @@ i {
   font-size: 1em;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
 .card-deck {
   margin-bottom: 1.25em;
 }
@@ -76,7 +88,19 @@ i {
     padding: 1em;
   }
 }
-/* Extra small devices (phones, 600px and down) */
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
 .dropdown-menu {
   border: none;
   border-radius: 0;
@@ -91,7 +115,19 @@ table thead tr th {
 
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
-/* Extra small devices (phones, 600px and down) */
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
 .btn {
   border-radius: 0;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -104,8 +140,23 @@ table thead tr th {
   margin-right: 0.5em;
 }
 .btn:hover, .btn:focus {
-  transition: all ease-in-out 150ms;
-  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.btn:hover:hover, .btn:hover:focus, .btn:hover:active, .btn:focus:hover, .btn:focus:focus, .btn:focus:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 .btn-dark-red-f-gr {
@@ -119,12 +170,12 @@ table thead tr th {
   color: #a8001f;
 }
 
-.btn-dark-red-f, main .filters-section .switch-view-btns .btn-group .active {
+.btn-dark-red-f {
   background-color: #a8001f;
   color: white;
   border: 1.5px solid transparent;
 }
-.btn-dark-red-f:hover, main .filters-section .switch-view-btns .btn-group .active:hover, .btn-dark-red-f:focus, main .filters-section .switch-view-btns .btn-group .active:focus {
+.btn-dark-red-f:hover, .btn-dark-red-f:focus {
   background: none;
   border: 1.5px solid #a8001f;
   color: #a8001f;
@@ -162,11 +213,11 @@ table thead tr th {
   color: white;
 }
 
-.btn-darker-grey-f {
+.btn-darker-grey-f, main .filters-section .switch-view-btns .btn-group .active {
   background-color: #333333;
   color: white;
 }
-.btn-darker-grey-f:hover, .btn-darker-grey-f:focus {
+.btn-darker-grey-f:hover, main .filters-section .switch-view-btns .btn-group .active:hover, .btn-darker-grey-f:focus, main .filters-section .switch-view-btns .btn-group .active:focus {
   background-color: transparent;
   border: 1.5px solid #333333;
   color: #333333;
