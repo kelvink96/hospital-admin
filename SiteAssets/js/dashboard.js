@@ -1,6 +1,10 @@
 $(function () {
 	initCharts();
-})
+});
+
+function bsEvents(){
+	$('.onboarding-modal').modal('show');
+}
 
 function initCharts() {
 	Chart.defaults.global.legend.labels.usePointStyle = true;
