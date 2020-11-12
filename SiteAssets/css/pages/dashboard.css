@@ -442,5 +442,11 @@ main .main-content .card-summaries .card .card-footer .view-more:hover, main .ma
     font-size: 0.9em;
   }
 }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1920px) {
+  .welcome-section .app-stats-card {
+    padding-top: 4em;
+  }
+}
 
 /*# sourceMappingURL=dashboard.css.map */
