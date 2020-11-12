@@ -1,0 +1,46 @@
+-var assetsDirectory = '../SiteAssets';
+
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel='stylesheet' href=assetsDirectory + '/css/vendors/bootstrap.min.css')
+		link(rel='stylesheet' href=assetsDirectory + '/css/pages/splash.css')
+		link(rel='icon' href=assetsDirectory + '/images/covid-19.ico')
+		script(src=assetsDirectory + '/js/vendors/jquery.min.js')
+		script(src=assetsDirectory + '/js/vendors/bootstrap.bundle.min.js')
+		title Welcome to i-Afya
+	body
+		.hero-section
+			.buttons-wrapper
+				h1 welcome to our&nbsp;
+					u healthcare
+					|  solution
+				.buttons
+					a(href='dashboard.html').btn.btn-dark-blue-f.btn-lg.mr-4 explore
+					a(href='dashboard.html').btn.btn-dark-red-f.btn-lg our app
+			.feature-section
+				.fixed-bottom.container
+					.card-deck
+						.card.bg-primary.text-white
+							.card-header
+								h5 dashboard module
+							.card-body
+								p.card-text Some quick example text to build on the card title and make up the bulk of the card's content
+						.card.bg-danger.text-white
+							.card-header
+								h5 patients / specialists module
+							.card-body
+								p.card-text Some quick example text to build on the card title and make up the bulk of the card's content
+						.card.bg-info.text-white
+							.card-header
+								h5 procurement module
+							.card-body
+								p.card-text Some quick example text to build on the card title and make up the bulk of the card's content
+						.card.bg-success.text-white
+							.card-header
+								h5 notification module
+							.card-body
+								p.card-text Some quick example text to build on the card title and make up the bulk of the card's content
+								

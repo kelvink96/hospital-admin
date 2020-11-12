@@ -1,112 +1,5 @@
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
-i {
-  font-size: 1em;
-}
-
-.section {
-  margin: 2em;
-}
-.section .page-title {
-  text-transform: capitalize;
-}
-.section .section-content {
-  margin: 1em;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .section {
-    margin: 1em 0.5em;
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  .section {
-    margin: 1.5em 0.75em;
-  }
-}
-/* Color Theme Swatches in Hex */
-/* Color Theme Swatches in RGBA */
-label {
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-.label-md {
-  padding: 0.5em;
-}
-
-.label-sm {
-  padding: 0.1em 1em;
-}
-
-.label-green {
-  background-color: rgba(40, 217, 255, 0.1);
-  color: var(--green);
-}
-
-.label-green-bl {
-  background-color: rgba(40, 217, 255, 0.1);
-  color: var(--green);
-  border-left: 3px solid var(--green);
-}
-
-.label-orange {
-  background-color: rgba(255, 171, 56, 0.1);
-  color: var(--orange);
-}
-
-.label-orange-bl {
-  background-color: rgba(255, 171, 56, 0.1);
-  color: var(--orange);
-  border-left: 3px solid var(--orange);
-}
-
-.label-blue {
-  background-color: rgba(71, 139, 229, 0.1);
-  color: var(--blue);
-}
-
-.label-blue-bl {
-  background-color: rgba(71, 139, 229, 0.1);
-  color: var(--blue);
-  border-left: 3px solid var(--blue);
-}
-
-.label-pink {
-  background-color: rgba(250, 84, 84, 0.1);
-  color: var(--pink);
-}
-
-.label-pink-bl {
-  background-color: rgba(250, 84, 84, 0.1);
-  color: var(--pink);
-  border-left: 3px solid var(--pink);
-}
-
-.label-grey {
-  background-color: #d8d8d8;
-  color: #333333;
-}
-
-.label-grey-bl {
-  background-color: #d8d8d8;
-  color: #333333;
-  border-left: 3px solid #333333;
-}
-
-.label-cream {
-  background-color: rgba(250, 235, 215, 0.7);
-  color: #333333;
-}
-
-table thead tr th {
-  text-transform: capitalize;
-}
-
-/* Color Theme Swatches in Hex */
-/* Color Theme Swatches in RGBA */
 /* Pulse Grow */
 @-webkit-keyframes hvr-pulse-grow {
   to {
@@ -248,58 +141,140 @@ table thead tr th {
   color: #333333;
 }
 
-.title-section .col-md-6:last-of-type {
-  text-align: right;
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+.card-deck {
+  margin-bottom: 1.25em;
 }
 
-.filters-section input, .filters-section .input-group-text {
+.card {
   border-radius: 0;
-}
-
-.content-section table thead tr, .content-section .table thead tr {
-  background-color: white;
+  padding: 1em;
+  border: none;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
-.content-section table thead tr th, .content-section .table thead tr th {
-  color: #333333;
-  padding: 1em;
-}
-.content-section table tbody tr, .content-section .table tbody tr {
+.card .card-header {
+  border-radius: 0;
   background-color: transparent;
+  padding: 0;
+  border: none;
+  vertical-align: center;
+}
+.card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header h4, .card .card-header h5, .card .card-header h6 {
   text-transform: capitalize;
 }
-.content-section table tbody tr td, .content-section .table tbody tr td {
-  vertical-align: middle;
+.card .card-body {
+  padding: 0;
 }
-.content-section table tbody tr td button, .content-section table tbody tr td .btn, .content-section .table tbody tr td button, .content-section .table tbody tr td .btn {
-  box-shadow: none;
-}
-.content-section table tbody tr td button i, .content-section table tbody tr td .btn i, .content-section .table tbody tr td button i, .content-section .table tbody tr td .btn i {
-  margin: 0;
-}
-.content-section table tbody tr td p, .content-section .table tbody tr td p {
-  margin: 0;
-}
-.content-section table tbody tr:hover, .content-section table tbody tr:focus, .content-section .table tbody tr:hover, .content-section .table tbody tr:focus {
-  transition: all ease-in-out 150ms;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
-  background-color: white;
+.card .card-footer {
+  background-color: transparent;
+  padding: 0;
   border: none;
-  cursor: pointer;
 }
 
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .title-section .col-md-6:last-child {
-    text-align: left;
+  .card-deck {
+    margin-bottom: 1em;
   }
+  .card-deck .card {
+    padding: 0.75em;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .card-deck {
+    margin-bottom: 1em;
+  }
+  .card-deck .card {
+    padding: 1em;
+  }
+}
+body {
+  margin: 0;
+  height: 100%;
+}
 
-  .filters-section .col-md-6 {
-    margin-bottom: 0.75em;
+.hero-section {
+  background-size: cover;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url("../../images/splash.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+}
+.hero-section .buttons-wrapper {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hero-section .buttons-wrapper h1 {
+  color: #333333;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+.hero-section .buttons-wrapper h1 u {
+  color: #a8001f;
+}
+.hero-section .feature-section {
+  width: 70%;
+}
+.hero-section .feature-section .fixed-bottom .card-deck {
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.hero-section .feature-section .fixed-bottom .card-deck .card {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    height: 100%;
+    padding: 1em 0;
+  }
+  .hero-section .buttons-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    padding: 2em 1em;
+    text-align: center;
+  }
+  .hero-section .feature-section .fixed-bottom {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+  }
+  .hero-section .feature-section .fixed-bottom .card-deck {
+    display: block;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  .hero-section .feature-section .fixed-bottom .card-deck .card {
+    margin-top: 1em;
+    padding: 1em;
   }
 }
 
-/*# sourceMappingURL=procurement.css.map */
+/*# sourceMappingURL=splash.css.map */

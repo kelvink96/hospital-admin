@@ -234,6 +234,28 @@ table thead tr th {
   color: white;
 }
 
+.btn-white-ish-f {
+  background-color: #f9f9f9;
+  color: #333333;
+  border: 1.5px solid transparent;
+}
+.btn-white-ish-f:hover, .btn-white-ish-f:focus {
+  background: none;
+  border: 1.5px solid #f9f9f9;
+  color: #f9f9f9;
+}
+
+.btn-white-ish-o {
+  background-color: transparent;
+  color: #f9f9f9;
+  border: 1.5px solid #f9f9f9;
+}
+.btn-white-ish-o:hover, .btn-white-ish-o:focus {
+  background: #f9f9f9;
+  border: 1.5px solid #f9f9f9;
+  color: #333333;
+}
+
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 label {

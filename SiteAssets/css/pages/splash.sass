@@ -1,0 +1,67 @@
+@import "../components/buttons"
+@import "../components/cards"
+
+body
+  margin: 0
+  height: 100%
+
+.hero-section
+  background-size: cover
+  background-image: radial-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .8)), url("../../images/splash.jpg")
+  background-repeat: no-repeat
+  background-position: bottom
+  height: 100vh
+
+  .buttons-wrapper
+    @include vertical-center
+
+    h1
+      color: $color-darker-grey
+      margin-bottom: 1em
+      text-transform: capitalize
+
+      u
+        color: $color-dark-red
+
+  .feature-section
+    width: 70%
+
+    .fixed-bottom
+      .card-deck
+        margin-bottom: 0
+        @include shadow-md
+
+        .card
+          text-align: center
+          text-transform: capitalize
+          margin: 0
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .hero-section
+    height: 100%
+    padding: 1em 0
+
+    .buttons-wrapper
+      position: relative
+      top: 0
+      left: 0
+      transform: translate(0, 0)
+      -ms-transform: translate(0, 0)
+      padding: 2em 1em
+      text-align: center
+
+    .feature-section
+      .fixed-bottom
+        position: relative
+        text-align: center
+        width: 100vw
+
+        .card-deck
+          display: block
+          margin-bottom: 0
+          box-shadow: none
+
+          .card
+            margin-top: 1em
+            padding: 1em
