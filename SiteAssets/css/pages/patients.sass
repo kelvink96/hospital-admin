@@ -8,12 +8,17 @@
 @import "../components/labels"
 
 main
-  .title-filters-section
-    .buttons-wrapper
-      display: inline-flex
-      float: right
+  .title-section
+    margin-left: 1em
 
-      .dropdown, .switch-view-btns
+  .filters-section
+    display: flex
+
+    .dropdowns-wrapper
+      display: flex
+      margin-right: 1em
+
+      .dropdown:not(:first-of-type), .switch-view-btns
         margin-left: 1em
 
       .dropdown
@@ -21,18 +26,19 @@ main
           &::after
             margin-left: 1.5em
 
-      .switch-view-btns
-        .btn-group
-          i
-            font-size: 1.5em
-            margin: 0
+    .switch-view-btns
+      .btn-group
+        i
+          font-size: 1.5em
+          margin: 0
 
         .active
-          @extend .btn-dark-red-f
+          @extend .btn-darker-grey-f
 
   .patients-card-view
     .card
       padding: 1.5em
+      margin-bottom: 1.5em
 
       .card-header
         align-items: baseline
@@ -49,6 +55,7 @@ main
 
         .view-more
           font-size: .8em
+          text-transform: capitalize
 
       .card-body
         padding: 1em 0
@@ -74,34 +81,29 @@ main
 
       &:hover,
       &:focus
-        @include shadow-lg
+        @include shadow-md
         @include scale
         @include transition
         cursor: pointer
 
   .patients-table-view
     table, .table
-      border-collapse: separate
-      border-spacing: 0 .5em
-      border: none
-
       thead
         tr
-          background-color: transparent
+          background-color: $color-white
+          @include shadow-sm
 
           th
             padding: 1em
             border: none
-            color: $color-dark-grey
+            color: $color-darker-grey
 
       tbody
         tr
-          @include shadow-sm
-          background-color: $color-white
+          background-color: transparent
 
           td
             text-transform: capitalize
-            border: none
             padding: 1em
             vertical-align: baseline
             font-weight: 500
@@ -116,7 +118,30 @@ main
 
           &:hover,
           &:focus
-            @include scale
+            background-color: $color-white
             @include transition
-            @include shadow-lg
+            @include shadow-sm-b
             cursor: pointer
+            border: none
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .filters-section
+    display: block !important
+
+    .dropdowns-wrapper
+      margin-bottom: .5em
+
+    .switch-view-btns
+      margin-bottom: .5em
+
+    .buttons-wrapper
+      display: block
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px)
+  .patients-card-view
+    .col-md-3
+      width: 50%
+      max-width: 50%
+      flex: 0 0 50%

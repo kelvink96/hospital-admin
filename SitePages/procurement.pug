@@ -1,4 +1,4 @@
-extends _layout
+extends layout
 
 append links
 	link(rel='stylesheet' href=assetsDirectory + '/css/pages/procurement.css')
@@ -8,27 +8,27 @@ block content
 		.row
 			.col-md-6
 				h5.page-title
-			.col-md-6.text-right
-				button.btn.btn-dark-red-f
-					i.las.la-plus
-					| create request
+			.col-md-6
+				button.btn.btn-dark-red-f-gr
+					i.las.la-plus-circle
+					| create a request
 	.section.filters-section
 		.row
-			.col-sm-8
+			.col-lg-8.col-md-6
 				button.btn.btn-dark-red-o.mr-2
 					i.las.la-filter
 					| filter
 				button.btn.btn-dark-red-o
 					i.las.la-sort
 					| sort
-			.col-sm-4
+			.col-lg-4.col-md-6
 				.input-group
 					.input-group-prepend
 						span.input-group-text
 							i.las.la-search
 					input.form-control(placeholder='search by title, owner, or vendor')
 	.section.content-section
-		table.table.table-hover.table-borderless
+		table.table.table-hover.table-responsive-lg
 			thead
 				tr
 					th inquiries
@@ -48,7 +48,7 @@ block content
 					td
 						label.label-orange.label-md ongoing
 					td
-						button.btn.btn-dark-red-o.text-center
+						button.btn
 							i.las.la-ellipsis-h
 				tr
 					td
@@ -60,7 +60,7 @@ block content
 					td
 						label.label-blue.label-md pending
 					td
-						button.btn.btn-dark-red-o.text-center
+						button.btn
 							i.las.la-ellipsis-h
 				tr
 					td
@@ -72,7 +72,7 @@ block content
 					td
 						label.label-blue.label-md pending
 					td
-						button.btn.btn-dark-red-o.text-center
+						button.btn
 							i.las.la-ellipsis-h
 				tr
 					td
@@ -82,9 +82,9 @@ block content
 					td 13 apr 2020
 					td john doe
 					td
-						label.label-orange.label-md outgoing
+						label.label-green.label-md outgoing
 					td
-						button.btn.btn-dark-red-o.text-center
+						button.btn
 							i.las.la-ellipsis-h
 				tr
 					td
@@ -94,9 +94,9 @@ block content
 					td 13 apr 2020
 					td john doe
 					td
-						label.label-orange.label-md outgoing
+						label.label-green.label-md outgoing
 					td
-						button.btn.btn-dark-red-o.text-center
+						button.btn
 							i.las.la-ellipsis-h
 				tr
 					td
@@ -106,9 +106,9 @@ block content
 					td 13 apr 2020
 					td john doe
 					td
-						label.label-orange.label-md outgoing
+						label.label-green.label-md outgoing
 					td
-						button.btn.btn-dark-red-o.text-center
+						button.btn
 							i.las.la-ellipsis-h
 				tr
 					td
@@ -118,7 +118,7 @@ block content
 					td 13 apr 2020
 					td john doe
 					td
-						label.label-orange.label-md outgoing
+						label.label-green.label-md outgoing
 					td
-						button.btn.btn-dark-red-o.text-center
+						button.btn
 							i.las.la-ellipsis-h

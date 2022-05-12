@@ -7,18 +7,15 @@
 @import "../components/buttons"
 
 main
-  .title-section
-    margin-left: 1em
-
   .filters-section
-    margin-left: 1em
     display: flex
 
     .dropdowns-wrapper
       display: flex
 
       .dropdown
-        margin-left: 1em
+        &:last-of-type
+          margin-left: 1em
 
       .dropdown
         a, .btn
@@ -27,26 +24,22 @@ main
 
   .specialists-table-view
     table, .table
-      border-collapse: separate
-      border-spacing: 0 .25em
-
       thead
         tr
-          background-color: transparent
+          background-color: $color-white
+          @include shadow-sm
 
           th
             padding: 1em
             border: none
-            color: $color-dark-grey
+            color: $color-darker-grey
 
       tbody
         tr
-          @include shadow-sm
-          background-color: $color-white
+          background-color: transparent
 
           td
             text-transform: capitalize
-            border: none
             padding: 1em
             vertical-align: baseline
             font-weight: 500
@@ -69,6 +62,15 @@ main
           &:hover,
           &:focus
             @include transition
-            @include shadow-lg
-            @include scale
+            @include shadow-sm-b
+            background-color: $color-white
+            border: none
             cursor: pointer
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .filters-section
+    display: block !important
+
+    .buttons-wrapper
+      margin-top: .5em

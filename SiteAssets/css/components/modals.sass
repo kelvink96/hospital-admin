@@ -1,0 +1,78 @@
+.modal
+  .modal-content
+    border-radius: 0
+
+    .modal-body
+      .carousel
+        .carousel-item
+          img
+            width: 70%
+            height: 300px
+            margin: 0 auto
+            object-fit: contain
+            padding-bottom: 3em
+
+          .carousel-caption
+            bottom: -30px
+
+            p
+              @include shadow-md
+              background-color: $color-white-ish
+              color: $color-darker-grey
+              font-weight: 500
+              padding: 1em
+
+              a
+                margin: 0 .25em
+                color: $color-dark-red
+
+                i
+                  display: none
+                  font-size: 1em
+                  color: $color-dark-red
+
+              &:hover,
+              &:focus
+                i
+                  display: inline-block
+
+        a
+          .las
+            color: $color-darker-grey
+            font-size: 2em
+
+/* Extra large devices (large laptops and desktops, 992 and up) */
+@media only screen and (min-width: 992px)
+  .modal
+    .modal-dialog
+      width: 700px
+      max-width: 700px
+
+      .modal-body
+        .carousel
+          .carousel-item
+            img
+              width: 100%
+              height: 400px
+
+          .carousel-caption
+            p
+              font-size: 1.25em
+
+/* Extra large devices (large laptops and desktops, 1920px and up) */
+@media only screen and (min-width: 1920px)
+  .modal
+    .modal-dialog
+      width: 900px
+      max-width: 900px
+
+      .modal-body
+        .carousel
+          .carousel-item
+            img
+              width: 100%
+              height: 500px
+
+          .carousel-caption
+            p
+              font-size: 1.5em

@@ -1,6 +1,10 @@
 $(function () {
 	initCharts();
-})
+});
+
+function bsEvents(){
+	$('.onboarding-modal').modal('show');
+}
 
 function initCharts() {
 	Chart.defaults.global.legend.labels.usePointStyle = true;
@@ -34,15 +38,15 @@ function initCharts() {
 	var bookingsChart = new Chart(ctx, {
 		type: 'doughnut',
 		data: {
-			labels: ['Red', 'Blue', 'Yellow', 'Green'],
+			labels: ['urgent', 'no urgent', 'resuscitation', 'emergency'],
 			datasets: [{
 				label: '# of Votes',
 				data: [12, 19, 3, 5],
 				backgroundColor: [
-					'rgba(255, 99, 132, 0.7)',
-					'rgba(54, 162, 235, 0.7)',
 					'rgba(255, 206, 86, 0.7)',
 					'rgba(75, 192, 192, 0.7)',
+					'rgba(54, 162, 235, 0.7)',
+					'rgba(255, 99, 132, 0.7)',
 				],
 			}],
 		},
@@ -56,15 +60,15 @@ function initCharts() {
 	var diseasesChart = new Chart(ctx2, {
 		type: 'doughnut',
 		data: {
-			labels: ['Red', 'Blue', 'Yellow', 'Green'],
+			labels: ['malaria', 'tuberculosis', 'pneumonia', 'diabetes'],
 			datasets: [{
 				label: '# of Votes',
 				data: [13, 1, 8, 15],
 				backgroundColor: [
-					'rgba(255, 99, 132, 0.7)',
-					'rgba(54, 162, 235, 0.7)',
 					'rgba(255, 206, 86, 0.7)',
 					'rgba(75, 192, 192, 0.7)',
+					'rgba(54, 162, 235, 0.7)',
+					'rgba(255, 99, 132, 0.7)',
 				],
 			}],
 		},

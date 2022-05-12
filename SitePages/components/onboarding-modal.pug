@@ -1,0 +1,49 @@
+.modal.onboarding-modal(tabindex='=1')
+	.modal-dialog.modal-dialog-centered
+		.modal-content
+			.modal-header
+				h5.modal-title Welcome
+				button(type='button' class='close' data-dismiss='modal' aria-label='Close')
+					i.las.la-times-circle
+			.modal-body
+					#carouselExampleCaptions.carousel.slide(data-ride='carousel')
+						.carousel-inner
+							.carousel-item.active
+								img.d-block(src='../SiteAssets/images/undraw_dashboard_nklg.svg' alt='...')
+								.carousel-caption.d-md-block
+									p intuitive
+										a(href='' data-dismiss='modal') dashboard
+											i.las.la-external-link-alt
+							.carousel-item
+								img.d-block(src='../SiteAssets/images/undraw_medicine_b1ol.svg' alt='...')
+								.carousel-caption.d-md-block
+									p access to
+										a(href='specialists.html') specialists
+											i.las.la-external-link-alt
+							.carousel-item
+								img.d-block(src='../SiteAssets/images/undraw_receipt_ecdd.svg' alt='...')
+								.carousel-caption.d-md-block
+									p simple
+										a(href='procurement.html') procurement
+											i.las.la-external-link-alt
+										| process
+							.carousel-item
+								img.d-block(src='../SiteAssets/images/undraw_new_notifications_fhvw.svg' alt='...')
+								.carousel-caption.d-md-block
+									p comprehensive
+										a(href='notifications.html') notification
+											i.las.la-external-link-alt
+										| center
+							.carousel-item
+								img.d-block(src='../SiteAssets/images/undraw_Preferences_re_49in.svg' alt='...')
+								.carousel-caption.d-md-block
+									p minimalist
+										a(href='settings.html') settings
+											i.las.la-external-link-alt
+										| center
+						a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
+							i.las.la-chevron-circle-left
+							span.sr-only Previous
+						a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
+							i.las.la-chevron-circle-right
+							span.sr-only Next

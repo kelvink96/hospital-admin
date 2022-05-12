@@ -8,20 +8,18 @@ nav, .navbar
   padding-left: 2em
 
   .navbar-brand
-    color: $color-med-red
-    text-transform: uppercase
+    color: $color-darker-grey
 
     img
       width: 40px
       height: 40px
       object-fit: contain
-
-  .page-title
-    text-transform: capitalize
+      margin-right: 1em
 
   .navbar-collapse
     .navbar-nav
       align-items: center
+      margin-left: auto
 
       .nav-item
         .nav-link
@@ -36,10 +34,17 @@ nav, .navbar
             width: 40px
             height: 40px
             object-fit: cover
+            margin-right: 1em
 
-          .fa-bell
-            font-size: 1.2em
-            color: $color-dark-red
+          .las
+            font-size: 1.3em
+            color: $color-dark-grey
+
+          &:hover,
+          &:focus
+            a, .las
+              color: $color-dark-red
+              cursor: pointer
 
       .dropdown-menu
         a
@@ -51,14 +56,14 @@ nav, .navbar
       .notification-dropdown-menu
         padding: 0
         width: 400px
+        margin-top: 2em
 
         .dropdown-title, .dropdown-footer
-          background-color: $color-dark-red
+          background-color: $color-darker-grey
           padding: .5em 1em
 
           a
             color: $color-white-ish
-
 
         .dropdown-body
           padding: 0
@@ -88,3 +93,102 @@ nav, .navbar
           p
             margin: 0
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  nav, .navbar
+    display: inline-block !important
+    padding: .5em 1em
+
+    .navbar-brand
+      float: left
+
+    .dropdown-menu
+      position: absolute
+
+    .navbar-collapse
+      display: inline-block
+      float: right
+
+      .navbar-nav
+        display: inline-block
+
+        .nav-item
+          display: inline-flex
+          margin-left: .5em
+
+          .nav-link
+            padding: .5em .25em .25em .25em
+
+            img
+              margin: 0
+
+          .profile-dropdown
+            span
+              display: none
+
+          .notification-dropdown-menu
+            right: -278%
+            left: auto
+            width: 300px
+            margin-top: 3.8em
+
+            .dropdown-body
+              .media
+                .media-body
+                  p
+                    display: none
+
+          .profile-dropdown-menu
+            margin-top: 1.2em
+            left: auto
+            right: -30%
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px)
+  nav, .navbar
+    display: inline-block !important
+    padding: 1em 2em
+
+    .navbar-brand
+      float: left
+
+    .dropdown-menu
+      position: absolute
+
+    .navbar-collapse
+      display: inline-block
+      float: right
+
+      .navbar-nav
+        display: inline-block
+
+        .nav-item
+          display: inline-flex
+          margin-left: .5em
+
+          .nav-link
+            padding: .5em .25em .25em .25em
+
+            img
+              margin: 0
+
+          .profile-dropdown
+            span
+              display: none
+
+          .notification-dropdown-menu
+            right: -278%
+            left: auto
+            width: 300px
+            margin-top: 3.8em
+
+            .dropdown-body
+              .media
+                .media-body
+                  p
+                    display: none
+
+          .profile-dropdown-menu
+            margin-top: 1.2em
+            left: auto
+            right: -30%

@@ -1,7 +1,7 @@
 @import "../abstracts/mixins"
 
 .card-deck
-  margin-bottom: 1.5em
+  margin-bottom: 1.25em
 
 .card
   @include border-radius
@@ -11,11 +11,13 @@
 
   .card-header
     @include border-radius
-    text-transform: capitalize
     background-color: transparent
     padding: 0
     border: none
     vertical-align: center
+
+    h1, h2, h3, h4, h5, h6
+      text-transform: capitalize
 
   .card-body
     padding: 0
@@ -24,3 +26,19 @@
     background-color: transparent
     padding: 0
     border: none
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .card-deck
+    margin-bottom: 1em
+
+    .card
+      padding: .75em
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px)
+  .card-deck
+    margin-bottom: 1em
+
+    .card
+      padding: 1em

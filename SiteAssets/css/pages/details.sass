@@ -13,6 +13,7 @@
   & > .col-md-8,
   & > .col-md-4
     padding: 0
+    text-align: right
 
   nav
     padding: 0
@@ -91,6 +92,7 @@
       .section-title
         border-bottom: 1px solid $color-lighter-grey
         padding: 1em
+        text-align: right
 
       .media
         border-bottom: 1px solid $color-lighter-grey
@@ -99,6 +101,7 @@
         .align-self-center
           border-right: 1.5px solid $color-lighter-grey
           padding: 1em
+          margin-right: 1em
 
           p, h3
             margin: 0
@@ -113,11 +116,13 @@
 
             label:not(.label-sm), p
               width: 19%
+              font-weight: 500
 
             label, p
               font-size: .85em
               padding-left: .5em
               text-transform: capitalize
+              font-weight: 500
 
             label
               height: 40px
@@ -136,7 +141,7 @@
             .label-sm
               text-align: center
               padding-top: .75em
-              font-weight: 400
+              font-weight: 500
 
             .btn
               padding: .25em
@@ -157,6 +162,11 @@
                 font-size: 1em
 
   .files-card, .notes-card
+    .card-header
+      h5
+        button
+          float: right
+
     .card-body
       margin: 1em 0
 
@@ -196,9 +206,8 @@
           &:hover,
           &:focus
             text-decoration: none
-            border: 1px solid $color-lighter-grey
-            @include shadow-sm
-            @include scale
+            border-color: transparent
+            @include shadow-md
             @include transition
 
             small, .text-muted
@@ -217,3 +226,76 @@
                   vertical-align: bottom
                   text-align: right
                   margin: 0
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .title-section
+    .col-md-8, .col-md-4
+      width: 50%
+      padding: 0
+
+    .col-md-8
+      .breadcrumb
+        .breadcrumb-item
+          padding-left: 0
+
+    .col-md-4
+      text-align: right
+
+      button
+        margin-bottom: .5em
+
+  .patient-details-section
+    .patients-details-card-wrapper
+      border: none
+
+    .mini-card
+      margin-bottom: 1em
+
+    .nav, .nav-tabs
+      display: flex
+      flex-wrap: nowrap
+      overflow-y: auto
+
+      li, .nav-item
+        list-style-type: none
+
+    .tab-content
+      .tab-pane
+        .section-title
+          text-align: center
+
+        .media
+          padding: 0
+          display: block
+          flex-wrap: nowrap
+          align-items: normal
+
+          .align-self-center, .media-body
+            width: 100%
+            display: block
+            margin: 0
+
+          .align-self-center
+            border-right: 0
+
+            h3, p
+              text-align: center
+
+          .media-body
+            .row
+              display: block
+              margin: 0
+
+              label, p, i
+                width: 100% !important
+                height: 100%
+                padding: .5em
+                text-align: center
+
+
+    .files-card
+      .list-group
+        .list-group-item
+          .float-right
+            float: none !important

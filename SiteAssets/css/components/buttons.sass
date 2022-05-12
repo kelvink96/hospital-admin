@@ -3,34 +3,110 @@
 
 .btn
   @include border-radius
+  @include shadow-sm
   text-transform: capitalize
+  font-weight: 500
 
   i
     margin-right: .5em
 
   &:hover,
   &:focus
-    @include transition
-    outline: none
-    box-shadow: none
+    @include hvr-pulse-grow
+
+.btn-dark-red-f-gr
+  background: linear-gradient(90deg, #A00000, #C62128)
+  color: $color-white
+  border: 1.5px solid transparent
+
+  &:hover,
+  &:focus
+    background: none
+    border-color: $color-dark-red
+    color: $color-dark-red
 
 .btn-dark-red-f
   background-color: $color-dark-red
   color: white
+  border: 1.5px solid transparent
 
   &:hover,
   &:focus
-    background-color: transparent
-    border: 1px solid $color-dark-red
+    background: none
+    border: 1.5px solid $color-dark-red
     color: $color-dark-red
 
 .btn-dark-red-o
   background-color: transparent
   color: $color-dark-red
-  border: 1px solid $color-dark-red
+  border: 1.5px solid $color-dark-red
 
   &:hover,
   &:focus
     background-color: $color-dark-red
-    border: 1px solid transparent
+    border: 1.5px solid transparent
     color: white
+
+.btn-dark-blue-f
+  background-color: $color-dark-blue
+  color: white
+
+  &:hover,
+  &:focus
+    background-color: transparent
+    border: 1.5px solid $color-dark-blue
+    color: $color-dark-blue
+
+.btn-dark-blue-o
+  background-color: transparent
+  color: $color-dark-blue
+  border: 1.5px solid $color-dark-blue
+
+  &:hover,
+  &:focus
+    background-color: $color-dark-blue
+    border: 1.5px solid transparent
+    color: white
+
+.btn-darker-grey-f
+  background-color: $color-darker-grey
+  color: white
+
+  &:hover,
+  &:focus
+    background-color: transparent
+    border: 1.5px solid $color-darker-grey
+    color: $color-darker-grey
+
+.btn-darker-grey-o
+  background-color: transparent
+  color: $color-darker-grey
+  border: 1.5px solid $color-darker-grey
+
+  &:hover,
+  &:focus
+    background-color: $color-darker-grey
+    border: 1.5px solid transparent
+    color: white
+
+.btn-white-ish-f
+  background-color: $color-white-ish
+  color: $color-darker-grey
+  border: 1.5px solid transparent
+
+  &:hover,
+  &:focus
+    background: none
+    border: 1.5px solid $color-white-ish
+    color: $color-white-ish
+
+.btn-white-ish-o
+  background-color: transparent
+  color: $color-white-ish
+  border: 1.5px solid $color-white-ish
+
+  &:hover,
+  &:focus
+    background: $color-white-ish
+    border: 1.5px solid $color-white-ish
+    color: $color-darker-grey

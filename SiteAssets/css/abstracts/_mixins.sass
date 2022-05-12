@@ -9,6 +9,11 @@
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
 
+@mixin shadow-sm-b()
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05)
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05)
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05)
+
 @mixin shadow-md()
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25)
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25)
@@ -24,3 +29,41 @@
 
 @mixin transition()
   transition: all ease-in-out 150ms
+
+/* Pulse Grow
+@-webkit-keyframes hvr-pulse-grow
+  to
+    -webkit-transform: scale(1.05)
+    transform: scale(1.05)
+
+@keyframes hvr-pulse-grow
+  to
+    -webkit-transform: scale(1.05)
+    transform: scale(1.05)
+
+@mixin hvr-pulse-grow
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+
+  &:hover, &:focus, &:active
+    -webkit-animation-name: hvr-pulse-grow
+    animation-name: hvr-pulse-grow
+    -webkit-animation-duration: 0.3s
+    animation-duration: 0.3s
+    -webkit-animation-timing-function: linear
+    animation-timing-function: linear
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+    -webkit-animation-direction: alternate
+    animation-direction: alternate
+    
+@mixin vertical-center
+  margin: 0
+  position: absolute
+  top: 50%
+  left: 50%
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)

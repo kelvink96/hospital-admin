@@ -1,32 +1,147 @@
 @import "../themes/colors"
 @import "../base/icons"
+@import "../components/cards"
 
 .side-nav
   padding: 1em 0
   min-height: 100vh
   background-color: white
+  @include shadow-md
+
 
   .list-group
     position: fixed
     width: inherit
 
     .list-group-item
-      width: 101%
       text-transform: capitalize
       color: $color-darker-grey
       text-decoration: none
-      border: 1px solid transparent
+      border: 1.5px solid transparent
+      font-weight: 500
+      border-radius: 0
+      width: 101%
+      margin-bottom: .25em
 
       i
         margin-right: .5em
+        font-size: 1.2em
 
       &:hover,
       &:focus
-        background-color: $color-dark-red
-        border: 1px solid $color-dark-red
-        color: $color-white
+        border: 1.5px solid $color-dark-red
+        background: none
+        color: $color-dark-red
         @include transition
+
+    .active
+      background: linear-gradient(90deg, #A00000, #C62128)
+      color: $color-white
+
+    .aob-items, .side-nav-footer
+      padding: .5em 1em
+
+      p
+        margin: 0
+
+      .card
+        background-color: $color-white-ish
+        border: 1px solid $color-light-grey
+
+        .card-header
+          text-align: center
+          margin-bottom: 1em
+
+          img
+            width: 40%
+
+        .card-body
+          p
+            margin: 0 0 .5em 0
+            text-transform: capitalize
+            font-weight: 500
+
+            i
+              margin-right: .5em
+
+            u
+              margin-left: .25em
+
+        .card-footer
+          margin-top: 1em
+          text-align: center
+
+          a
+            width: 100%
+            @include shadow-sm
 
     hr, .divider
       width: 100%
       margin: 1em 0
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .side-nav
+    @include shadow-md
+
+    .tooltip
+      display: block
+
+    .list-group
+      .list-group-item
+        padding: .5em
+        margin-bottom: .1em
+        text-align: center
+        width: 100%
+
+        i
+          text-align: center
+          display: block
+          margin: 0 0 .25em 0
+          font-size: 1.5em
+
+        span
+          display: none
+
+      .divider
+        display: none
+
+      .aob-items
+        display: none
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px)
+  .side-nav
+    @include shadow-md
+
+    .tooltip
+      display: block
+
+    .list-group
+      .list-group-item
+        padding: .75em .5em .75em .5em
+        margin-bottom: .1em
+        text-align: center
+        width: 100%
+
+        i
+          text-align: center
+          display: block
+          margin: 0 0 .25em 0
+          font-size: 2em
+
+        span
+          display: block
+
+      .divider
+        display: none
+
+      .aob-items
+        display: none
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1920px)
+  .side-nav
+    .list-group
+      .list-group-item
+        width: 100%

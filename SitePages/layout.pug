@@ -1,0 +1,122 @@
+-var assetsDirectory = '../SiteAssets'
+
+html
+	head
+		title Admin
+		meta(charset="UTF-8")
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel='stylesheet' href=assetsDirectory + '/css/vendors/bootstrap.min.css')
+		link(rel='stylesheet' href=assetsDirectory + '/css/vendors/line-awesome.min.css')
+		link(rel='stylesheet' href=assetsDirectory + '/css/pages/layout.css')
+		link(rel='icon' href=assetsDirectory + '/images/covid-19.ico')
+		script(src=assetsDirectory + '/js/vendors/jquery.min.js')
+		script(src=assetsDirectory + '/js/vendors/bootstrap.bundle.min.js')
+		script(src=assetsDirectory + '/js/global.js')
+		block links
+	body
+		header
+			nav.navbar.navbar-expand-lg.shadow-sm.fixed-top
+				a.navbar-brand(href='')
+					img(src=assetsDirectory + '/images/hospital-website.svg')
+					span i~Afya
+				.navbar-collapse
+					ul.navbar-nav
+						li.nav-item
+							a.nav-link
+								i.las.la-question-circle
+						li.nav-item.dropdown.dropleft
+							a.nav-link.notification-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+								span.badge.badge-pill.badge-primary(style='float:right;margin-bottom:-10px;')
+								i.las.la-bell
+							.dropdown-menu.notification-dropdown-menu.shadow-lg(aria-labelledby='notification-dropdown')
+								.dropdown-title
+									a(href='') notifications
+										span.ml-2.notifications-count (3)
+									a(href='').float-right mark all as read
+								.dropdown-body
+									ul.list-unstyled
+										li.media
+											a(href='').notification-card
+												img.mr-3(src=assetsDirectory + '/images/inbox.svg', alt='...')
+												.media-body
+													h6.mt-0.mb-1 collaboration tools available
+													p Cras sit amet nibh libero, in gravida nulla.
+													small.text-muted 21.03.2020, 13.02
+										li.media
+											a(href='').notification-card
+												img.mr-3(src=assetsDirectory + '/images/inbox.svg', alt='...')
+												.media-body
+													h6.mt-0.mb-1 use the new app launcher
+													p Cras sit amet nibh libero, in gravida nulla.
+													small.text-muted 21.03.2020, 13.02
+										li.media
+											a(href='').notification-card
+												img.mr-3(src=assetsDirectory + '/images/inbox.svg', alt='...')
+												.media-body
+													h6.mt-0.mb-1 the new dashboard abailable
+													p Cras sit amet nibh libero, in gravida nulla.
+													small.text-muted 21.03.2020, 13.02
+								.dropdown-footer.text-center
+									a(href='notifications.html') view more
+						li.nav-item
+							.nav-link
+								span.vertical-divider
+						li.nav-item
+							a.nav-link.profile-dropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+								img.rounded-circle(src=assetsDirectory + '/images/person.jpg')
+								span.d jane doe
+							.dropdown
+								.dropdown-menu.shadow-lg.profile-dropdown-menu(aria-labelledby='profile-dropdown')
+									a.dropdown-item(href='#')
+										i.las.la-user.mr-2
+										| profile
+									a.dropdown-item(href='#')
+										i.las.la-cog.mr-2
+										| settings
+		main
+			.side-nav
+				ul.list-group.list-group-flush
+					a(href='dashboard.html' data-toggle="tooltip" data-placement="bottom" title="Dashboard").list-group-item
+						i.las.la-shapes.la-lw
+						span dashboard
+					a(href='patients.html' data-toggle="tooltip" data-placement="bottom" title="Patients").list-group-item
+						i.las.la-user-injured.la-lw
+						span patients
+					a(href='specialists.html' data-toggle="tooltip" data-placement="bottom" title="Specialists").list-group-item
+						i.las.la-clinic-medical.la-lw
+						span specialists
+					a(href='procurement.html' data-toggle="tooltip" data-placement="bottom" title="Procurement").list-group-item
+						i.las.la-shopping-cart.la-lw
+						span procurement
+					a(href='notifications.html' data-toggle="tooltip" data-placement="bottom" title="Notifications").list-group-item
+						i.las.la-sms.la-lw
+						span notifications
+					a(href='settings.html' data-toggle="tooltip" data-placement="bottom" title="Settings").list-group-item
+						i.las.la-cogs.la-lw
+						span settings
+					hr.divider
+					.aob-items
+						.card
+							.card-header
+								img(src=assetsDirectory + '/images/covid-19.svg')
+							.card-body
+								p
+									u
+										i.las.la-globe
+										| world
+								p infected -
+									u 43,341,451
+								p deaths -
+									u 1,157,509
+							.card-footer
+								a(href='https://covid19.who.int' target='_blank').btn.btn-dark-red-f-gr.btn-sm view COVID-19 info
+			.main-content
+				.container-fluid
+					block content
+					include components/onboarding-modal
+				footer
+					.page-footer.text-center
+						.fixed-bottom.shadow-sm
+							a(href='https://covid19.who.int' target='_blank')
+								img(src=assetsDirectory + '/images/covid-19.svg')
+								span view COVID-19 info

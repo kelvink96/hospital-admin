@@ -1,0 +1,91 @@
+@import "../themes/colors"
+@import "../layout/section"
+@import "../base/icons"
+@import "../components/cards"
+@import "../components/dropdowns"
+@import "../components/buttons"
+@import "../components/labels"
+@import "../components/inputs"
+
+.section
+  .card
+    margin-bottom: 1.5em
+
+    .card-header
+      padding: 1em 1em 0 1em
+
+      p
+        margin: 0
+
+    .card-body
+      img
+        width: 100%
+        height: auto
+        border: 1px solid $color-darker-grey
+
+      p
+        margin: 0
+
+      label
+        text-transform: capitalize
+
+      .sub-section
+        padding: 1em
+
+        .sub-section-title
+          h6
+            text-transform: uppercase
+            color: $color-dark-grey
+
+        .sub-section-body
+          padding: 1em 0
+
+          .custom-control-input:checked ~ .custom-control-label::before
+            background-color: $color-dark-red
+            border-color: $color-dark-red
+
+@media only screen and (max-width: 600px)
+  .profile-section
+    .card
+      .card-body
+        .sub-section
+          .sub-section-body
+            .col-lg-2
+              text-align: center
+              margin-bottom: 1em
+
+              img
+                width: 70%
+
+            .col-lg-6
+              .d-flex
+                display: block !important
+
+                button
+                  width: 100%
+                  margin-bottom: .75em
+
+                .ml-2
+                  margin-left: 0 !important
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px)
+  .profile-section
+    .card
+      .card-body
+        .sub-section
+          .sub-section-body
+            .col-lg-2
+              text-align: center
+
+              img
+                width: 80%
+
+            .col-lg-6
+              .d-flex
+                margin-top: 2em
+                margin-bottom: 0 !important
+
+                button
+                  width: 100%
+                  margin-bottom: .75em

@@ -1,10 +1,10 @@
-extends _layout
+extends layout
 
 append links
 	link(rel='stylesheet' href=assetsDirectory + '/css/pages/specialists.css')
 block content
 	.section.title-section
-		h5.nav-link.page-title
+		h5.page-title
 	.section.filters-section.justify-content-between
 		.dropdowns-wrapper
 			.dropdown
@@ -28,11 +28,11 @@ block content
 					a.dropdown-item(href='#') phone no.
 					a.dropdown-item(href='#') address
 		.buttons-wrapper
-			button.btn.btn-dark-red-f
+			button.btn.btn-dark-red-f-gr
 				i.las.la-plus-circle
 				| add a new specialist
 	.section.specialists-table-view
-		table.table.table-hover
+		table.table.table-hover.table-responsive-lg
 			thead
 				tr
 					th name

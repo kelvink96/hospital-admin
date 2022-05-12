@@ -1,0 +1,280 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+.btn {
+  border-radius: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.btn i {
+  margin-right: 0.5em;
+}
+.btn:hover, .btn:focus {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.btn:hover:hover, .btn:hover:focus, .btn:hover:active, .btn:focus:hover, .btn:focus:focus, .btn:focus:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.btn-dark-red-f-gr {
+  background: linear-gradient(90deg, #A00000, #C62128);
+  color: white;
+  border: 1.5px solid transparent;
+}
+.btn-dark-red-f-gr:hover, .btn-dark-red-f-gr:focus {
+  background: none;
+  border-color: #a8001f;
+  color: #a8001f;
+}
+
+.btn-dark-red-f {
+  background-color: #a8001f;
+  color: white;
+  border: 1.5px solid transparent;
+}
+.btn-dark-red-f:hover, .btn-dark-red-f:focus {
+  background: none;
+  border: 1.5px solid #a8001f;
+  color: #a8001f;
+}
+
+.btn-dark-red-o {
+  background-color: transparent;
+  color: #a8001f;
+  border: 1.5px solid #a8001f;
+}
+.btn-dark-red-o:hover, .btn-dark-red-o:focus {
+  background-color: #a8001f;
+  border: 1.5px solid transparent;
+  color: white;
+}
+
+.btn-dark-blue-f {
+  background-color: #00417c;
+  color: white;
+}
+.btn-dark-blue-f:hover, .btn-dark-blue-f:focus {
+  background-color: transparent;
+  border: 1.5px solid #00417c;
+  color: #00417c;
+}
+
+.btn-dark-blue-o {
+  background-color: transparent;
+  color: #00417c;
+  border: 1.5px solid #00417c;
+}
+.btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
+  background-color: #00417c;
+  border: 1.5px solid transparent;
+  color: white;
+}
+
+.btn-darker-grey-f {
+  background-color: #333333;
+  color: white;
+}
+.btn-darker-grey-f:hover, .btn-darker-grey-f:focus {
+  background-color: transparent;
+  border: 1.5px solid #333333;
+  color: #333333;
+}
+
+.btn-darker-grey-o {
+  background-color: transparent;
+  color: #333333;
+  border: 1.5px solid #333333;
+}
+.btn-darker-grey-o:hover, .btn-darker-grey-o:focus {
+  background-color: #333333;
+  border: 1.5px solid transparent;
+  color: white;
+}
+
+.btn-white-ish-f {
+  background-color: #f9f9f9;
+  color: #333333;
+  border: 1.5px solid transparent;
+}
+.btn-white-ish-f:hover, .btn-white-ish-f:focus {
+  background: none;
+  border: 1.5px solid #f9f9f9;
+  color: #f9f9f9;
+}
+
+.btn-white-ish-o {
+  background-color: transparent;
+  color: #f9f9f9;
+  border: 1.5px solid #f9f9f9;
+}
+.btn-white-ish-o:hover, .btn-white-ish-o:focus {
+  background: #f9f9f9;
+  border: 1.5px solid #f9f9f9;
+  color: #333333;
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+.card-deck {
+  margin-bottom: 1.25em;
+}
+
+.card {
+  border-radius: 0;
+  padding: 1em;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  vertical-align: center;
+}
+.card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header h4, .card .card-header h5, .card .card-header h6 {
+  text-transform: capitalize;
+}
+.card .card-body {
+  padding: 0;
+}
+.card .card-footer {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card-deck {
+    margin-bottom: 1em;
+  }
+  .card-deck .card {
+    padding: 0.75em;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .card-deck {
+    margin-bottom: 1em;
+  }
+  .card-deck .card {
+    padding: 1em;
+  }
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.hero-section {
+  background-size: cover;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url("../../images/splash.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+}
+.hero-section .buttons-wrapper {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hero-section .buttons-wrapper h1 {
+  color: #333333;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+.hero-section .buttons-wrapper h1 u {
+  color: #a8001f;
+}
+.hero-section .feature-section {
+  width: 70%;
+}
+.hero-section .feature-section .fixed-bottom .card-deck {
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.hero-section .feature-section .fixed-bottom .card-deck .card {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    height: 100%;
+    padding: 1em 0;
+  }
+  .hero-section .buttons-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    padding: 2em 1em;
+    text-align: center;
+  }
+  .hero-section .feature-section .fixed-bottom {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+  }
+  .hero-section .feature-section .fixed-bottom .card-deck {
+    display: block;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  .hero-section .feature-section .fixed-bottom .card-deck .card {
+    margin-top: 1em;
+    padding: 1em;
+  }
+}
+
+/*# sourceMappingURL=splash.css.map */

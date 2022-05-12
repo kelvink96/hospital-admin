@@ -1,4 +1,4 @@
-extends _layout
+extends layout
 
 append links
 	link(rel='stylesheet' href=assetsDirectory + '/css/pages/dashboard.css')
@@ -10,7 +10,7 @@ block content
 	.section
 		.row
 			.col-md-6
-				h5.nav-link.page-title
+				h5.page-title
 	.section.welcome-section
 		.section-content
 			.card-deck
@@ -20,7 +20,7 @@ block content
 							.col-md-6.welcome-text-wrapper.align-self-center
 								h5 hello, dr. john doe
 								p Welcome to your dashboard
-							.col-md-6.welcome-img-wrapper.text-right
+							.col-md-6.welcome-img-wrapper
 								img(src='../SiteAssets/images/hello.svg')
 				.card.app-stats-card
 					.card-body
@@ -48,37 +48,31 @@ block content
 						.icon-wrapper
 							i.las.la-clinic-medical
 					.card-body
-						p add clinic
+						p add a clinic
 				a(href='').card.text-center
 					.card-title
 						.icon-wrapper
 							i.las.la-user-md
 					.card-body
-						p add specialist
+						p add a specialist
 				a(href='').card.text-center
 					.card-title
 						.icon-wrapper
 							i.las.la-user-plus
 					.card-body
-						p add user
+						p add a user
 				a(href='').card.text-center
 					.card-title
 						.icon-wrapper
 							i.las.la-user-lock
 					.card-body
-						p add clinic admin
+						p add an admin
 				a(href='').card.text-center
 					.card-title
 						.icon-wrapper
 							i.las.la-plus-circle
 					.card-body
-						p add staff
-				a(href='').card.text-center
-					.card-title
-						.icon-wrapper
-							i.las.la-user-nurse
-					.card-body
-						p add nurse
+						p add a staff
 	.section.card-summaries
 		.section-content
 			.card-deck
@@ -107,40 +101,47 @@ block content
 							li scaling
 							li root canal
 							li bleaching
+							li transplants
+							li cesarean
 							li x-rays
 					.card-footer
-						a(href='')
+						a(href='').view-more
 							| more
-				.card
+							i.las.la-angle-right
+				.card.total-counts-summary
 					.card-header
 						h5 total counts
 					.card-body
-						.row
+						.row.text-center.text-capitalize
 							.col-md-6
-								i.las.la-users
-								h4 100
+								i.las.la-users.la-2x.mb-1
+								h4.mb-1 100
 								p total users
 							.col-md-6
-								i.las.la-user-md
-								h4 12
+								i.las.la-user-md.la-2x.mb-1
+								h4.mb-1 12
 								p total doctors
 							.col-md-6
-								i.las.la-user-injured
-								h4 3210
+								i.las.la-user-injured.la-2x.mb-1
+								h4.mb-1 3210
 								p total patients
 							.col-md-6
-								i.las.la-hospital
-								h4 40
+								i.las.la-hospital.la-2x.mb-1
+								h4.mb-1 40
 								p total clinics
+					.card-footer
+						a(href='').view-more
+							| more
+							i.las.la-angle-right
 				.card
 					.card-header
 						h5 recent patients
 					.card-body
-						table.table.table-borderless.table-hover
+						table.table.table-hover.table-responsive-md.table-borderless
 							tbody
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -151,7 +152,7 @@ block content
 											i.las.la-ellipsis-h
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -162,7 +163,7 @@ block content
 											i.las.la-ellipsis-h
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -171,16 +172,20 @@ block content
 									td
 										button.btn.btn-sm
 											i.las.la-ellipsis-h
+					.card-footer
+						a(href='').view-more
+							| more
+							i.las.la-angle-right
 			.card-deck
 				.card
 					.card-header
-						h5 doctors list
+						h5 doctors lists
 					.card-body
-						table.table.table-borderless.table-hover
+						table.table.table-borderless.table-hover.table-responsive-md
 							tbody
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -195,7 +200,7 @@ block content
 											i.las.la-ellipsis-h
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -210,7 +215,7 @@ block content
 											i.las.la-ellipsis-h
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -225,7 +230,7 @@ block content
 											i.las.la-ellipsis-h
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -238,15 +243,19 @@ block content
 									td
 										button.btn.btn-sm
 											i.las.la-ellipsis-h
+					.card-footer
+						a(href='').view-more
+							| more
+							i.las.la-angle-right
 				.card
 					.card-header
 						h5 upcoming appointments
 					.card-body
-						table.table.table-borderless.table-hover
+						table.table.table-borderless.table-hover.table-responsive-md
 							tbody
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -264,7 +273,7 @@ block content
 											i.las.la-ellipsis-h
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -282,7 +291,7 @@ block content
 											i.las.la-ellipsis-h
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -300,7 +309,7 @@ block content
 											i.las.la-ellipsis-h
 								tr
 									td
-										img.rounded-circle(src='https://placebeard.it/640x360')
+										img.rounded-circle(src=assetsDirectory + '/images/man.svg' loading='lazy')
 									td
 										p john doe
 										small.text-muted dentist
@@ -316,3 +325,7 @@ block content
 									td
 										button.btn.btn-sm
 											i.las.la-ellipsis-h
+					.card-footer
+						a(href='').view-more
+							| more
+							i.las.la-angle-right

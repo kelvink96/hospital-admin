@@ -2,19 +2,24 @@
 @import "../layout/section"
 @import "../components/cards"
 @import "../components/buttons"
+@import "../components/modals"
 
 main
+  // GENERAL OVERRIDES
+  .section
+    .section-content
+      margin: 0
+
   .main-content
     .welcome-section
       .welcome-content-card
-        padding-left: 2em
-        padding-right: 2em
-
         .welcome-text-wrapper
           h5
             text-transform: capitalize
 
         .welcome-img-wrapper
+          text-align: right
+
           img
             width: 60%
 
@@ -37,10 +42,12 @@ main
     .functionality-section
       .section-content
         .card
-          background-color: $color-dark-red
+          background: rgb(188, 0, 35)
+          background: linear-gradient(0deg, #A00000, #C62128)
           text-transform: capitalize
           @include border-radius
           @include shadow-md
+          border: 1.5px solid $color-dark-red
 
           .card-title
             padding-top: 1em
@@ -60,12 +67,9 @@ main
 
           &:hover,
           &:focus
-            @include border-radius
-            @include transition
-            @include scale
+            @include hvr-pulse-grow
             text-decoration: none
-            background-color: $color-white
-            border-color: $color-white
+            background: none
 
             .card-title
               i
@@ -77,13 +81,16 @@ main
 
     .card-summaries
       .card
-        margin-bottom: 1em
+        margin-bottom: .5em
 
         .card-header
-          padding: 1em
+          padding: .5em
 
         .card-body
-          padding: .5em 1em
+          padding: .5em
+
+          i
+            color: $color-dark-red
 
           table
             tr
@@ -97,7 +104,214 @@ main
                 p:not(.text-muted)
                   font-weight: 600
 
+                button, .btn
+                  box-shadow: none
+
           img
             width: 30px
             height: 30px
             object-fit: cover
+
+          ol[type="1"]
+            li
+              font-weight: 500
+              text-transform: capitalize
+
+        .card-footer
+          text-align: right
+          padding: .5em 1em
+
+          .view-more
+            padding: .5em 1em
+            color: $color-darker-grey
+            text-transform: capitalize
+            font-weight: 500
+            border-radius: 1.25em
+            background-color: $color-lighter-grey
+            border: 1.5px solid $color-lighter-grey
+            text-decoration: none
+
+            i
+              margin-left: 1.5em
+              background-color: $color-dark-red
+              padding: .25em
+              color: $color-white-ish
+              border-radius: 50%
+
+            &:hover,
+            &:focus
+              border: 1.5px solid $color-dark-red
+              @include transition
+              background-color: transparent
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .welcome-section
+    .welcome-content-card
+      .card-body
+        .welcome-text-wrapper
+          text-align: center
+          margin: .5em 0
+
+          h5, p
+            margin-bottom: .5em
+
+        .welcome-img-wrapper
+          text-align: center !important
+
+          img
+            width: 50% !important
+
+    .app-stats-card
+      .card-body
+        .col-md-4
+          width: 33.33%
+
+          .las
+            font-size: 2em
+
+          p
+            margin: .35em 0 !important
+            font-size: .9em
+
+          h4
+            font-size: 1.3em
+            margin-bottom: .5em !important
+
+  .functionality-section
+    .card-deck
+      width: 100%
+      text-align: center
+      padding: 0
+
+      .card
+        width: 45%
+        display: inline-block
+        margin: .25em
+        padding: 0
+
+        .card-title
+          i
+            font-size: 1.5em
+
+        .card-body
+          margin: 0
+
+          p
+            font-size: .8em
+
+  .card-summaries
+    .card-deck
+      width: 100%
+
+      .card
+        margin-bottom: 1em !important
+
+        .card-body
+          padding: 0 !important
+
+        .card-footer
+          text-align: center !important
+
+      .total-counts-summary
+        .card-body
+          .col-md-6
+            width: 50%
+            text-align: center
+
+            i
+              font-size: 1.5em
+
+            h4
+              font-size: 1.3em
+
+            p
+              font-size: .9em
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px)
+  .welcome-section
+    .welcome-content-card
+      .card-body
+        .welcome-text-wrapper
+          text-align: left
+          margin: .5em 0
+
+          h5, p
+            margin-bottom: .5em
+
+        .welcome-img-wrapper
+          text-align: center !important
+
+          img
+            width: 90% !important
+            margin-top: 1em
+
+    .app-stats-card
+      .card-body
+        .col-md-4
+          width: 33.33%
+
+          .las
+            font-size: 2em
+
+          p
+            margin: .35em 0 !important
+            font-size: .9em
+
+          h4
+            font-size: 1.3em
+            margin-bottom: .5em !important
+
+  .functionality-section
+    .card-deck
+      text-align: center
+      padding: 0
+      display: block
+
+      .card
+        width: 25%
+        display: inline-block
+        padding: .5em
+        margin: .5em
+
+        .card-title
+          i
+            font-size: 1.5em
+
+        .card-body
+          margin: 0
+
+          p
+            font-size: .8em
+
+  .card-summaries
+    .card-deck
+      display: block
+
+      .card
+        margin-bottom: 1.5em !important
+
+        .card-footer
+          text-align: center !important
+
+      .total-counts-summary
+        .card-body
+          .col-md-6
+            width: 50%
+            text-align: center
+
+            i
+              font-size: 1.5em
+
+            h4
+              font-size: 1.3em
+
+            p
+              font-size: .9em
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1920px)
+  .welcome-section
+    .app-stats-card
+      padding-top: 4em

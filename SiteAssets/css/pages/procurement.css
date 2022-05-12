@@ -14,6 +14,18 @@ i {
   margin: 1em;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section {
+    margin: 1em 0.5em;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .section {
+    margin: 1.5em 0.75em;
+  }
+}
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 label {
@@ -95,69 +107,199 @@ table thead tr th {
 
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
 .btn {
   border-radius: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   text-transform: capitalize;
+  font-weight: 500;
 }
 .btn i {
   margin-right: 0.5em;
 }
 .btn:hover, .btn:focus {
-  transition: all ease-in-out 150ms;
-  outline: none;
-  box-shadow: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.btn:hover:hover, .btn:hover:focus, .btn:hover:active, .btn:focus:hover, .btn:focus:focus, .btn:focus:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.btn-dark-red-f-gr {
+  background: linear-gradient(90deg, #A00000, #C62128);
+  color: white;
+  border: 1.5px solid transparent;
+}
+.btn-dark-red-f-gr:hover, .btn-dark-red-f-gr:focus {
+  background: none;
+  border-color: #a8001f;
+  color: #a8001f;
 }
 
 .btn-dark-red-f {
   background-color: #a8001f;
   color: white;
+  border: 1.5px solid transparent;
 }
 .btn-dark-red-f:hover, .btn-dark-red-f:focus {
-  background-color: transparent;
-  border: 1px solid #a8001f;
+  background: none;
+  border: 1.5px solid #a8001f;
   color: #a8001f;
 }
 
 .btn-dark-red-o {
   background-color: transparent;
   color: #a8001f;
-  border: 1px solid #a8001f;
+  border: 1.5px solid #a8001f;
 }
 .btn-dark-red-o:hover, .btn-dark-red-o:focus {
   background-color: #a8001f;
-  border: 1px solid transparent;
+  border: 1.5px solid transparent;
   color: white;
+}
+
+.btn-dark-blue-f {
+  background-color: #00417c;
+  color: white;
+}
+.btn-dark-blue-f:hover, .btn-dark-blue-f:focus {
+  background-color: transparent;
+  border: 1.5px solid #00417c;
+  color: #00417c;
+}
+
+.btn-dark-blue-o {
+  background-color: transparent;
+  color: #00417c;
+  border: 1.5px solid #00417c;
+}
+.btn-dark-blue-o:hover, .btn-dark-blue-o:focus {
+  background-color: #00417c;
+  border: 1.5px solid transparent;
+  color: white;
+}
+
+.btn-darker-grey-f {
+  background-color: #333333;
+  color: white;
+}
+.btn-darker-grey-f:hover, .btn-darker-grey-f:focus {
+  background-color: transparent;
+  border: 1.5px solid #333333;
+  color: #333333;
+}
+
+.btn-darker-grey-o {
+  background-color: transparent;
+  color: #333333;
+  border: 1.5px solid #333333;
+}
+.btn-darker-grey-o:hover, .btn-darker-grey-o:focus {
+  background-color: #333333;
+  border: 1.5px solid transparent;
+  color: white;
+}
+
+.btn-white-ish-f {
+  background-color: #f9f9f9;
+  color: #333333;
+  border: 1.5px solid transparent;
+}
+.btn-white-ish-f:hover, .btn-white-ish-f:focus {
+  background: none;
+  border: 1.5px solid #f9f9f9;
+  color: #f9f9f9;
+}
+
+.btn-white-ish-o {
+  background-color: transparent;
+  color: #f9f9f9;
+  border: 1.5px solid #f9f9f9;
+}
+.btn-white-ish-o:hover, .btn-white-ish-o:focus {
+  background: #f9f9f9;
+  border: 1.5px solid #f9f9f9;
+  color: #333333;
+}
+
+.title-section .col-md-6:last-of-type {
+  text-align: right;
 }
 
 .filters-section input, .filters-section .input-group-text {
   border-radius: 0;
 }
 
-.content-section table, .content-section .table {
-  border-collapse: separate;
-  border-spacing: 0 0.5em;
-}
-.content-section table thead, .content-section .table thead {
-  background-color: transparent;
-}
-.content-section table thead tr th, .content-section .table thead tr th {
-  color: #666666;
-}
-.content-section table tbody tr, .content-section .table tbody tr {
+.content-section table thead tr, .content-section .table thead tr {
   background-color: white;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.content-section table thead tr th, .content-section .table thead tr th {
+  color: #333333;
+  padding: 1em;
+}
+.content-section table tbody tr, .content-section .table tbody tr {
+  background-color: transparent;
   text-transform: capitalize;
 }
 .content-section table tbody tr td, .content-section .table tbody tr td {
   vertical-align: middle;
+}
+.content-section table tbody tr td button, .content-section table tbody tr td .btn, .content-section .table tbody tr td button, .content-section .table tbody tr td .btn {
+  box-shadow: none;
 }
 .content-section table tbody tr td button i, .content-section table tbody tr td .btn i, .content-section .table tbody tr td button i, .content-section .table tbody tr td .btn i {
   margin: 0;
 }
 .content-section table tbody tr td p, .content-section .table tbody tr td p {
   margin: 0;
+}
+.content-section table tbody tr:hover, .content-section table tbody tr:focus, .content-section .table tbody tr:hover, .content-section .table tbody tr:focus {
+  transition: all ease-in-out 150ms;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-section .col-md-6:last-child {
+    text-align: left;
+  }
+
+  .filters-section .col-md-6 {
+    margin-bottom: 0.75em;
+  }
 }
 
 /*# sourceMappingURL=procurement.css.map */
